@@ -139,27 +139,7 @@
     "href": "02-set-up-project.html#cases-attributes",
     "title": "Setting Up Your Project",
     "section": "Cases & Attributes",
-    "text": "Cases & Attributes\nCases group data around a person, place or situation. Attributes are the variables that describe them, such as age group or year of study.\nDo you need cases? Not always. If each participant has one interview file, you can put attributes straight on the file. Cases help when one person has several files, or when one file (such as a focus group) holds several people.\nWorking with cases (Manage &gt; Manage Cases):\n\nAdd a case, e.g. Participant 01.\nClick the case’s Files cell to link whole files, or highlight part of a text and assign just that passage. Linked text is underlined in red.\nAdd attribute columns and fill in values.\nImport attributes from a CSV or XLSX file: first row = column headings, first column = case names. Names must match exactly, including capitals.\nSort, filter or hide columns with a right-click, and export the table to Excel.\n\nAttribute types: QualCoder offers only two:\n\nCharacter – text values, e.g. “2nd year”.\nNumeric – numbers, e.g. 21. You can turn numeric into character later, but not the other way round.\n\nAttributes can be attached to files, cases or journals, and managed in Manage &gt; Manage Attributes. QualCoder is not a statistics package; for statistical analysis of attributes, export them to a tool such as R.\n&lt;FIXME: ADD EXERCISE&gt;\n\n\n\n\n\n\nNoteWhy this matters for analysis\n\n\n\nAttributes will allow you to ask questions like “Do first-year students talk about stress differently from final-year students?”. It allows you to query the data considering demographics and other important characteristics associated with the documents you are analyzing.",
-    "crumbs": [
-      "Setting Up Your Project"
-    ]
-  },
-  {
-    "objectID": "02-set-up-project.html#references-optional",
-    "href": "02-set-up-project.html#references-optional",
-    "title": "Setting Up Your Project",
-    "section": "References (optional)",
-    "text": "References (optional)\nIf your data includes published articles, you can import a bibliography through Manage &gt; References. This is optional for the workshop but useful for literature reviews.\n\nImport RIS or NBIB files (.ris, .nbib or .txt), or pull references straight from Zotero 7 while it is open with its local API turned on.\nLink each reference to its file. The file then gains four attributes: Ref_Authors, Ref_Title, Ref_Type and Ref_Year.\nKeep the attributes that start with Ref_; deleting them breaks the link.\nExport all references as a RIS file.",
-    "crumbs": [
-      "Setting Up Your Project"
-    ]
-  },
-  {
-    "objectID": "02-set-up-project.html#section",
-    "href": "02-set-up-project.html#section",
-    "title": "Setting Up Your Project",
-    "section": "",
-    "text": "TipActivity 2.1\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 2.2",
+    "text": "Cases & Attributes\nCases group data around a person, place or situation. Attributes are the variables that describe them, such as age group or year of study.\nDo you need cases? Not always. If each participant has one interview file, you can put attributes straight on the file. Cases help when one person has several files, or when one file (such as a focus group) holds several people.\nWorking with cases (Manage &gt; Manage Cases):\n\nAdd a case, e.g. Participant 01.\nClick the case’s Files cell to link whole files, or highlight part of a text and assign just that passage. Linked text is underlined in red.\nAdd attribute columns and fill in values.\nImport attributes from a CSV or XLSX file: first row = column headings, first column = case names. Names must match exactly, including capitals.\nSort, filter or hide columns with a right-click, and export the table to Excel.\n\nAttribute types: QualCoder offers only two:\n\nCharacter – text values, e.g. “2nd year”.\nNumeric – numbers, e.g. 21. You can turn numeric into character later, but not the other way round.\n\nAttributes can be attached to files, cases or journals, and managed in Manage &gt; Manage Attributes. QualCoder is not a statistics package; for statistical analysis of attributes, export them to a tool such as R.\n&lt;FIXME: ADD EXERCISE&gt;\n\n\n\n\n\n\nNoteWhy this matters for analysis\n\n\n\nAttributes will allow you to ask questions like “Do first-year students talk about stress differently from final-year students?”. It allows you to query the data considering demographics and other important characteristics associated with the documents you are analyzing.\n\n\n\n\n\n\n\n\nTipActivity 2.1\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 2.2",
     "crumbs": [
       "Setting Up Your Project"
     ]
@@ -377,41 +357,41 @@
   {
     "objectID": "wrap-up.html",
     "href": "wrap-up.html",
-    "title": "Wrap-up",
+    "title": "Wrap-up and take-home",
     "section": "",
-    "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyze: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI.",
+    "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyse: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI.",
     "crumbs": [
-      "Wrap-up"
+      "Wrap-up and take-home"
     ]
   },
   {
     "objectID": "wrap-up.html#recap",
     "href": "wrap-up.html#recap",
-    "title": "Wrap-up",
+    "title": "Wrap-up and take-home",
     "section": "",
-    "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyze: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI.",
+    "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyse: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI.",
     "crumbs": [
-      "Wrap-up"
+      "Wrap-up and take-home"
     ]
   },
   {
     "objectID": "wrap-up.html#exit-ticket",
     "href": "wrap-up.html#exit-ticket",
-    "title": "Wrap-up",
+    "title": "Wrap-up and take-home",
     "section": "Exit ticket",
-    "text": "Exit ticket\n\n\n\n\n\n\nTip(placeholder) fixme\n\n\n\n\nQuestion 1, e.g. “One thing I can now do in QualCoder”\nQuestion 2, e.g. “One thing I’m still unsure about”\nQuestion 3, e.g. “How confident do I feel coding my own data? (1–5)”\nLink to exit survey: insert link",
+    "text": "Exit ticket\n\n\n\n\n\n\nTipExit ticket (placeholder) fixme\n\n\n\n\nQuestion 1, e.g. “One thing I can now do in QualCoder”\nQuestion 2, e.g. “One thing I’m still unsure about”\nQuestion 3, e.g. “How confident do I feel coding my own data? (1–5)”\nLink to exit survey: insert link",
     "crumbs": [
-      "Wrap-up"
+      "Wrap-up and take-home"
     ]
   },
   {
     "objectID": "wrap-up.html#before-you-leave",
     "href": "wrap-up.html#before-you-leave",
-    "title": "Wrap-up",
+    "title": "Wrap-up and take-home",
     "section": "Before you leave",
-    "text": "Before you leave\n\nClose QualCoder before copying or zipping your project.\nZip the whole .qda folder and save a copy somewhere safe.\nNote your coder name; use the same one next time.",
+    "text": "Before you leave\n\nClose QualCoder before copying or zipping your project.\nZip the whole .qda folder and save a copy somewhere safe.\nadd more &lt;FIXME&gt;",
     "crumbs": [
-      "Wrap-up"
+      "Wrap-up and take-home"
     ]
   }
 ]
