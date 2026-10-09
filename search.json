@@ -6,7 +6,6 @@
     "section": "",
     "text": "Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.\n\nThe journal window floats, so you can keep it open beside the coding screen.\nAdd simple formatting with Markdown: # for headings (up to three levels), *italics* and **bold**. Web links become clickable from the right-click menu.\nSearch journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.\n\nMemo vs journal: a memo belongs to one code, file or passage; a journal entry is about the project as a whole.",
     "crumbs": [
-      "Episodes",
       "Analyzing and Reporting"
     ]
   },
@@ -17,7 +16,6 @@
     "section": "",
     "text": "Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.\n\nThe journal window floats, so you can keep it open beside the coding screen.\nAdd simple formatting with Markdown: # for headings (up to three levels), *italics* and **bold**. Web links become clickable from the right-click menu.\nSearch journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.\n\nMemo vs journal: a memo belongs to one code, file or passage; a journal entry is about the project as a whole.",
     "crumbs": [
-      "Episodes",
       "Analyzing and Reporting"
     ]
   },
@@ -28,7 +26,6 @@
     "section": "Retrieving and comparing coded data (Analysis menu)",
     "text": "Retrieving and comparing coded data (Analysis menu)\nThe Analysis menu turns your coding into evidence. Code retrieval (sometimes called the coding report) is the main tool.\n\nCode retrieval\n\nChoose one or more codes or categories.\nOptionally narrow by file, case or attribute, e.g. only second-year students.\nOptionally search within results or show only segments marked Important.\nRead the matching passages together, then export them as TXT, CSV, XLSX, ODT or HTML.\n\nA matrix view places codes against files or cases, so you can see who talked about what.\n\n\nOther analysis options\n\n\n\nOption\nQuestion it answers\n\n\n\n\nCode co-occurrence\nWhich codes tend to appear on the same passages?\n\n\nCode relations\nHow do two codes sit in the text: overlapping, one inside another, close by, or exactly the same? (Text only)\n\n\nCodes by text segments\nWhich codes does each segment carry?\n\n\nGraph\nHow do codes and categories connect visually? (See below.)\n\n\n\nWhen you export an HTML report that includes images or media, keep the report’s companion folder with it.",
     "crumbs": [
-      "Episodes",
       "Analyzing and Reporting"
     ]
   },
@@ -39,7 +36,6 @@
     "section": "Reports menu",
     "text": "Reports menu\nReports summarize your project in numbers and charts.\n\nCode frequencies: how often each code was used, by each coder, optionally per file.\nFile summary/code summary: details about a file or code, including word frequencies (common words removed) and average segment length.\nCharts: bar charts, sunbursts, heatmaps, stacked bars and word clouds, opened in your web browser and exportable as HTML.\nCoding comparison: compares two coders on the same text using percentage agreement and Cohen’s kappa, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.\nDatabase queries: advanced users can run SQL queries on the project database. Back up first, as queries can change data.\n\n\n\n\n\n\n\nNoteTeaching point\n\n\n\nCounting codes is not the same as finding meaning. Frequencies show where to look; reading the passages tells you what they mean.",
     "crumbs": [
-      "Episodes",
       "Analyzing and Reporting"
     ]
   },
@@ -50,7 +46,6 @@
     "section": "Visualizing codes with the Graph tool",
     "text": "Visualizing codes with the Graph tool\nThe Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.\n\nChoose what to show: all categories or selected ones.\nDrag items into position; use the buttons at lower left to space them evenly, and + / – to zoom.\nRight-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.\nRight-click empty space to add free text boxes, file or case boxes, and extra lines.\nSave graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.\n\nA graph exported as PNG is a quick way to include a thematic map in a report or presentation.\n\n\n\n\n\n\nTipActivity 4.1 –\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 4.2\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 4.3",
     "crumbs": [
-      "Episodes",
       "Analyzing and Reporting"
     ]
   },
@@ -116,7 +111,6 @@
     "section": "",
     "text": "A QualCoder project is a folder ending in .qda that holds everything: a database, your imported files and your coding. A project called “Test” becomes a folder called Test.qda. For our toy project, we will name it “GitHub”.\n\nChoose Project &gt; Create New Project.\nGive it a name and choose where to save it.\nTo share or hand in the project, zip the whole .qda folder.\n\n&lt;FIXME - ADD SCREENSHOT&gt;\nThe main screen has five tabs: Action log, Manage, Reports, Coding and AI chat. After you change something (for example, add files), use the menu bar to reopen a screen so it refreshes, rather than clicking the tab.\nWrite a project memo: Adding short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and the AI tools use it as context. Anything written after a line of ##### is kept private from the AI as we will see in later episodes.\n&lt;FIXME: ADD Project memo code block that learners can copy and paste from&gt;\n\n\n\n\n\n\nWarningImportant Tips\n\n\n\n\nSave projects on your computer’s own drive, not in a cloud-synced folder or on a USB stick. Syncing while QualCoder is open can corrupt the database.\nKeep backup copies in more than one location. You can use cloud storage, USB drives, external hard drives, or a combination of these options for added protection.",
     "crumbs": [
-      "Episodes",
       "Setting Up Your Project"
     ]
   },
@@ -127,7 +121,6 @@
     "section": "",
     "text": "A QualCoder project is a folder ending in .qda that holds everything: a database, your imported files and your coding. A project called “Test” becomes a folder called Test.qda. For our toy project, we will name it “GitHub”.\n\nChoose Project &gt; Create New Project.\nGive it a name and choose where to save it.\nTo share or hand in the project, zip the whole .qda folder.\n\n&lt;FIXME - ADD SCREENSHOT&gt;\nThe main screen has five tabs: Action log, Manage, Reports, Coding and AI chat. After you change something (for example, add files), use the menu bar to reopen a screen so it refreshes, rather than clicking the tab.\nWrite a project memo: Adding short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and the AI tools use it as context. Anything written after a line of ##### is kept private from the AI as we will see in later episodes.\n&lt;FIXME: ADD Project memo code block that learners can copy and paste from&gt;\n\n\n\n\n\n\nWarningImportant Tips\n\n\n\n\nSave projects on your computer’s own drive, not in a cloud-synced folder or on a USB stick. Syncing while QualCoder is open can corrupt the database.\nKeep backup copies in more than one location. You can use cloud storage, USB drives, external hard drives, or a combination of these options for added protection.",
     "crumbs": [
-      "Episodes",
       "Setting Up Your Project"
     ]
   },
@@ -138,7 +131,6 @@
     "section": "Bringing in your data: Manage Files",
     "text": "Bringing in your data: Manage Files\nAll your data comes in through Manage &gt; Manage Files.\n\n\n\n\n\n\n\nType\nFormats\n\n\n\n\nText\n.txt, .docx, .epub, .md, .odt, .pdf, .rtf, .tex\n\n\nImages\n.jpg, .jpeg, .png\n\n\nAudio and video\n.mp3, .m4a, .wav, .mp4, .mov, .ogg (and .wmv video)\n\n\n\n&lt;FIXME - ADD SCREENSHOT&gt;\nSome other things you can do here:\n\nCreate a new text file: and type or paste content directly.\nFilter, sort and bulk-rename files, and add attributes to each file.\n\n\n\n\n\n\n\nCaution\n\n\n\n\nQualCoder should not be used for editing, de-identifying, or pseudonymizing raw data. Best practice dictates importing only final, analysis-ready transcripts and notes into the platform for coding.\n\n\n\nLet’s import our sample files into QualCoder.\n&lt;FIXME - ADD SCREENSHOT&gt;",
     "crumbs": [
-      "Episodes",
       "Setting Up Your Project"
     ]
   },
@@ -149,7 +141,6 @@
     "section": "Cases & Attributes",
     "text": "Cases & Attributes\nCases group data around a person, place or situation. Attributes are the variables that describe them, such as age group or year of study.\nDo you need cases? Not always. If each participant has one interview file, you can put attributes straight on the file. Cases help when one person has several files, or when one file (such as a focus group) holds several people.\nWorking with cases (Manage &gt; Manage Cases):\n\nAdd a case, e.g. Participant 01.\nClick the case’s Files cell to link whole files, or highlight part of a text and assign just that passage. Linked text is underlined in red.\nAdd attribute columns and fill in values.\nImport attributes from a CSV or XLSX file: first row = column headings, first column = case names. Names must match exactly, including capitals.\nSort, filter or hide columns with a right-click, and export the table to Excel.\n\nAttribute types: QualCoder offers only two:\n\nCharacter – text values, e.g. “2nd year”.\nNumeric – numbers, e.g. 21. You can turn numeric into character later, but not the other way round.\n\nAttributes can be attached to files, cases or journals, and managed in Manage &gt; Manage Attributes. QualCoder is not a statistics package; for statistical analysis of attributes, export them to a tool such as R.\n&lt;FIXME: ADD EXERCISE&gt;\n\n\n\n\n\n\nNoteWhy this matters for analysis\n\n\n\nAttributes will allow you to ask questions like “Do first-year students talk about stress differently from final-year students?”. It allows you to query the data considering demographics and other important characteristics associated with the documents you are analyzing.",
     "crumbs": [
-      "Episodes",
       "Setting Up Your Project"
     ]
   },
@@ -160,7 +151,6 @@
     "section": "References (optional)",
     "text": "References (optional)\nIf your data includes published articles, you can import a bibliography through Manage &gt; References. This is optional for the workshop but useful for literature reviews.\n\nImport RIS or NBIB files (.ris, .nbib or .txt), or pull references straight from Zotero 7 while it is open with its local API turned on.\nLink each reference to its file. The file then gains four attributes: Ref_Authors, Ref_Title, Ref_Type and Ref_Year.\nKeep the attributes that start with Ref_; deleting them breaks the link.\nExport all references as a RIS file.",
     "crumbs": [
-      "Episodes",
       "Setting Up Your Project"
     ]
   },
@@ -171,7 +161,6 @@
     "section": "",
     "text": "TipActivity 2.1\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 2.2",
     "crumbs": [
-      "Episodes",
       "Setting Up Your Project"
     ]
   },
@@ -182,7 +171,6 @@
     "section": "",
     "text": "QualCoder is a free, open-source desktop program for qualitative data analysis. It helps you organize non-numeric data, such as interviews, documents and images, and tag meaningful passages with codes.\nWhat you can do with it:\n\nCode many kinds of data: text, PDFs, images, audio and video.\nWrite as you think: keep journals and attach memos to codes, files and coded passages.\nOrganize ideas: group codes into categories in a tree, like folders.\nAnalyse and report: retrieve everything tagged with a code, compare codes, and export reports.\nUse optional AI tools: search for themes and discuss your data with a large language model. These are switched off by default.\n\nApplications\nQualCoder can be used to analyze a wide range of qualitative data files and combine them within the same research project. For example, students can import PDF files such as journal articles, policy documents, reports, or case studies and code them to identify key themes and concepts; audio recordings of interviews or focus groups can be transcribed and coded to explore participants’ experiences, opinions, and perceptions; text files such as open-ended survey responses, interview transcripts, field notes, or meeting notes can be organized into categories and themes; web-based or social-media text can be analyzed to compare public perspectives and discussions; and images or other visual materials such as photographs, screenshots, or field observations can be coded alongside textual data. These different file types can also be combined and compared, allowing students to examine, for example, whether themes identified in policy documents are also reflected in interviews, survey responses, or public discussions.\n\n\n\n\n\n\nNoteRound-Robin\n\n\n\nHow do you envision using QualCoder in your research or coursework? What types of documents or artifacts would you analyze (e.g., journal articles, policy documents, interview recordings, transcripts, survey responses, or images)?\n\n\nGood to know:\n\nIt runs on Windows, macOS and Linux, and works offline.\nIt is designed for one person at a time. Teams take turns on a project or merge copies later (see Working in a team).\nIt aims to follow the REFI-QDA exchange standard, so projects can move to and from tools such as NVivo, ATLAS.ti and MAXQDA, with some limits.\nIt is licensed under the LGPL v3. If you use it in coursework or research, cite it (the citation is on the QualCoder website).\n\nThe simplest route is a ready-made installer from the releases page. Choose the one appropriate for your laptop.\n\n\n\n\n\n\n\n\nSystem\nWhat to download\nWhat to expect on first launch\n\n\n\n\nWindows\nThe Windows installer (.exe)\nA SmartScreen warning, because the app is not signed. Click More info, then Run anyway.\n\n\nmacOS\nThe .dmg file\nA Gatekeeper warning. Allow the app under System Settings &gt; Privacy & Security.\n\n\nLinux (Debian/Ubuntu)\nThe Linux executable, or run from source\nUsually no warning.\n\n\n\nOptional extras (which won’t be covered during this workshop)\n\nVLC media player is needed to code audio and video\nffmpeg lets QualCoder draw audio waveforms.\n\nPlease note that Audio and video do not work on Fedora Linux.",
     "crumbs": [
-      "Episodes",
       "Meet QualCoder!"
     ]
   },
@@ -193,7 +181,6 @@
     "section": "",
     "text": "QualCoder is a free, open-source desktop program for qualitative data analysis. It helps you organize non-numeric data, such as interviews, documents and images, and tag meaningful passages with codes.\nWhat you can do with it:\n\nCode many kinds of data: text, PDFs, images, audio and video.\nWrite as you think: keep journals and attach memos to codes, files and coded passages.\nOrganize ideas: group codes into categories in a tree, like folders.\nAnalyse and report: retrieve everything tagged with a code, compare codes, and export reports.\nUse optional AI tools: search for themes and discuss your data with a large language model. These are switched off by default.\n\nApplications\nQualCoder can be used to analyze a wide range of qualitative data files and combine them within the same research project. For example, students can import PDF files such as journal articles, policy documents, reports, or case studies and code them to identify key themes and concepts; audio recordings of interviews or focus groups can be transcribed and coded to explore participants’ experiences, opinions, and perceptions; text files such as open-ended survey responses, interview transcripts, field notes, or meeting notes can be organized into categories and themes; web-based or social-media text can be analyzed to compare public perspectives and discussions; and images or other visual materials such as photographs, screenshots, or field observations can be coded alongside textual data. These different file types can also be combined and compared, allowing students to examine, for example, whether themes identified in policy documents are also reflected in interviews, survey responses, or public discussions.\n\n\n\n\n\n\nNoteRound-Robin\n\n\n\nHow do you envision using QualCoder in your research or coursework? What types of documents or artifacts would you analyze (e.g., journal articles, policy documents, interview recordings, transcripts, survey responses, or images)?\n\n\nGood to know:\n\nIt runs on Windows, macOS and Linux, and works offline.\nIt is designed for one person at a time. Teams take turns on a project or merge copies later (see Working in a team).\nIt aims to follow the REFI-QDA exchange standard, so projects can move to and from tools such as NVivo, ATLAS.ti and MAXQDA, with some limits.\nIt is licensed under the LGPL v3. If you use it in coursework or research, cite it (the citation is on the QualCoder website).\n\nThe simplest route is a ready-made installer from the releases page. Choose the one appropriate for your laptop.\n\n\n\n\n\n\n\n\nSystem\nWhat to download\nWhat to expect on first launch\n\n\n\n\nWindows\nThe Windows installer (.exe)\nA SmartScreen warning, because the app is not signed. Click More info, then Run anyway.\n\n\nmacOS\nThe .dmg file\nA Gatekeeper warning. Allow the app under System Settings &gt; Privacy & Security.\n\n\nLinux (Debian/Ubuntu)\nThe Linux executable, or run from source\nUsually no warning.\n\n\n\nOptional extras (which won’t be covered during this workshop)\n\nVLC media player is needed to code audio and video\nffmpeg lets QualCoder draw audio waveforms.\n\nPlease note that Audio and video do not work on Fedora Linux.",
     "crumbs": [
-      "Episodes",
       "Meet QualCoder!"
     ]
   },
@@ -204,7 +191,6 @@
     "section": "Basic Settings",
     "text": "Basic Settings\nOpen Project &gt; Settings (or the settings icon). Only four settings matter for a first session.\n&lt;FIXME - ADD SCREENSHOT&gt;\n\nCoder name: Every code you apply is stamped with your coder name. Set your own name (or initials) before you start, using the Change button. This matters later if you compare coding with a collaborator.\nLanguage: English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.\nFont and display: Increase the font size if text is hard to read on a projector or small screen.\nBackups” QualCoder can back up your project every hour and keep the most recent copies, named like projectname_BKP_yyyymmdd_hh.qda. Let’s leave this on!\n\nBehind the scenes: QualCoder keeps its settings file (config.ini) and a log file in a hidden .qualcoder folder in your home directory. Remember: do not store project data there!\n\n\n\n\n\n\nTipActivity 1.1 –",
     "crumbs": [
-      "Episodes",
       "Meet QualCoder!"
     ]
   },
@@ -215,7 +201,6 @@
     "section": "",
     "text": "Coding means attaching a short label (a code) to a passage of data that expresses an idea relevant to your research question. Codes are then grouped into categories, which can grow into themes.\n\n\n\n\n\n\n\n\nTerm\nMeaning\nExample\n\n\n\n\nCode\nA label applied to a passage\nSleep loss\n\n\nCategory\nA group of related codes\nPhysical effects of stress\n\n\nCoded segment\nThe passage a code is attached to\n“I barely slept the week before finals.”\n\n\nIn vivo code\nA code named with the participant’s own words\n“running on empty”\n\n\nMemo\nA note explaining your thinking about a code or passage\n“Several students link sleep to caffeine use.”\n\n\n\nCodes can be planned in advance from theory (deductive) or emerge as you read (inductive). Most student projects mix both.",
     "crumbs": [
-      "Episodes",
       "Coding Data"
     ]
   },
@@ -226,7 +211,6 @@
     "section": "",
     "text": "Coding means attaching a short label (a code) to a passage of data that expresses an idea relevant to your research question. Codes are then grouped into categories, which can grow into themes.\n\n\n\n\n\n\n\n\nTerm\nMeaning\nExample\n\n\n\n\nCode\nA label applied to a passage\nSleep loss\n\n\nCategory\nA group of related codes\nPhysical effects of stress\n\n\nCoded segment\nThe passage a code is attached to\n“I barely slept the week before finals.”\n\n\nIn vivo code\nA code named with the participant’s own words\n“running on empty”\n\n\nMemo\nA note explaining your thinking about a code or passage\n“Several students link sleep to caffeine use.”\n\n\n\nCodes can be planned in advance from theory (deductive) or emerge as you read (inductive). Most student projects mix both.",
     "crumbs": [
-      "Episodes",
       "Coding Data"
     ]
   },
@@ -237,7 +221,6 @@
     "section": "Coding text step by step",
     "text": "Coding text step by step\nOpen Coding &gt; Code text. The code tree sits on the left, your document in the center, and the file list nearby.\n\nCreate codes and categories\n\nRight-click the code tree and choose to add a new code or category. In the text area, the shortcuts are N (new code) and C (new category).\nRight-click a code to rename it, change its color, or add a memo.\n\n\n\nApply a code\n\nHighlight a passage with the mouse.\nClick a code in the code tree. The passage takes on the code’s color.\n\nShortcuts after highlighting: Q reuses your most recent code, R lists recent codes, and V makes an in vivo code from the selected words.\n\n\nCheck and fix your coding\n\nHover over coloured text to see which code is attached.\nTo remove a code, click the coded text and press U (or the Unmark button). Ctrl+Z brings back the last code you removed.\nTo resize a segment, click it and press Shift + arrow to extend or Alt + arrow to shrink.\nWhere codes overlap, click there and press O to cycle through them.\n\n\n\nAdd your thinking\n\nMemo a coded segment: hover over it and press M. Memoed text appears in italics.\nAnnotate any selected text, coded or not, by pressing A. Annotated text turns bold.\nFlag a strong example as Important with I. The star button under the code tree then shows only important segments, which is handy for picking quotes.\n\n\n\nAuto-coding (use with care!)\nButtons at the top right can code every exact match of a word (case-sensitive; separate options with |, e.g. exam|exams), every sentence containing a fragment, or the section between two markers. Mark speakers creates a code for each speaker in a transcript.\n\n\n\n\n\n\nWarning\n\n\n\nAuto-coding can be undone only until you close the project, so always review the results.\n\n\n\n\nHandy shortcuts\n\n\n\nKey\nAction\n\n\n\n\nN / C\nNew code / new category\n\n\nQ\nApply most recent code\n\n\nR\nChoose from recent codes\n\n\nV\nIn vivo code\n\n\nU\nRemove code at the cursor\n\n\nCtrl+Z\nRestore last removed code\n\n\nM\nMemo on coded segment\n\n\nA\nAnnotate selection\n\n\nI\nMark as important\n\n\nS\nSearch text\n\n\nB / Shift+B\nSet bookmark / jump to bookmark\n\n\nH\nHide or show the top panel\n\n\nCtrl+E\nTurn edit mode on or off",
     "crumbs": [
-      "Episodes",
       "Coding Data"
     ]
   },
@@ -248,7 +231,6 @@
     "section": "Building and organizing your code tree",
     "text": "Building and organizing your code tree\nYour codes live in a tree: categories act like folders, codes sit inside them, and from version 4.0 codes can have sub-codes.\nExample tree for the sample research question:\n\nPhysical effects of stress (category)\n\nSleep loss (code)\nEating habits (code)\n\nCoping strategies (category)\n\nSocial support (code)\n\nFriends (sub-code)\nFamily (sub-code)\n\nTime management (code)\n\n\nEveryday tree tasks (right-click in the code tree):\n\nMove a code into a category, or a category into a larger one.\nMerge by dropping one code onto another; their coded segments combine. Don’t drop items on each other unless you mean to merge.\nRename, recolor or memo any code or category. Coding &gt; Color scheme recolors several codes at once and previews how colors look to people with color blindness.\nFilter a long tree: F9 shows codes matching some text, F10 shows codes of one color. F11/F12 sort it.\nShow coded files: right-click a code to list every passage tagged with it, open each in context, and export them to a text file. This is a quick way to check that a code is used consistently.\n\nA code can belong to only one category. If an idea fits two places, create two similarly named codes.\n\nThe Code Organizer\nFor a bigger clean-up, open the Code Organizer. It shows your codes and categories as a diagram you can restructure: move, merge, rename and remove codes and categories, add new categories, and export the view as a PNG.\n\n\n\n\n\n\nWarning\n\n\n\nNothing changes until you click Apply, and once applied the changes cannot be undone. Make a backup first; QualCoder will prompt you to.",
     "crumbs": [
-      "Episodes",
       "Coding Data"
     ]
   },
@@ -259,7 +241,6 @@
     "section": "Coding PDFs, images, audio and video (FIXME: REMOVE SINCE WE WONT COVER IT)?",
     "text": "Coding PDFs, images, audio and video (FIXME: REMOVE SINCE WE WONT COVER IT)?\nThe same idea applies to every data type: choose a code, mark a piece of the data, and add memos where useful.\n\n\n\n\n\n\n\n\nData type\nHow you mark it\nWorth knowing\n\n\n\n\nPDF\nSelect text in the PDF view or in a plain-text view of it\nShortcuts mirror text coding (Q, R, M, A, I). Projects coded in 4.0 may show misaligned codes if opened in 3.8.2 or earlier.\n\n\nImage\nSelect a code, then drag a rectangle over part of the image\nRight-click to rotate, zoom, or apply grayscale, blur or solarize to see details. Exports to HTML show code names on hover.\n\n\nAudio / video\nPress Start segment / Stop segment (Ctrl+S) while playing, then right-click a code to assign it\nNeeds VLC. Code the transcript text too, and link text to segments. Change play speed from 0.1x to 2x.\n\n\n\nIn all three, you can mark items as Important, attach memos, and use the star button to show only important items.\nUseful audio/video shortcuts: Ctrl+P play/pause, Alt+R rewind 30 seconds, Ctrl+Shift+&lt; and &gt; slow down or speed up playback.\n\n\n\n\n\n\nTipActivity 3.1\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 3.2",
     "crumbs": [
-      "Episodes",
       "Coding Data"
     ]
   },
@@ -286,24 +267,12 @@
     ]
   },
   {
-    "objectID": "ref-under-the-hood.html",
-    "href": "ref-under-the-hood.html",
-    "title": "Under the hood",
-    "section": "",
-    "text": "Built with: Python 3 and Qt6. Development happens openly on GitHub, inspired by the earlier R package RQDA.\nProject structure: a .qda folder contains a SQLite database plus imported files, and an ai_data folder if AI is enabled. Settings and logs live in the hidden .qualcoder folder in your home directory.\nDatabase: the docs describe each table (files, cases, codes, coded text, attributes, journals and more) for people who want to write SQL queries. Text positions are counted in characters; audio and video positions in milliseconds.\nLicence: LGPL v3, so QualCoder is free to use, share and modify.\nContributing: anyone can help by translating the interface or the docs, or by contributing code via GitHub. Documentation lives as Markdown files in the qualcoder-org.github.io repository.\nAI technical information: this page of the official docs is still a placeholder.",
-    "crumbs": [
-      "Reference",
-      "Under the hood"
-    ]
-  },
-  {
     "objectID": "05-ai-features.html",
     "href": "05-ai-features.html",
     "title": "AI Features",
     "section": "",
     "text": "QualCoder’s AI tools are off by default and entirely optional. In this workshop they are a facilitator demo, not a student task.\n\n\n\nRun the setup wizard (shown after a fresh install, or via AI &gt; Setup Wizard).\nTurn on AI integration and choose a model. Options include commercial models (OpenAI, Anthropic, Google) with an API key, university-hosted services, other providers such as Mistral or OpenRouter, or a local model via Ollama, which keeps data on your computer.\nWait while QualCoder builds a local “AI memory” of your documents. It downloads an embedding model of about 2.5 GB once, and the status bar shows AI: reading until it is ready.\n\n\n\n\n\nQualCoder sends only short, selected chunks of text (around 500 characters each) to a cloud model, not whole documents.\nAnything in a memo after a ##### line is never sent to the AI.\nAnonymize/de-identify data before using any cloud service, and check what your ethics approval allows.\n\nPrepare the project: a clear project memo, readable file names, and labelled speakers in transcripts all improve AI results.",
     "crumbs": [
-      "Episodes",
       "AI Features"
     ]
   },
@@ -314,7 +283,6 @@
     "section": "",
     "text": "QualCoder’s AI tools are off by default and entirely optional. In this workshop they are a facilitator demo, not a student task.\n\n\n\nRun the setup wizard (shown after a fresh install, or via AI &gt; Setup Wizard).\nTurn on AI integration and choose a model. Options include commercial models (OpenAI, Anthropic, Google) with an API key, university-hosted services, other providers such as Mistral or OpenRouter, or a local model via Ollama, which keeps data on your computer.\nWait while QualCoder builds a local “AI memory” of your documents. It downloads an embedding model of about 2.5 GB once, and the status bar shows AI: reading until it is ready.\n\n\n\n\n\nQualCoder sends only short, selected chunks of text (around 500 characters each) to a cloud model, not whole documents.\nAnything in a memo after a ##### line is never sent to the AI.\nAnonymize/de-identify data before using any cloud service, and check what your ethics approval allows.\n\nPrepare the project: a clear project memo, readable file names, and labelled speakers in transcripts all improve AI results.",
     "crumbs": [
-      "Episodes",
       "AI Features"
     ]
   },
@@ -325,7 +293,6 @@
     "section": "AI-assisted coding and AI chat",
     "text": "AI-assisted coding and AI chat\nAI-assisted coding searches your data by meaning, not exact words. You pick a code (or type a free topic), choose an analytic prompt, and optionally filter by documents, cases or attributes. QualCoder first searches its local memory, then asks the language model to rank and explain the best matches. You review each suggestion and decide whether to code it. The docs stress this is assisted, not automated, coding.\nAI chat offers four kinds of conversation:\n\n\n\n\n\n\n\nChat type\nWhat it does\n\n\n\n\nTopic analysis\nExplores a theme across all your data, even before you’ve coded\n\n\nText analysis\nDiscusses a selected passage: brainstorm, summarize, suggest themes, or look for the unexpected\n\n\nCode analysis\nSends everything under one code or category for a summary or comparison; watch the cost on large codes\n\n\nGeneral chat\nOpen conversation about your project\n\n\n\nPrompt library: the instructions sent to the AI are plain-language prompts you can view, copy and edit via AI &gt; Prompt library. Built-in system prompts must be duplicated before editing. Prompts are in English but work with data in other languages.",
     "crumbs": [
-      "Episodes",
       "AI Features"
     ]
   },
@@ -336,18 +303,18 @@
     "section": "Demo and discussion",
     "text": "Demo and discussion\n\n\n\n\n\n\nTipDemo 5.1 – AI-assisted coding (5 min, facilitator)\n\n\n\nNotes to fix:\n\nWhat to show: e.g. run AI-assisted coding for the code “fixme”on the sample data; accept one suggestion, reject one\nModel used: e.g. local Ollama free model/institutional service &lt;fixme&gt;\n\n\n\n\n\n\n\n\n\nTipDiscussion 5.1 – Should we use AI here? (5 min) - fixme\n\n\n\n\nPrompt 1, e.g. “What did the AI find that you missed? What did it get wrong?”\nPrompt 2, e.g. “Who is responsible for an interpretation suggested by AI?”\nPrompt 3, e.g. “Would your participants have agreed to their words being sent to an AI company?”",
     "crumbs": [
-      "Episodes",
       "AI Features"
     ]
   },
   {
-    "objectID": "episodes.html",
-    "href": "episodes.html",
-    "title": "Episodes",
+    "objectID": "ref-under-the-hood.html",
+    "href": "ref-under-the-hood.html",
+    "title": "Under the hood",
     "section": "",
-    "text": "Each episode explains one stage of a QualCoder project and ends with hands-on activities.\n\n\n\nEpisode\nTime\nYou will learn to\n\n\n\n\n1 – Meet QualCoder\n\nInstall QualCoder and set your coder name\n\n\n2 – Set Up Your Project\n\nCreate a project, import data, add cases and attributes\n\n\n3 – Code Your Data\n\nCreate codes and categories and apply them to text and media\n\n\n4 – Analyze and Report\n\nWrite journals, retrieve coded data, produce reports and graphs\n\n\n5 – AI Features\n\nUnderstand QualCoder’s AI tools and their ethical questions\n\n\nWrap-up\n\nReview, reflect and plan next steps",
+    "text": "Built with: Python 3 and Qt6. Development happens openly on GitHub, inspired by the earlier R package RQDA.\nProject structure: a .qda folder contains a SQLite database plus imported files, and an ai_data folder if AI is enabled. Settings and logs live in the hidden .qualcoder folder in your home directory.\nDatabase: the docs describe each table (files, cases, codes, coded text, attributes, journals and more) for people who want to write SQL queries. Text positions are counted in characters; audio and video positions in milliseconds.\nLicence: LGPL v3, so QualCoder is free to use, share and modify.\nContributing: anyone can help by translating the interface or the docs, or by contributing code via GitHub. Documentation lives as Markdown files in the qualcoder-org.github.io repository.\nAI technical information: this page of the official docs is still a placeholder.",
     "crumbs": [
-      "Episodes"
+      "Reference",
+      "Under the hood"
     ]
   },
   {
@@ -410,45 +377,41 @@
   {
     "objectID": "wrap-up.html",
     "href": "wrap-up.html",
-    "title": "Wrap-up and take-home",
+    "title": "Wrap-up",
     "section": "",
     "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyze: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI.",
     "crumbs": [
-      "Episodes",
-      "Wrap-up and take-home"
+      "Wrap-up"
     ]
   },
   {
     "objectID": "wrap-up.html#recap",
     "href": "wrap-up.html#recap",
-    "title": "Wrap-up and take-home",
+    "title": "Wrap-up",
     "section": "",
     "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyze: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI.",
     "crumbs": [
-      "Episodes",
-      "Wrap-up and take-home"
+      "Wrap-up"
     ]
   },
   {
     "objectID": "wrap-up.html#exit-ticket",
     "href": "wrap-up.html#exit-ticket",
-    "title": "Wrap-up and take-home",
+    "title": "Wrap-up",
     "section": "Exit ticket",
     "text": "Exit ticket\n\n\n\n\n\n\nTip(placeholder) fixme\n\n\n\n\nQuestion 1, e.g. “One thing I can now do in QualCoder”\nQuestion 2, e.g. “One thing I’m still unsure about”\nQuestion 3, e.g. “How confident do I feel coding my own data? (1–5)”\nLink to exit survey: insert link",
     "crumbs": [
-      "Episodes",
-      "Wrap-up and take-home"
+      "Wrap-up"
     ]
   },
   {
     "objectID": "wrap-up.html#before-you-leave",
     "href": "wrap-up.html#before-you-leave",
-    "title": "Wrap-up and take-home",
+    "title": "Wrap-up",
     "section": "Before you leave",
     "text": "Before you leave\n\nClose QualCoder before copying or zipping your project.\nZip the whole .qda folder and save a copy somewhere safe.\nNote your coder name; use the same one next time.",
     "crumbs": [
-      "Episodes",
-      "Wrap-up and take-home"
+      "Wrap-up"
     ]
   }
 ]
