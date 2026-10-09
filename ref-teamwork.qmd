@@ -7,7 +7,7 @@ title: "Working in a team"
 QualCoder is single-user, so teams use one of two approaches. Either way, give every person a **unique coder name** (**Project \> Settings \> Change**).
 
 | Approach | How it works | Best for |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Take turns | One person works, closes QualCoder, then passes the zipped project to the next person. Never open the same project at the same time. | Small groups, open (inductive) coding |
 | Master project + merge | Build one master project with all files, give each person a copy, code separately, then merge the copies back. Don't edit the texts in the copies. | Coding with an agreed codebook (deductive) |
 

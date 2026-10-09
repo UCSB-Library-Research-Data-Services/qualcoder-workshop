@@ -1,6 +1,5 @@
 ---
 title: "Wrap-up and take-home"
-subtitle: "2:25–2:30 · 5 minutes"
 ---
 
 ## Recap
@@ -9,28 +8,24 @@ In one session, participants went from an empty project to coded data, a journal
 
 1.  **Set up:** project, files, cases, attributes.
 2.  **Code:** codes, categories, memos, important quotes.
-3.  **Analyse:** retrieve, filter by attributes, compare, visualise.
+3.  **Analyze:** retrieve, filter by attributes, compare, visualise.
 4.  **Reflect:** journals, and critical thinking about AI.
 
 ## Exit ticket
 
 ::: {.callout-tip icon="false"}
-## Exit ticket (placeholder)
+## (placeholder) fixme
 
 -   [Question 1, e.g. "One thing I can now do in QualCoder"]{.todo}
 -   [Question 2, e.g. "One thing I'm still unsure about"]{.todo}
 -   [Question 3, e.g. "How confident do I feel coding my own data? (1–5)"]{.todo}
--   **Link to form:** [insert link]{.todo}
+-   **Link to exit survey:** [insert link]{.todo}
 :::
 
 ## Before you leave
 
 -   [ ] Close QualCoder before copying or zipping your project.
+
 -   [ ] Zip the whole .qda folder and save a copy somewhere safe.
+
 -   [ ] Note your coder name; use the same one next time.
-
-## Next steps for participants
-
--   [Homework or assignment link]{.todo}
--   Read the official [QualCoder documentation](https://qualcoder.org/doc/en/) for anything not covered today.
--   See the [Reference](reference.qmd) section for teamwork, imports and exports.
