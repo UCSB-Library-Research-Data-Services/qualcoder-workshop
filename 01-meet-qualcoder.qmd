@@ -34,7 +34,7 @@ QualCoder can be used to analyze a wide range of qualitative data files and comb
 The simplest route is a ready-made installer from the [releases page](https://github.com/ccbogel/QualCoder/releases). Choose the one appropriate for your laptop.
 
 | System | What to download | What to expect on first launch |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Windows | The Windows installer (.exe) | A SmartScreen warning, because the app is not signed. Click **More info**, then **Run anyway**. |
 | macOS | The .dmg file | A Gatekeeper warning. Allow the app under **System Settings \> Privacy & Security**. |
 | Linux (Debian/Ubuntu) | The Linux executable, or run from source | Usually no warning. |
@@ -60,5 +60,5 @@ Open **Project \> Settings** (or the settings icon). Only four settings matter f
 **Behind the scenes:** QualCoder keeps its settings file (`config.ini`) and a log file in a hidden `.qualcoder` folder in your home directory. Remember: do not store project data there!
 
 ::: {.callout-tip icon="false"}
-## Activity 1.1 – 
+## Activity 1.1 –
 :::

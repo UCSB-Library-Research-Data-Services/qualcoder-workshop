@@ -6,7 +6,7 @@ subtitle: "What we will explore today?"
 ***Our Plan***
 
 | Time | **Block** | **Minutes** | **Focus** | **Hands-on** |
-|--------|-----------------------|--------|---------------------------|---------------|
+|----|----|----|----|----|
 | 0-10 | Introduction & Warm-up | 10 | What is qualitative coding? Icebreaker | Activity |
 |  | [Meet QualCoder!](01-meet-qualcoder.qmd) |  | Tour of basic settings and functionalities. | Activity |
 |  | [Setting Up Your Project](02-set-up-project.qmd) |  | Starting a new project and importing files. Describing cases and attributes. | Activities |

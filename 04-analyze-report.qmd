@@ -28,7 +28,7 @@ A **matrix view** places codes against files or cases, so you can see who talked
 ### Other analysis options
 
 | Option | Question it answers |
-|------------------------------------|------------------------------------|
+|----|----|
 | Code co-occurrence | Which codes tend to appear on the same passages? |
 | Code relations | How do two codes sit in the text: overlapping, one inside another, close by, or exactly the same? (Text only) |
 | Codes by text segments | Which codes does each segment carry? |
@@ -65,13 +65,13 @@ The Graph tool draws your categories and codes as a diagram you can rearrange, w
 A graph exported as PNG is a quick way to include a thematic map in a report or presentation.
 
 ::: {.callout-tip icon="false"}
-## Activity 4.1 – 
+## Activity 4.1 –
 :::
 
 ::: {.callout-tip icon="false"}
-## Activity 4.2 
+## Activity 4.2
 :::
 
 ::: {.callout-tip icon="false"}
-## Activity 4.3 
+## Activity 4.3
 :::

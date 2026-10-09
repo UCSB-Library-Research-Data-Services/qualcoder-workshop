@@ -7,7 +7,7 @@ title: "Coding Data"
 Coding means attaching a short label (a **code**) to a passage of data that expresses an idea relevant to your research question. Codes are then grouped into **categories**, which can grow into themes.
 
 | Term | Meaning | Example |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Code | A label applied to a passage | *Sleep loss* |
 | Category | A group of related codes | *Physical effects of stress* |
 | Coded segment | The passage a code is attached to | "I barely slept the week before finals." |
@@ -109,7 +109,7 @@ Nothing changes until you click **Apply**, and once applied the changes cannot b
 The same idea applies to every data type: choose a code, mark a piece of the data, and add memos where useful.
 
 | Data type | How you mark it | Worth knowing |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | **PDF** | Select text in the PDF view or in a plain-text view of it | Shortcuts mirror text coding (Q, R, M, A, I). Projects coded in 4.0 may show misaligned codes if opened in 3.8.2 or earlier. |
 | **Image** | Select a code, then drag a rectangle over part of the image | Right-click to rotate, zoom, or apply grayscale, blur or solarize to see details. Exports to HTML show code names on hover. |
 | **Audio / video** | Press **Start segment** / **Stop segment** (Ctrl+S) while playing, then right-click a code to assign it | Needs VLC. Code the transcript text too, and link text to segments. Change play speed from 0.1x to 2x. |
@@ -119,9 +119,9 @@ In all three, you can mark items as **Important**, attach memos, and use the sta
 **Useful audio/video shortcuts:** Ctrl+P play/pause, Alt+R rewind 30 seconds, Ctrl+Shift+\< and \> slow down or speed up playback.
 
 ::: {.callout-tip icon="false"}
-## Activity 3.1 
+## Activity 3.1
 :::
 
 ::: {.callout-tip icon="false"}
-## Activity 3.2 
+## Activity 3.2
 :::

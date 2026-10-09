@@ -27,7 +27,7 @@ QualCoder's AI tools are **off by default** and entirely optional. In this works
 **AI chat** offers four kinds of conversation:
 
 | Chat type | What it does |
-|------------------------------------|------------------------------------|
+|----|----|
 | Topic analysis | Explores a theme across all your data, even before you've coded |
 | Text analysis | Discusses a selected passage: brainstorm, summarise, suggest themes, or look for the unexpected |
 | Code analysis | Sends everything under one code or category for a summary or comparison; watch the cost on large codes |
