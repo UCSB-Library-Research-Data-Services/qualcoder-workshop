@@ -3,10 +3,10 @@ title: "Reference"
 subtitle: "Beyond the workshop"
 ---
 
-These pages cover QualCoder features that go beyond a first session, for students who want to go further.
+These pages cover QualCoder features that go beyond a first session, for workshop attendees who want to go further.
 
 | Page | What's inside |
-|----|----|
+|------------------------------------|------------------------------------|
 | [Working in a team](ref-teamwork.qmd) | Taking turns on a project, and merging copies |
 | [Imports and exports](ref-imports-exports.qmd) | Codebooks, REFI-QDA exchange, other tools, survey imports |
 | [Under the hood](ref-under-the-hood.qmd) | Technology, project structure, database, licence, contributing |
