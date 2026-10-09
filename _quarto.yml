@@ -59,7 +59,6 @@ website:
         - href: index.qmd
           text: "Welcome"
         - href: 00-agenda.qmd
-        - href: 00-facilitator-prep.qmd
 
     - id: modules
       title: "Modules"
