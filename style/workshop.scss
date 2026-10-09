@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$primary: #1f6f8b;
+$link-color: #1f6f8b;
+$navbar-fg: #15384a;
+$navbar-hl: #0b2633;
+$footer-fg: #15384a;
+$callout-color-tip: #2e8b57;
+
+/*-- scss:rules --*/
+
+.navbar-logo {
+  max-height: 44px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.callout.callout-style-default .callout-header {
+  font-weight: 700;
+}
+
+table {
+  font-size: 0.95em;
+}
+
+/* Square-bracket placeholders stand out for facilitators */
+.todo {
+  background: #fff4cc;
+  padding: 0 0.25em;
+  border-radius: 3px;
+}
+
+.todo::before { content: "["; }
+.todo::after { content: "]"; }

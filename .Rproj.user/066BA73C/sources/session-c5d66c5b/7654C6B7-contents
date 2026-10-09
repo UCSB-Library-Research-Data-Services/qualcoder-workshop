@@ -1,0 +1,127 @@
+---
+title: "Coding Data"
+---
+
+## What is coding?
+
+Coding means attaching a short label (a **code**) to a passage of data that expresses an idea relevant to your research question. Codes are then grouped into **categories**, which can grow into themes.
+
+| Term | Meaning | Example |
+|----|----|----|
+| Code | A label applied to a passage | *Sleep loss* |
+| Category | A group of related codes | *Physical effects of stress* |
+| Coded segment | The passage a code is attached to | "I barely slept the week before finals." |
+| In vivo code | A code named with the participant's own words | *"running on empty"* |
+| Memo | A note explaining your thinking about a code or passage | "Several students link sleep to caffeine use." |
+
+Codes can be planned in advance from theory (**deductive**) or emerge as you read (**inductive**). Most student projects mix both.
+
+## Coding text step by step
+
+Open **Coding \> Code text**. The code tree sits on the left, your document in the center, and the file list nearby.
+
+### Create codes and categories
+
+-   Right-click the code tree and choose to add a new code or category. In the text area, the shortcuts are **N** (new code) and **C** (new category).
+-   Right-click a code to rename it, change its color, or add a memo.
+
+### Apply a code
+
+1.  Highlight a passage with the mouse.
+2.  Click a code in the code tree. The passage takes on the code's color.
+
+Shortcuts after highlighting: **Q** reuses your most recent code, **R** lists recent codes, and **V** makes an *in vivo* code from the selected words.
+
+### Check and fix your coding
+
+-   Hover over coloured text to see which code is attached.
+-   To remove a code, click the coded text and press **U** (or the Unmark button). **Ctrl+Z** brings back the last code you removed.
+-   To resize a segment, click it and press **Shift + arrow** to extend or **Alt + arrow** to shrink.
+-   Where codes overlap, click there and press **O** to cycle through them.
+
+### Add your thinking
+
+-   **Memo** a coded segment: hover over it and press **M**. Memoed text appears in italics.
+-   **Annotate** any selected text, coded or not, by pressing **A**. Annotated text turns bold.
+-   Flag a strong example as **Important** with **I**. The star button under the code tree then shows only important segments, which is handy for picking quotes.
+
+### Auto-coding (use with care!)
+
+Buttons at the top right can code every exact match of a word (case-sensitive; separate options with `|`, e.g. `exam|exams`), every sentence containing a fragment, or the section between two markers. **Mark speakers** creates a code for each speaker in a transcript.
+
+::: callout-warning
+Auto-coding can be undone only until you close the project, so always review the results.
+:::
+
+### Handy shortcuts
+
+| Key         | Action                          |
+|-------------|---------------------------------|
+| N / C       | New code / new category         |
+| Q           | Apply most recent code          |
+| R           | Choose from recent codes        |
+| V           | In vivo code                    |
+| U           | Remove code at the cursor       |
+| Ctrl+Z      | Restore last removed code       |
+| M           | Memo on coded segment           |
+| A           | Annotate selection              |
+| I           | Mark as important               |
+| S           | Search text                     |
+| B / Shift+B | Set bookmark / jump to bookmark |
+| H           | Hide or show the top panel      |
+| Ctrl+E      | Turn edit mode on or off        |
+
+## Building and organizing your code tree
+
+Your codes live in a tree: categories act like folders, codes sit inside them, and from version 4.0 codes can have sub-codes.
+
+**Example tree for the sample research question:**
+
+-   Physical effects of stress (category)
+    -   Sleep loss (code)
+    -   Eating habits (code)
+-   Coping strategies (category)
+    -   Social support (code)
+        -   Friends (sub-code)
+        -   Family (sub-code)
+    -   Time management (code)
+
+**Everyday tree tasks (right-click in the code tree):**
+
+-   **Move** a code into a category, or a category into a larger one.
+-   **Merge** by dropping one code onto another; their coded segments combine. Don't drop items on each other unless you mean to merge.
+-   **Rename, recolor or memo** any code or category. **Coding \> Color scheme** recolors several codes at once and previews how colors look to people with color blindness.
+-   **Filter** a long tree: **F9** shows codes matching some text, **F10** shows codes of one color. **F11/F12** sort it.
+-   **Show coded files:** right-click a code to list every passage tagged with it, open each in context, and export them to a text file. This is a quick way to check that a code is used consistently.
+
+A code can belong to only one category. If an idea fits two places, create two similarly named codes.
+
+### The Code Organizer
+
+For a bigger clean-up, open the **Code Organizer**. It shows your codes and categories as a diagram you can restructure: move, merge, rename and remove codes and categories, add new categories, and export the view as a PNG.
+
+::: callout-warning
+Nothing changes until you click **Apply**, and once applied the changes cannot be undone. Make a backup first; QualCoder will prompt you to.
+:::
+
+## Coding PDFs, images, audio and video (FIXME: REMOVE SINCE WE WONT COVER IT)?
+
+The same idea applies to every data type: choose a code, mark a piece of the data, and add memos where useful.
+
+| Data type | How you mark it | Worth knowing |
+|----|----|----|
+| **PDF** | Select text in the PDF view or in a plain-text view of it | Shortcuts mirror text coding (Q, R, M, A, I). Projects coded in 4.0 may show misaligned codes if opened in 3.8.2 or earlier. |
+| **Image** | Select a code, then drag a rectangle over part of the image | Right-click to rotate, zoom, or apply grayscale, blur or solarize to see details. Exports to HTML show code names on hover. |
+| **Audio / video** | Press **Start segment** / **Stop segment** (Ctrl+S) while playing, then right-click a code to assign it | Needs VLC. Code the transcript text too, and link text to segments. Change play speed from 0.1x to 2x. |
+
+In all three, you can mark items as **Important**, attach memos, and use the star button to show only important items.
+
+**Useful audio/video shortcuts:** Ctrl+P play/pause, Alt+R rewind 30 seconds, Ctrl+Shift+\< and \> slow down or speed up playback.
+
+::: {.callout-tip icon="false"}
+## Activity 3.1
+:::
+
+::: {.callout-tip icon="false"}
+## Activity 3.2
+:::

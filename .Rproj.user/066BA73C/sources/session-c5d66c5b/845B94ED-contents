@@ -1,0 +1,20 @@
+---
+title: "Facilitator preparation"
+subtitle: "Complete these before the session"
+---
+
+Most lost time in a first QualCoder class comes from installation problems, so send setup instructions at least one week ahead.
+
+-   [ ] Decide which QualCoder version the class will use (the docs mention both 3.8.2 and 4.0) and share the download link from the [GitHub releases page](https://github.com/ccbogel/QualCoder/releases).
+-   [ ] Send install instructions, including the "unsigned app" warning on Windows and macOS (see [Module 1](01-meet-qualcoder.qmd#installing-and-opening-qualcoder)).
+-   [ ] Prepare a sample data pack: 3–4 short interview transcripts (.docx or .txt), 1 PDF, 1 image, and optionally 1 short audio clip.
+-   [ ] Prepare a participant attribute sheet (CSV) with case names in the first column, e.g. Participant, Age group, Year of study.
+-   [ ] Make sure all sample data is fictional or properly anonymised.
+-   [ ] Build a finished "answer key" project to show if anyone falls behind.
+-   [ ] Decide whether to demo AI features. If yes, set up the AI model and API key on the facilitator laptop beforehand; students do not need AI enabled.
+-   [ ] Tell students to save projects on the laptop's local drive, not in OneDrive, Dropbox, Google Drive or on a USB stick.
+-   [ ] Fill in each [placeholder]{.todo} in the module pages.
+
+::: callout-note
+Put the sample data pack in the `materials/` folder of this site so students can download it directly.
+:::

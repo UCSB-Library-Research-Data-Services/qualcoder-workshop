@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+$body-bg: #14202a;
+$body-color: #e6edf2;
+$primary: #7cc4dd;
+$link-color: #7cc4dd;
+$navbar-bg: #1d3644;
+$navbar-fg: #e6edf2;
+$navbar-hl: #ffffff;
+$footer-bg: #1d3644;
+$footer-fg: #e6edf2;
+
+/*-- scss:rules --*/
+
+.navbar, .nav-footer {
+  background-color: #1d3644 !important;
+}
+
+.todo {
+  background: #4a3f12;
+  color: #fff4cc;
+}

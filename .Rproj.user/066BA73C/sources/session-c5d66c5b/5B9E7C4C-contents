@@ -1,0 +1,55 @@
+---
+title: "AI Features"
+---
+
+## AI in QualCoder: setup, privacy and responsible use
+
+QualCoder's AI tools are **off by default** and entirely optional. In this workshop they are a facilitator demo, not a student task.
+
+### Setting up (facilitator only)
+
+1.  Run the setup wizard (shown after a fresh install, or via **AI \> Setup Wizard**).
+2.  Turn on AI integration and choose a model. Options include commercial models (OpenAI, Anthropic, Google) with an API key, university-hosted services, other providers such as Mistral or OpenRouter, or a **local model via Ollama**, which keeps data on your computer.
+3.  Wait while QualCoder builds a local "AI memory" of your documents. It downloads an embedding model of about 2.5 GB once, and the status bar shows *AI: reading* until it is ready.
+
+### Privacy
+
+-   QualCoder sends only short, selected chunks of text (around 500 characters each) to a cloud model, not whole documents.
+-   Anything in a memo after a `#####` line is never sent to the AI.
+-   Anonymise data before using any cloud service, and check what your ethics approval allows.
+
+**Prepare the project:** a clear project memo, readable file names, and labelled speakers in transcripts all improve AI results.
+
+## AI-assisted coding and AI chat
+
+**AI-assisted coding** searches your data by *meaning*, not exact words. You pick a code (or type a free topic), choose an analytic prompt, and optionally filter by documents, cases or attributes. QualCoder first searches its local memory, then asks the language model to rank and explain the best matches. You review each suggestion and decide whether to code it. The docs stress this is *assisted*, not automated, coding.
+
+**AI chat** offers four kinds of conversation:
+
+| Chat type | What it does |
+|----|----|
+| Topic analysis | Explores a theme across all your data, even before you've coded |
+| Text analysis | Discusses a selected passage: brainstorm, summarise, suggest themes, or look for the unexpected |
+| Code analysis | Sends everything under one code or category for a summary or comparison; watch the cost on large codes |
+| General chat | Open conversation about your project |
+
+**Prompt library:** the instructions sent to the AI are plain-language prompts you can view, copy and edit via **AI \> Prompt library**. Built-in system prompts must be duplicated before editing. Prompts are in English but work with data in other languages.
+
+## Demo and discussion
+
+::: {.callout-tip icon="false"}
+## Demo 5.1 – AI-assisted coding (5 min, facilitator)
+
+-   **What to show:** [e.g. run AI-assisted coding for the code *Social support* on the sample data; accept one suggestion, reject one]{.todo}
+-   **Model used:** [e.g. local Ollama model / institutional service]{.todo}
+-   **Backup plan if the AI is slow:** [e.g. screenshots or a pre-recorded clip]{.todo}
+:::
+
+::: {.callout-tip icon="false"}
+## Discussion 5.1 – Should we use AI here? (5 min)
+
+-   [Prompt 1, e.g. "What did the AI find that you missed? What did it get wrong?"]{.todo}
+-   [Prompt 2, e.g. "Who is responsible for an interpretation suggested by AI?"]{.todo}
+-   [Prompt 3, e.g. "Would your participants have agreed to their words being sent to an AI company?"]{.todo}
+-   **Course policy note:** [insert your institution's or course's AI-use policy]{.todo}
+:::
