@@ -79,17 +79,6 @@ Attributes can be attached to files, cases or journals, and managed in **Manage 
 Attributes will allow you to ask questions like "Do first-year students talk about stress differently from final-year students?". It allows you to query the data considering demographics and other important characteristics associated with the documents you are analyzing.
 :::
 
-## References (optional)
-
-If your data includes published articles, you can import a bibliography through **Manage \> References**. This is optional for the workshop but useful for literature reviews.
-
--   Import RIS or NBIB files (.ris, .nbib or .txt), or pull references straight from **Zotero 7** while it is open with its local API turned on.
--   Link each reference to its file. The file then gains four attributes: Ref_Authors, Ref_Title, Ref_Type and Ref_Year.
--   Keep the attributes that start with **Ref\_**; deleting them breaks the link.
--   Export all references as a RIS file.
-
-## 
-
 ::: {.callout-tip icon="false"}
 ## Activity 2.1
 :::

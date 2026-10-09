@@ -1,5 +1,5 @@
 ---
-title: "Wrap-up"
+title: "Wrap-up and take-home"
 ---
 
 ## Recap
@@ -8,13 +8,13 @@ In one session, participants went from an empty project to coded data, a journal
 
 1.  **Set up:** project, files, cases, attributes.
 2.  **Code:** codes, categories, memos, important quotes.
-3.  **Analyze:** retrieve, filter by attributes, compare, visualise.
+3.  **Analyse:** retrieve, filter by attributes, compare, visualise.
 4.  **Reflect:** journals, and critical thinking about AI.
 
 ## Exit ticket
 
 ::: {.callout-tip icon="false"}
-## (placeholder) fixme
+## Exit ticket (placeholder) fixme
 
 -   [Question 1, e.g. "One thing I can now do in QualCoder"]{.todo}
 -   [Question 2, e.g. "One thing I'm still unsure about"]{.todo}
@@ -28,4 +28,4 @@ In one session, participants went from an empty project to coded data, a journal
 
 -   [ ] Zip the whole .qda folder and save a copy somewhere safe.
 
--   [ ] Note your coder name; use the same one next time.
+-   [ ] add more \<FIXME\>
