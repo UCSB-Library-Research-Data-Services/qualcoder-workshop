@@ -6,13 +6,13 @@ subtitle: "What we will explore today?"
 ***Our Plan***
 
 | Time | **Block** | **Minutes** | **Focus** | **Hands-on** |
-|----|----|----|----|----|
+|---------------|---------------|---------------|---------------|---------------|
 | 0-10 | Introduction & Warm-up | 10 | What is qualitative coding? Icebreaker | Activity |
 |  | [Meet QualCoder!](01-meet-qualcoder.qmd) |  | Tour of basic settings and functionalities. | Activity |
 |  | [Setting Up Your Project](02-set-up-project.qmd) |  | Starting a new project and importing files. Describing cases and attributes. | Activities |
 |  | Break |  | — | — |
 |  | [Coding Data](03-code-your-data.qmd) |  | Working with codes and categories. Different coding approaches. The role of memos. | Activities |
-|  | [Analysis and Reporting](04-analyse-report.qmd) |  | Querying data, code retrieval, reports and graphs | Activities |
+|  | [Analysis and Reporting](04-analyze-report.qmd) |  | Querying data, code retrieval, reports and graphs | Activities |
 |  | [AI Features](05-ai-features.qmd) |  | Setting up AI and integrating it into your coding workflow | Discussion |
 |  | [Wrapping-up](wrap-up.qmd) |  | Recapping and final considerations | Exit Survey |
 

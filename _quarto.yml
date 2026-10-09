@@ -42,8 +42,8 @@ website:
     left:
       - text: "Overview"
         href: index.qmd
-      - text: "Modules"
-        href: modules.qmd
+      - text: "Episodes"
+        href: episodes.qmd
       - text: "Wrap-up"
         href: wrap-up.qmd
       - text: "Reference"
@@ -60,8 +60,8 @@ website:
           text: "Welcome"
         - href: 00-agenda.qmd
 
-    - id: modules
-      title: "Modules"
+    - id: episodes
+      title: "Episodes"
       contents:
         - href: episodes.qmd
         - href: 01-meet-qualcoder.qmd
