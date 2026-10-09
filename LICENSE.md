@@ -4,4 +4,6 @@ The workshop materials on this site are licensed under a [Creative Commons Attri
 
 You are free to share and adapt these materials for any purpose, provided you give appropriate credit and distribute your contributions under the same licence.
 
-Content is paraphrased from the [QualCoder documentation](https://qualcoder.org/doc/en/). QualCoder itself is free software released under the [GNU LGPL v3](https://www.gnu.org/licenses/lgpl-3.0.html).
+Content is based on the [QualCoder documentation](https://qualcoder.org/doc/en/). QualCoder itself is free software released under the [GNU LGPL v3](https://www.gnu.org/licenses/lgpl-3.0.html).
+
+The dataset used for this workshop was adapted from \<FIXME: add citation and license + disclaimer should not be used for research purposes\>
