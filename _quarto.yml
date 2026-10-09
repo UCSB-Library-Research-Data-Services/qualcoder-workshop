@@ -6,8 +6,6 @@ website:
   title: "QualCoder Workshop"
   site-url: "https://ucsb-library-research-data-services.github.io/qualcoder-workshop/"
 
-  repo-url: https://github.com/UCSB-Library-Research-Data-Services/qualcoder-workshop
-
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/)"
     background: "#A7D5E8"
@@ -25,7 +23,7 @@ website:
 
     right:
       - icon: github
-        href: https://github.com/YOUR-USERNAME/qualcoder-workshop
+        href: https://github.com/UCSB-Library-Research-Data-Services/qualcoder-workshop
         aria-label: GitHub
       - icon: book
         href: https://qualcoder.org/doc/en/
