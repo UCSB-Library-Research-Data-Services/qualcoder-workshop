@@ -1,5 +1,5 @@
 ---
-title: "Wrap-up and take-home"
+title: "Wrap-up"
 ---
 
 ## Recap

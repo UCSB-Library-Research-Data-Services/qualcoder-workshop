@@ -34,8 +34,6 @@ website:
         href: index.qmd
       - text: "Episodes"
         href: episodes.qmd
-      - text: "Wrap-up"
-        href: wrap-up.qmd
       - text: "Reference"
         href: reference.qmd
 
@@ -53,7 +51,6 @@ website:
     - id: episodes
       title: "Episodes"
       contents:
-        - href: episodes.qmd
         - href: 01-meet-qualcoder.qmd
         - href: 02-set-up-project.qmd
         - href: 03-code-your-data.qmd
