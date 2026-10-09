@@ -1,0 +1,15 @@
+---
+title: "Episodes"
+subtitle: "Five teaching modules, in session order"
+---
+
+Each episode explains one stage of a QualCoder project and ends with hands-on activities.
+
+| Episode | Time | You will learn to |
+|------------------------|------------------------|------------------------|
+| [1 – Meet QualCoder](01-meet-qualcoder.qmd) |  | Install QualCoder and set your coder name |
+| [2 – Set Up Your Project](02-set-up-project.qmd) |  | Create a project, import data, add cases and attributes |
+| [3 – Code Your Data](03-code-your-data.qmd) |  | Create codes and categories and apply them to text and media |
+| [4 – Analyse and Report](04-analyse-report.qmd) |  | Write journals, retrieve coded data, produce reports and graphs |
+| [5 – AI Features](05-ai-features.qmd) |  | Understand QualCoder's AI tools and their ethical questions |
+| [Wrap-up](wrap-up.qmd) |  | Review, reflect and plan next steps |

@@ -7,7 +7,7 @@ title: "Working in a team"
 QualCoder is single-user, so teams use one of two approaches. Either way, give every person a **unique coder name** (**Project \> Settings \> Change**).
 
 | Approach | How it works | Best for |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Take turns | One person works, closes QualCoder, then passes the zipped project to the next person. Never open the same project at the same time. | Small groups, open (inductive) coding |
 | Master project + merge | Build one master project with all files, give each person a copy, code separately, then merge the copies back. Don't edit the texts in the copies. | Coding with an agreed codebook (deductive) |
 
@@ -20,7 +20,7 @@ Moving a zipped project through email or cloud storage is fine; *running* QualCo
 Open the destination project, then use **Help \> Special functions \> Merge projects**, choose the source project and run the merge.
 
 ::: callout-important
-Back up the destination project first. There is no undo.
+Back up the destination project first. Important: There is no undo!
 :::
 
 -   Files, codes and categories that don't already exist are added.

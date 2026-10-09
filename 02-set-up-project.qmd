@@ -50,7 +50,7 @@ Let's import our sample files into QualCoder.
 
 \<FIXME - ADD SCREENSHOT\>
 
-## Cases & attributes
+## Cases & Attributes
 
 **Cases** group data around a person, place or situation. **Attributes** are the variables that describe them, such as age group or year of study.
 
@@ -88,7 +88,7 @@ If your data includes published articles, you can import a bibliography through 
 -   Keep the attributes that start with **Ref\_**; deleting them breaks the link.
 -   Export all references as a RIS file.
 
-## Hands-on activities
+## 
 
 ::: {.callout-tip icon="false"}
 ## Activity 2.1
