@@ -4,14 +4,9 @@ project:
 website:
   page-navigation: true
   title: "QualCoder Workshop"
-  site-url: "https://YOUR-USERNAME.github.io/qualcoder-workshop/"
+  site-url: "https://ucsb-library-research-data-services.github.io/qualcoder-workshop/"
 
-  repo-url: https://github.com/YOUR-USERNAME/qualcoder-workshop
-  repo-actions: [edit, issue]
-
-  open-graph: true
-  twitter-card:
-    image: "/images/twitter-card.png"
+  repo-url: https://github.com/UCSB-Library-Research-Data-Services/qualcoder-workshop
 
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/)"
@@ -24,7 +19,6 @@ website:
 
   navbar:
     background: "#A7D5E8"
-    logo: "images/logo.svg"
     align: center
     title: false
     collapse-below: lg
