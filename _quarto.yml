@@ -16,7 +16,7 @@ website:
     image: "/images/twitter-card.png"
 
   page-footer:
-    left: "This page is built with ❤️ and [Quarto](https://quarto.org/). Content paraphrased from the [QualCoder documentation](https://qualcoder.org/doc/en/)."
+    left: "This page is built with ❤️ and [Quarto](https://quarto.org/)"
     background: "#A7D5E8"
     right:
     - text: "License"
