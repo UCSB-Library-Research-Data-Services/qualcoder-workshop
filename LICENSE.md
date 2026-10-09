@@ -1,6 +1,6 @@
 # License
 
-The workshop materials on this site are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). <!-- Change if your institution requires a different licence. -->
+The workshop materials on this site are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
 
 You are free to share and adapt these materials for any purpose, provided you give appropriate credit and distribute your contributions under the same licence.
 
