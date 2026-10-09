@@ -1,7 +1,5 @@
 project:
   type: website
-  resources:
-    - ""
 
 website:
   page-navigation: true
