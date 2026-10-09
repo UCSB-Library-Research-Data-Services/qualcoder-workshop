@@ -28,7 +28,7 @@ A **matrix view** places codes against files or cases, so you can see who talked
 ### Other analysis options
 
 | Option | Question it answers |
-|----|----|
+|------------------------------------|------------------------------------|
 | Code co-occurrence | Which codes tend to appear on the same passages? |
 | Code relations | How do two codes sit in the text: overlapping, one inside another, close by, or exactly the same? (Text only) |
 | Codes by text segments | Which codes does each segment carry? |
@@ -38,10 +38,10 @@ When you export an HTML report that includes images or media, keep the report's 
 
 ## Reports menu
 
-Reports summarise your project in numbers and charts.
+Reports summarize your project in numbers and charts.
 
 -   **Code frequencies:** how often each code was used, by each coder, optionally per file.
--   **File summary / code summary:** details about a file or code, including word frequencies (common words removed) and average segment length.
+-   **File summary/code summary:** details about a file or code, including word frequencies (common words removed) and average segment length.
 -   **Charts:** bar charts, sunbursts, heatmaps, stacked bars and word clouds, opened in your web browser and exportable as HTML.
 -   **Coding comparison:** compares two coders on the same text using percentage agreement and **Cohen's kappa**, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.
 -   **Database queries:** advanced users can run SQL queries on the project database. Back up first, as queries can change data.
@@ -52,13 +52,13 @@ Reports summarise your project in numbers and charts.
 Counting codes is not the same as finding meaning. Frequencies show where to look; reading the passages tells you what they mean.
 :::
 
-## Visualising codes with the Graph tool {#visualising-codes-with-the-graph-tool}
+## Visualizing codes with the Graph tool {#visualising-codes-with-the-graph-tool}
 
 The Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.
 
 -   Choose what to show: all categories or selected ones.
 -   Drag items into position; use the buttons at lower left to space them evenly, and **+ / –** to zoom.
--   Right-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or colour.
+-   Right-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.
 -   Right-click empty space to add free text boxes, file or case boxes, and extra lines.
 -   Save graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.
 

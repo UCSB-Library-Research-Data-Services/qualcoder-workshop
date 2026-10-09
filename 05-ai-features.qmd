@@ -16,7 +16,7 @@ QualCoder's AI tools are **off by default** and entirely optional. In this works
 
 -   QualCoder sends only short, selected chunks of text (around 500 characters each) to a cloud model, not whole documents.
 -   Anything in a memo after a `#####` line is never sent to the AI.
--   Anonymise data before using any cloud service, and check what your ethics approval allows.
+-   Anonymize/de-identify data before using any cloud service, and check what your ethics approval allows.
 
 **Prepare the project:** a clear project memo, readable file names, and labelled speakers in transcripts all improve AI results.
 
@@ -27,9 +27,9 @@ QualCoder's AI tools are **off by default** and entirely optional. In this works
 **AI chat** offers four kinds of conversation:
 
 | Chat type | What it does |
-|----|----|
+|------------------------------------|------------------------------------|
 | Topic analysis | Explores a theme across all your data, even before you've coded |
-| Text analysis | Discusses a selected passage: brainstorm, summarise, suggest themes, or look for the unexpected |
+| Text analysis | Discusses a selected passage: brainstorm, summarize, suggest themes, or look for the unexpected |
 | Code analysis | Sends everything under one code or category for a summary or comparison; watch the cost on large codes |
 | General chat | Open conversation about your project |
 
@@ -40,16 +40,16 @@ QualCoder's AI tools are **off by default** and entirely optional. In this works
 ::: {.callout-tip icon="false"}
 ## Demo 5.1 – AI-assisted coding (5 min, facilitator)
 
--   **What to show:** [e.g. run AI-assisted coding for the code *Social support* on the sample data; accept one suggestion, reject one]{.todo}
--   **Model used:** [e.g. local Ollama model / institutional service]{.todo}
--   **Backup plan if the AI is slow:** [e.g. screenshots or a pre-recorded clip]{.todo}
+**Notes to fix:**
+
+-   **What to show:** [e.g. run AI-assisted coding for the code *"fix*]{.todo}*me"*[ on the sample data; accept one suggestion, reject one]{.todo}
+-   **Model used:** [e.g. local Ollama free model/institutional service]{.todo} \<fixme\>
 :::
 
 ::: {.callout-tip icon="false"}
-## Discussion 5.1 – Should we use AI here? (5 min)
+## Discussion 5.1 – Should we use AI here? (5 min) - fixme
 
 -   [Prompt 1, e.g. "What did the AI find that you missed? What did it get wrong?"]{.todo}
 -   [Prompt 2, e.g. "Who is responsible for an interpretation suggested by AI?"]{.todo}
 -   [Prompt 3, e.g. "Would your participants have agreed to their words being sent to an AI company?"]{.todo}
--   **Course policy note:** [insert your institution's or course's AI-use policy]{.todo}
 :::
