@@ -16,4 +16,44 @@ By the end, participants will be able to:
 6.  Retrieve coded segments and produce a simple report.
 7.  Describe what QualCoder's optional AI tools do, and the ethical questions they raise.
 
-## 
+## Setup instructions
+
+For our workshop, you need to install QualCoder, which you can do with the following instructions. If you have questions or need help, please email  [rcurty@ucsb.edu](mailto: rcurty@ucsb.edu) and [jose_nino@ucsb.edu](mailto: jose_nino@ucsb.edu).
+
+::: {.panel-tabset}
+
+### Windows
+
+1. Download from GitHub the QualCoder installer [QualCoder_4.0_Win_INSTALLER.exe](https://github.com/ccbogel/QualCoder/releases/download/4.0/QualCoder_4.0_Win_INSTALLER.exe)
+2. Open the installer
+    - A window saying "Windows protected your PC" may open up. Don't worry, QualCoder is safe to install, this just happens because it is from an unknown publisher. **Click "More Info", and then "Run anyway"**.
+3. Follow the instructions in the installer.
+
+An alternative to the previous steps is to download the portable version [Qualcoder-4.0_Win_PORTABLE.exe](https://github.com/ccbogel/QualCoder/releases/download/4.0/Qualcoder-4.0_Win_PORTABLE.exe). The portable version works without installation, just double clicking the .exe file. However, Qualcoder will take longer to start each time.
+
+### Mac
+
+1. Make sure you have installed any macOS updates before starting the installation. Go to the System Settings app on your Mac. Click General in the sidebar (you may need to scroll down), then click Software Update.
+2. Download the App bundle [macOS_arm_QualCoder_4.0.dmg](https://github.com/ccbogel/QualCoder/releases/download/4.0/macOS_arm_QualCoder_4.0.dmg)
+3. Double click the downloaded file. Drag QualCoder into the link to your applications.
+4. Start QualCoder by double-clicking the app within your applications folder.
+
+    - You may get a pop-up warning that QualCoder is from an unregistered developer or "QualCoder can't be opened because Apple cannot check it for malicious software." Don't worry, QualCoder is safe to install, this just happens because it is from an unknown publisher.
+  
+    - Go to Settings -> Privacy and Security -> Scroll down until you see a message stating QualCoder was prevented from starting. Click on "open anyway". ou may be prompted to enter your password and may need to click "Open" again.
+    
+    - From now on, QualCoder should start without issues.
+    
+If you are having issues with installation, you may have an older Intel-based Mac. Please visit the [QualCoder GitHub website](https://github.com/ccbogel/QualCoder/releases/tag/4.0) for additional instructions, and reach out to us if you need help.
+
+### Linux
+The following instructions will only work for Debian-based systems (Debian, Ubuntu / Lubuntu / ZorinOS, Linux Mint). If you have a different OS, please reach out to us.
+
+1. Download from GitHub the QualCoder Debian package [qualcoder_4.0_amd64.deb](https://github.com/ccbogel/QualCoder/releases/download/4.0/qualcoder_4.0_amd64.deb)
+2. Double click to run
+    - You might first need to right-click on the file and go to Properties, then check the Executable checkbox.
+
+For installation instructions in other Linux systems, please visit the [QualCoder GitHub website](https://github.com/ccbogel/QualCoder/releases/tag/4.0).
+
+:::
+
