@@ -51,6 +51,8 @@ website:
     - id: episodes
       title: "Episodes"
       contents:
+        - href: episodes.qmd
+          text: All Episodes
         - href: 01-meet-qualcoder.qmd
         - href: 02-set-up-project.qmd
         - href: 03-code-your-data.qmd

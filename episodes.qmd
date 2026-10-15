@@ -1,0 +1,16 @@
+---
+title: "Workshop Episodes"
+listing:
+  contents:
+    - "01-meet-qualcoder.qmd"
+    - "02-set-up-project.qmd"
+    - "03-code-your-data.qmd"
+    - "04-analyze-report.qmd"
+    - "05-ai-features.qmd"
+    - "wrap-up.qmd"
+  type: table
+  fields: [title, description]
+  sort: false
+---
+
+Welcome to the QualCoder Workshop episodes. Select an episode below or from the sidebar navigation to get started.
