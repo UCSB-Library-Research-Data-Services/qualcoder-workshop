@@ -48,6 +48,8 @@ Please note that Audio and video do not work on Fedora Linux.
 
 ## Launching Qualcoder
 
+**FIXME: note that the shell/terminal for Windows user.**
+
 After installation is completed, to open QualCoder:
 
 -   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
@@ -56,7 +58,7 @@ After installation is completed, to open QualCoder:
 
 ## Basic Settings
 
-Open main menu choose **QualCoder \> Settings or Preferences**.
+Open main menu choose **QualCoder \> Preferences** for Mac users or P.
 
 ![](images/settings-preferences.png){fig-alt="Settings and preferences"}
 

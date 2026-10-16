@@ -7,7 +7,7 @@ title: "Coding Data"
 As covered before, coding means attaching a short label (a **code**) to a passage of data that expresses an idea relevant to your research question. Codes are then grouped into **categories**, which can grow into themes.
 
 | Term | Meaning | Example |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Code | A label applied to a passage | *Sleep loss* |
 | Category | A group of related codes | *Physical effects of stress* |
 | Coded segment | The passage a code is attached to | "I barely slept the week before finals." |
@@ -15,6 +15,14 @@ As covered before, coding means attaching a short label (a **code**) to a passag
 | Memo | A note explaining your thinking about a code or passage | "Several students link sleep to caffeine use." |
 
 Codes can be planned in advance from theory (**deductive**) or emerge as you read (**inductive**), but often projects mix both.
+
+## Codebook
+
+As we start assigning codes to excerpts we start developing what it is called a codebook. In qualitative research, a codebook is the shared framework that turns raw text into analyzable data. Each entry typically names a code, gives a concise definition (memo), and sets inclusion and exclusion criteria for when the code applies and when it doesn’t.
+
+Similarly to codes, codebooks can be built deductively from theory or prior literature, inductively from patterns that emerge during close reading, or through a mix of both. Often it changes over several rounds as the team refines, merges, splits, or retires codes. That evolution is itself part of the analytic record, so keeping versions and logging changes helps document how interpretations developed. When several researchers code the same material, the codebook keeps them aligned. It makes intercoder agreement possible to assess, and it gives the team a concrete reference for talking through disagreements instead of relying on each person’s intuition.
+
+Beyond the life of a single project, a well-documented codebook makes qualitative work more transparent and credible. Readers and reviewers can see how claims were grounded in the data, and other researchers can understand, critique, or adapt the analytic approach. It also makes archived qualitative data far more usable for secondary analysis, since the meaning behind each code stays clear long after the original team has moved on.
 
 ## Coding text step by step
 
