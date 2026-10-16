@@ -29,6 +29,8 @@ website:
         href: https://qualcoder.org/doc/en/
         aria-label: QualCoder documentation
 
+    website:
+  navbar:
     left:
       - text: "Overview"
         href: index.qmd
@@ -43,8 +45,8 @@ website:
           - href: 04-analyze-report.qmd
           - href: 05-ai-features.qmd
           - href: wrap-up.qmd
-      
 
+  sidebar:
     - id: reference
       title: "Reference"
       contents:
