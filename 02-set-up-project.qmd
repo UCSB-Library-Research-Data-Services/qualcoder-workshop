@@ -2,87 +2,182 @@
 title: "Setting Up Your Project"
 ---
 
-## Creating a new project
+## Creating a New Project
 
-A QualCoder project is a folder ending in **.qda** that holds everything: a database, your imported files and your coding. A project called "Test" becomes a folder called *Test.qda*. For our toy project, we will name it "GitHub".
+On the main window, before exploring QualCoder and its features, let's create a new project. For this workshop, save the project to your Desktop so it's easy to locate and access. Choose **Project \> Create New Project**.
 
-1.  Choose **Project \> Create New Project**.
-2.  Give it a name and choose where to save it.
-3.  To share or hand in the project, zip the whole .qda folder.
+![](images/new-project.png){width="149"}
 
-\<FIXME - ADD SCREENSHOT\>
+Then, let's name it named `git-experience`. Note this will create a folder `git-experience.qda` in your desktop. If you open it you will notice that it contains a set of preset subfolders:
 
-**The main screen has five tabs:** Action log, Manage, Reports, Coding and AI chat. After you change something (for example, add files), use the menu bar to reopen a screen so it refreshes, rather than clicking the tab.
+![](images/qda%20folder.png){width="389"}
 
-**Write a project memo:** Adding short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and the AI tools use it as context. Anything written after a line of `#####` is kept private from the AI as we will see in later episodes.
+This is a **QualCoder project folder**. QualCoder saves each project as an ordinary folder whose name ends in `.qda`. Here’s what each item in it does:
 
-\<FIXME: ADD Project memo code block that learners can copy and paste from\>
+-   **git-experience.qda/** is the project itself. To open it, choose *Project → Open* in QualCoder and select this folder. If you move or back up the project, copy the whole folder. Taking only some of the files inside it will break the project.
+
+-   **data.qda** is the most important file. It’s a SQLite database that holds all your analysis work: Your codes and code categories (the code tree). Every coded segment of text, image, audio and video. Cases, attributes, journals and memos. The plain text QualCoder pulls out of your imported documents (this is the text you actually code). Project settings and the list of imported files
+
+-   **project_in_use.lock** is a temporary file. QualCoder creates it when the project is open, so the same project can’t be edited from two places at once. It’s normally removed when you close the project. If it’s still there and QualCoder isn’t running, the app probably crashed or was force-quit, and QualCoder may warn you the project is in use the next time you open it. In that case it’s safe to delete, as long as the project really isn’t open anywhere else.
+
+-   **ai_data/** holds data for QualCoder’s AI-assisted features (available in newer versions). It’s a local vector database of embeddings made from your documents, which powers AI search and AI-assisted coding. QualCoder can rebuild it from your documents. If it’s empty, you probably haven’t used the AI features yet.
+
+-   **documents/** stores copies of the text files you imported (.txt, .docx, .pdf, .odt and so on). Your coding is tied to the extracted text in data.qda, not to these files.
+
+-   **images/** stores imported images (.jpg, .png and so on) that you can code by region.
+
+-   **audio/** stores imported audio (.mp3, .wav, .m4a and so on). You can transcribe it and code it by time segment.
+
+-   **video/** stores imported video (.mp4, .mov and so on), which you can also transcribe and code by time segment.
+
+## Navigating Basic Functions
+
+The main screen has five tabs: Action log, Manage, Reports, Coding and AI chat. But since our project is empty there isn't much to explore yet.
+
+The first step will be to add a project memo. Adding short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and the AI tools use it as context. Anything written after a line of `#####` is kept private from the AI as we will see in later episodes.
+
+![](images/menu-project-memo.png)
+
+Let's copy the project memo below and add it:
+
+::: callout-important
+# Project Memo: Investigating & Archiving the Scholarly Git Experience (IASGE) — Behavioral Study
+
+This project contains the data underlying the behavioral study of *Investigating & Archiving the Scholarly Git Experience (IASGE)*. The study investigates how scholars use Git and Git hosting platforms (GHPs), such as GitHub and GitLab, to conduct research, manage scholarly materials, and collaborate with others. It explores how researchers with varying levels of experience adopt version control in their workflows, what challenges they encounter, how they learn to use these tools, and how libraries and other scholarly support organizations can better support the sustainable management and preservation of research outputs.
+
+## Research Questions and Objectives
+
+The study seeks to understand how scholars incorporate Git and Git hosting platforms into individual and collaborative research practices. It considers both scholars who actively use Git in their academic work and those who are familiar with Git but have not fully adopted it into a standardized workflow. The research examines how these groups use platform features, learn version control practices, and navigate the technical and social aspects of collaborative research.
+
+Key research questions include:
+
+-   How do scholars with different levels of experience use Git and Git hosting platforms in their research workflows?
+
+-   How do researchers learn Git, find instructions, and develop practices for managing files, tracking changes, and synchronizing collaborative work?
+
+-   How do scholars resolve merge conflicts, reuse and adapt existing code, and communicate with collaborators or external researchers through issues, discussions, and other platform features?
+
+-   How do researchers discover, evaluate, reuse, and cite code hosted in public repositories?
+
+-   What challenges do scholars encounter when using Git hosting platforms for academic collaboration, and what features or improvements would better support their needs?
+
+-   How can libraries and other scholarly support services help researchers make their code, data, and other research outputs citable, stable, accessible, and suitable for long-term preservation?
+
+## Research Design and Methods
+
+The behavioral study uses a three-part, mixed-methods empirical approach consisting of focus groups, a survey, and semi-structured interviews. These methods provide complementary perspectives on scholarly users’ experiences, practices, preferences, and needs.
+
+Focus groups gather perspectives on Git adoption, research collaboration, common challenges, and opportunities for improving scholarly workflows. The survey collects information about users’ backgrounds, experience levels, platform use, feature adoption, and research practices. Semi-structured interviews provide a more detailed examination of individual experiences through open-ended questions and task-based scenarios. Together, these methods support an understanding of both broader usage patterns and the reasoning behind specific user behaviors.
+
+During interviews, participants discuss their research processes and demonstrate how they approach representative Git and Git hosting platform tasks. Scenarios include editing multiple files, comparing versions of a document, synchronizing local and remote repositories, resolving conflicts, forking repositories, and collaborating with other researchers. Additional tasks explore how participants communicate feedback about code, submit or respond to issues, search for reusable code, obtain citations for repositories, and arrange for persistent identifiers and long-term preservation of research materials. Participants are also asked how they learned each task, where they seek instructions, and how they would teach the same practices to others.
+
+## Data and Scope
+
+The project data include, but are not limited to, information about participant experiences and practices, user profiles, levels of Git experience, frequency of feature use, collaboration patterns, learning strategies, and perceptions of platform functionality. Data generated through the study’s research methods provide insight into how scholars engage with version control and Git hosting platforms across different stages of adoption.
+
+The interview component also captures participants’ approaches to specific tasks, their decision-making processes, the resources they consult, and the difficulties they encounter. These observations help distinguish between knowing that a feature exists and being able to use it effectively in a research context. The study further considers participants’ preferences for collaboration, peer feedback, code reuse, citation, and repository preservation.
+
+## Significance and Expected Outcomes
+
+The findings aim to inform how libraries, research support professionals, and platform developers can better meet the needs of scholars using Git and Git hosting platforms. By identifying common practices, barriers to adoption, and gaps in existing learning resources, the study can help shape instruction, training, and support services for researchers at different experience levels.
+
+Ultimately, the behavioral study contributes to IASGE’s broader goal of understanding how scholarly materials hosted on Git platforms can transition from active, collaborative development to stable, permanently citable research outputs supported by professional preservation practices. The project provides an empirical basis for improving the discoverability, usability, citation, and long-term accessibility of scholarship created and shared through Git-based research workflows.
+:::
+
+![](images/project-memo.png){width="487"}
 
 ::: callout-warning
-## Important Tips
+## Important Tips - move this FIXME
 
 -   Save projects on your computer's own drive, not in a cloud-synced folder or on a USB stick. Syncing while QualCoder is open can corrupt the database.
 -   Keep backup copies in more than one location. You can use cloud storage, USB drives, external hard drives, or a combination of these options for added protection.
 :::
 
-## Bringing in your data: Manage Files
+## Bringing in the data: Manage Files
 
-All your data comes in through **Manage \> Manage Files**.
+With the project memo in place, let's now import the interview files we will be coding.
 
-| Type            | Formats                                             |
+All data in QualCoder comes in through **Manage \> Manage Files**.
+
+| Type            | Accepted Formats                                    |
 |-----------------|-----------------------------------------------------|
 | Text            | .txt, .docx, .epub, .md, .odt, .pdf, .rtf, .tex     |
 | Images          | .jpg, .jpeg, .png                                   |
 | Audio and video | .mp3, .m4a, .wav, .mp4, .mov, .ogg (and .wmv video) |
 
-\<FIXME - ADD SCREENSHOT\>
+Click the first icon (the document with a plus sign). A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.
 
-**Some other things you can do here:**
+![](images/add-files.png){width="250"}
 
--   **Create a new text file:** and type or paste content directly.
--   **Filter, sort and bulk-rename** files, and add attributes to each file.
+![](images/selecting-files.png)
+
+\
+The files should be displayed in our window, and double-clicking a file should open and display its contents.
+
+![](images/file-displays.png)
 
 ::: callout-caution
 > **QualCoder should not be used for editing, de-identifying, or pseudonymizing raw data.** Best practice dictates importing only final, analysis-ready transcripts and notes into the platform for coding.
 :::
 
-Let's import our sample files into QualCoder.
+The `memo` field can be used to record any notes or annotations relevant to the file. For example, it may document the duration of an interview, its location or setting, the mode of data collection (e.g., in-person, telephone, or online), or its relationship to other files or data sources. More generally, the memo can capture contextual information, methodological notes, or other details that help document the file and support subsequent analysis. We won't be using file memos in this workshop, but you may find them useful in your own projects for documenting additional information about your data and keeping track of details that may be relevant during analysis.
 
-\<FIXME - ADD SCREENSHOT\>
+Note that that the time and date stamp reflect the import, not the file creation. IDs are sequentially assigned. But what are `cases` for?
 
-## Cases & Attributes
+### Cases
 
-**Cases** group data around a person, place or situation. **Attributes** are the variables that describe them, such as age group or year of study.
+**`Cases`** allow you to group data around a person, place, organization, or situation. In QualCoder, a case provides a way to bring together files and descriptive information associated with the same entity, making it easier to organize and compare data during analysis. You can also assign attributes to cases, such as a participant's age group, gender, occupation, or other characteristics relevant to your research.
 
-**Do you need cases?** Not always. If each participant has one interview file, you can put attributes straight on the file. Cases help when one person has several files, or when one file (such as a focus group) holds several people.
+*Do you need cases?* Not always! If each participant has only one interview file, you can assign attributes directly to the file, without creating a separate case for each participant.
 
-**Working with cases (Manage \> Manage Cases):**
+Cases become more useful when your data are more complex. For example, if you interview the same participant several times, you can use a single case to group their interview files and associate them with the same participant attributes. This allows you to examine what the participant said across different interviews without treating each interview as a separate person.
 
-1.  Add a case, e.g. *Participant 01*.
-2.  Click the case's **Files** cell to link whole files, or highlight part of a text and assign just that passage. Linked text is underlined in red.
-3.  Add attribute columns and fill in values.
-4.  Import attributes from a CSV or XLSX file: first row = column headings, first column = case names. Names must match exactly, including capitals.
-5.  Sort, filter or hide columns with a right-click, and export the table to Excel.
+Cases can also be useful when a single file contains data from multiple participants, as in a focus group transcript. You can create a separate case for each participant and associate relevant segments of the transcript with the appropriate cases. This helps you distinguish participants' contributions and compare their perspectives, even though their statements appear in the same file. Understanding how they work will be helpful as you begin working with larger or more complex datasets in your own projects.
 
-**Attribute types:** QualCoder offers only two:
+For this workshop, even though we only have one file per case, we will proceed creating cases, but using a more streamlined approach combining it with attributes.
 
--   **Character** – text values, e.g. "2nd year".
--   **Numeric** – numbers, e.g. 21. You can turn numeric into character later, but not the other way round.
+### Attributes
 
-Attributes can be attached to files, cases or journals, and managed in **Manage \> Manage Attributes**. QualCoder is not a statistics package; for statistical analysis of attributes, export them to a tool such as R.
+QualCoder also offers the option to **Manage \> Manage Attributes**.
 
-\<FIXME: ADD EXERCISE\>
+File attributes describe a particular file, whereas case attributes describe the entity represented by the data. For example, an interview's date and mode of collection are file-level characteristics, while the participant's age group and occupation are typically case-level characteristics. The choice depends on your research design and what you want to compare during analysis.
+
+**File attributes** describe individual files. For example, you could record the interview date, interview mode (in-person, telephone, or online), or participant's age group and occupation for an interview transcript. These attributes are useful when you want to compare files based on their characteristics.
+
+**Case attributes** describe the people, places, organizations, or situations represented in your data. For example, if you create a case for each participant, you could assign attributes such as age group, occupation, education level, or region. If a participant has several interview files, these attributes belong to the case rather than needing to be repeated for every file. You can then use the attributes to compare participants or explore patterns across groups.
 
 ::: callout-note
-## Why this matters for analysis
+## Relevance of Attributes
 
-Attributes will allow you to ask questions like "Do first-year students talk about stress differently from final-year students?". It allows you to query the data considering demographics and other important characteristics associated with the documents you are analyzing.
+Attributes will allow you to ask questions like "Do first-year students talk about stress differently from final-year students?". It allows you to query and explore the data considering demographics and other important characteristics associated with the documents you are analyzing.
+
+QualCoder is not a statistics package; for statistical analysis of attributes, we recommend to export them to a tool such as R.
 :::
+
+Attributes can be added manually in the Manage Attributes, Manage Files, Manage Cases or Manage Journals sections by clicking on the (x) button, shown below.
+
+![](images/attributes-manual.png){width="483"}
+
+However, there is an easier way to import them from a survey. QualCoder allows researchers to import csv or xls files with the description of cases and their associated attributes, and we have prepared it for you.
+
+Select **Manage \> Import Survey**, then choose the \`cases-attributes.xls\` file from the workshop folder.
+
+![](images/attributes-case-import.png)
+
+If everything looks good, click OK. Now, let's go to **Manage \> Cases**. Note that the column files shows 0. Why? Because we have yet to link files to cases. Double-click the 0 value to prompt the case file manager window.
+
+![](images/case-file-manager.png)
+
+Now, we will assign files to cases. Select the corresponding file to match case numbers. We can assign by clicking on the file and choosing "Add selected files to case".
+
+![](images/matching-cases-files-1.png)
+
+Before confirming, please note that the file assignment now displays “YES.” You can also undo assignments or bulk-assign multiple documents within a selected range, though that won't be relevant in this case. You might also click "Hide Assigned Files" to reduce the list and avoid confusion.
+
+![](images/matching-cases-files-2.png)
 
 ::: {.callout-tip icon="false"}
 ## Activity 2.1
-:::
 
-::: {.callout-tip icon="false"}
-## Activity 2.2
+Complete the assignments for the remaining 9 cases/files and verify that each assignment matches the corresponding case/file.
 :::

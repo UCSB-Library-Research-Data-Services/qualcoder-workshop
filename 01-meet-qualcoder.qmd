@@ -34,7 +34,7 @@ QualCoder can be used to analyze a wide range of qualitative data files and comb
 The simplest route is a ready-made installer from the [releases page](https://github.com/ccbogel/QualCoder/releases). Choose the one appropriate for your laptop.
 
 | System | What to download | What to expect on first launch |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Windows | The Windows installer (.exe) | A SmartScreen warning, because the app is not signed. Click **More info**, then **Run anyway**. |
 | macOS | The .dmg file | A Gatekeeper warning. Allow the app under **System Settings \> Privacy & Security**. |
 | Linux (Debian/Ubuntu) | The Linux executable, or run from source | Usually no warning. |
@@ -46,19 +46,62 @@ The simplest route is a ready-made installer from the [releases page](https://gi
 
 Please note that Audio and video do not work on Fedora Linux.
 
+## Launching Qualcoder
+
+After installation is completed, to open QualCoder:
+
+-   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
+
+-   **macOS:** Open **QualCoder** from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.
+
 ## Basic Settings
 
-Open **Project \> Settings** (or the settings icon). Only four settings matter for a first session.
+Open main menu choose **QualCoder \> Settings or Preferences**.
 
-\<FIXME - ADD SCREENSHOT\>
+![](images/settings-preferences.png){fig-alt="Settings and preferences"}
 
-1.  **Coder name:** Every code you apply is stamped with your coder name. Set your own name (or initials) before you start, using the **Change** button. This matters later if you compare coding with a collaborator.
-2.  **Language:** English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.
-3.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
-4.  **Backups"** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on!
+Only a few settings matter for now:
 
-**Behind the scenes:** QualCoder keeps its settings file (`config.ini`) and a log file in a hidden `.qualcoder` folder in your home directory. Remember: do not store project data there!
+1.  **Coder name:** Every code you apply is stamped with your coder name. Set your own name (or initials) before you start, using the **Change** button. This matters later if you compare coding with a collaborator. For this, choose `change` and `rename` the system default.
+
+    ![](images/coder-name.png)
+
+2.  **Show IDs:** It is a good practice to check this option so that you will see the unique ID for each file, code, cases and other project components.
+
+3.  **Language:** English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.
+
+4.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
+
+5.  **Backups"** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on!
+
+Applying these changes, your settings and preferences should look like:
+
+![](images/settings-preferences-modified.png)
+
+As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
 ::: {.callout-tip icon="false"}
-## Activity 1.1 –
+## Activity 1.1 – Adding you as a Coder
+
+\
+Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.
+:::
+
+::: callout-tip
+## Pro-tip: Resetting preferences or coders from past projects
+If you already use QualCoder and want to start from a blank slate, you can clear the settings, recent projects and saved coder name left over from earlier work. Your existing projects won’t be affected. QualCoder keeps these preferences in a hidden folder called .qualcoder in your home directory. Your projects are stored separately as .qda folders, so resetting preferences doesn’t touch them.
+
+1. Quit QualCoder
+
+2. Rename the preferences folder. 
+
+macOS / Linux (Terminal):
+   `mv ~/.qualcoder ~/.qualcoder_backup`
+
+Windows (PowerShell):
+   `Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"`
+   
+Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.
+
+Tip: Renaming the folder instead of deleting it keeps a backup. To undo the reset, rename .qualcoder_backup back to .qualcoder. Coder names are saved inside each project’s .qda file, so a new project starts with no coders from earlier projects.
 :::

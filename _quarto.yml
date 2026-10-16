@@ -44,9 +44,9 @@ website:
       collapse-level: 2
       align: left
       contents:
-        - href: index.qmd
-          text: "Welcome"
         - href: 00-agenda.qmd
+          text: "Agenda & Introduction"
+        
 
     - id: episodes
       title: "Episodes"
