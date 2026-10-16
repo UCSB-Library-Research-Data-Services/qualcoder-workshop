@@ -48,13 +48,15 @@ Please note that Audio and video do not work on Fedora Linux.
 
 ## Launching Qualcoder
 
-**FIXME: note that the shell/terminal for Windows user.**
-
 After installation is completed, to open QualCoder:
+
+-   **macOS:** Open **QualCoder** from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.
+
+<!-- -->
 
 -   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
 
--   **macOS:** Open **QualCoder** from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.
+**Important:** Windows users may see a shell/terminal window pop up, which upon closing will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
 
 ## Basic Settings
 
@@ -82,7 +84,7 @@ Applying these changes, your settings and preferences should look like:
 
 As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
-::: {.callout-tip icon="false"}
+::: {.callout-note icon="false"}
 ## Activity 1.1 – Adding you as a Coder
 
 \
@@ -91,18 +93,17 @@ Enter your name or initials so QualCoder can identify who is coding the data. Th
 
 ::: callout-tip
 ## Pro-tip: Resetting preferences or coders from past projects
+
 If you already use QualCoder and want to start from a blank slate, you can clear the settings, recent projects and saved coder name left over from earlier work. Your existing projects won’t be affected. QualCoder keeps these preferences in a hidden folder called .qualcoder in your home directory. Your projects are stored separately as .qda folders, so resetting preferences doesn’t touch them.
 
-1. Quit QualCoder
+1.  Quit QualCoder
 
-2. Rename the preferences folder. 
+2.  Rename the preferences folder.
 
-macOS / Linux (Terminal):
-   `mv ~/.qualcoder ~/.qualcoder_backup`
+macOS / Linux (Terminal): `mv ~/.qualcoder ~/.qualcoder_backup`
 
-Windows (PowerShell):
-   `Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"`
-   
+Windows (PowerShell): `Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"`
+
 Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.
 
 Tip: Renaming the folder instead of deleting it keeps a backup. To undo the reset, rename .qualcoder_backup back to .qualcoder. Coder names are saved inside each project’s .qda file, so a new project starts with no coders from earlier projects.
