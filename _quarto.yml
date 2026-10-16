@@ -29,7 +29,6 @@ website:
         href: https://qualcoder.org/doc/en/
         aria-label: QualCoder documentation
 
-    website:
   navbar:
     left:
       - text: "Overview"
