@@ -7,4 +7,3 @@ title: "Under the hood"
 -   **Database:** the docs describe each table (files, cases, codes, coded text, attributes, journals and more) for people who want to write SQL queries. Text positions are counted in characters; audio and video positions in milliseconds.
 -   **Licence:** LGPL v3, so QualCoder is free to use, share and modify.
 -   **Contributing:** anyone can help by translating the interface or the docs, or by contributing code via GitHub. Documentation lives as Markdown files in the [qualcoder-org.github.io](https://github.com/QualCoder-Org/qualcoder-org.github.io) repository.
--   **AI technical information:** this page of the official docs is still a placeholder.
