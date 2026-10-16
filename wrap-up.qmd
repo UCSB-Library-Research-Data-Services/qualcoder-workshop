@@ -1,5 +1,5 @@
 ---
-title: "Wrap-up and take-home"
+title: "Wrap-up"
 ---
 
 ## Recap
@@ -28,4 +28,9 @@ In one session, participants went from an empty project to coded data, a journal
 
 -   [ ] Zip the whole .qda folder and save a copy somewhere safe.
 
--   [ ] add more \<FIXME\>
+::: callout-tip
+## Backup Important Tips
+
+-   Save projects on your computer's own drive, not in a cloud-synced folder or on a USB stick. Syncing while QualCoder is open can corrupt the database.
+-   Keep backup copies in more than one location. You can use cloud storage, USB drives, external hard drives, or a combination of these options for added protection.
+:::
