@@ -153,11 +153,3 @@ Buttons at the top right can code every exact match of a word (case-sensitive; s
 ::: callout-warning
 Auto-coding can be undone only until you close the project, so always review the results and proceed with care.
 :::
-
-::: {.callout-tip icon="false"}
-## Activity 3.1
-:::
-
-::: {.callout-tip icon="false"}
-## Activity 3.2
-:::
