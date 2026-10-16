@@ -17,7 +17,7 @@ In this 3 hour workshop, attendees with no QualCoder experience will set up a pr
 |  | [AI Features](05-ai-features.qmd) |  | Setting up AI and integrating it into your coding workflow | Discussion |
 |  | [Wrapping-up](wrap-up.qmd) |  | Recapping and final considerations | Exit Survey |
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end, participants will be able to:
 
@@ -29,7 +29,7 @@ By the end, participants will be able to:
 6.  Retrieve coded segments and produce a simple report.
 7.  Describe what QualCoder's optional AI tools do, and the ethical questions they raise.
 
-## Setup instructions
+## Setup Instructions
 
 For our workshop, you need to install QualCoder, which you can do with the following instructions. If you have questions or need help, please email [rcurty\@ucsb.edu](mailto:%20rcurty@ucsb.edu) and [jose_nino\@ucsb.edu](mailto:%20jose_nino@ucsb.edu).
 

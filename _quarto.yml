@@ -32,8 +32,6 @@ website:
     left:
       - text: "Overview"
         href: index.qmd
-      - text: "Reference"
-        href: reference.qmd
       - text: "Episodes"
         menu:
           - href: 00-introduction.qmd
@@ -43,6 +41,8 @@ website:
           - href: 04-analyze-report.qmd
           - href: 05-ai-features.qmd
           - href: wrap-up.qmd
+      - text: "Reference"
+        href: reference.qmd
 
   sidebar:
     - id: reference
