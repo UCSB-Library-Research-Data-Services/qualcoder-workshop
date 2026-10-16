@@ -159,7 +159,14 @@
     "href": "index.html",
     "title": "Introduction to Qualitative Data Analysis with QualCoder",
     "section": "",
-    "text": "In this 3 hour workshop, attendees with no QualCoder experience will set up a project, code real qualitative data, and pull out a first report.\nAgenda"
+    "text": "In this 3 hour workshop, attendees with no QualCoder experience will set up a project, code real qualitative data, and pull out a first report."
+  },
+  {
+    "objectID": "index.html#agenda",
+    "href": "index.html#agenda",
+    "title": "Introduction to Qualitative Data Analysis with QualCoder",
+    "section": "Agenda",
+    "text": "Agenda\n\n\n\nTime\nBlock\nMinutes\nFocus\nHands-on\n\n\n\n\n0-10\nQualitative Data Analysis\n10\nWhat is qualitative coding? Icebreaker\nActivity\n\n\n\nMeet QualCoder!\n\nTour of basic settings and functionalities.\nActivity\n\n\n\nSetting Up Your Project\n\nStarting a new project and importing files. Describing cases and attributes.\nActivities\n\n\n\nBreak\n\n—\n—\n\n\n\nCoding Data\n\nWorking with codes and categories. Different coding approaches. The role of memos.\nActivities\n\n\n\nAnalysis and Reporting\n\nQuerying data, code retrieval, reports and graphs\nActivities\n\n\n\nAI Features\n\nSetting up AI and integrating it into your coding workflow\nDiscussion\n\n\n\nWrapping-up\n\nRecapping and final considerations\nExit Survey"
   },
   {
     "objectID": "index.html#learning-outcomes",
