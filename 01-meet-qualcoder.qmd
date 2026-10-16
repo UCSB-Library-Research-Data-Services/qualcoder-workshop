@@ -58,9 +58,9 @@ After installation is completed, to open QualCoder:
 
 **Important:** Windows users may see a shell/terminal window pop up, which upon closing will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
 
-## Basic Settings
+## Basic Preferences/Settings
 
-Open main menu choose **QualCoder \> Preferences** for Mac users or P.
+We’ll start by adjusting a few settings. Open the main menu and choose **QualCoder \> Preferences** (Mac) or **Project \> Settings** (Windows).
 
 ![](images/settings-preferences.png){fig-alt="Settings and preferences"}
 

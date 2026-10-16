@@ -86,7 +86,7 @@ Ultimately, the behavioral study contributes to IASGE’s broader goal of unders
 
 ![](images/project-memo.png){width="487"}
 
-## Bringing in the data: Manage Files
+## Bringing in the Data: Manage Files
 
 With the project memo in place, let's now import the interview files we will be coding.
 
