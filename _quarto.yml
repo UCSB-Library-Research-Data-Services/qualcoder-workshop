@@ -32,32 +32,18 @@ website:
     left:
       - text: "Overview"
         href: index.qmd
-      - text: "Episodes"
-        href: episodes.qmd
       - text: "Reference"
         href: reference.qmd
-
-  sidebar:
-    - id: overview
-      title: "Overview"
-      style: "floating"
-      collapse-level: 2
-      align: left
-      contents:
-        - href: agenda.qmd
-          text: "Agenda"
-        
-
-    - id: episodes
-      title: "Episodes"
-      contents:
-        - href: 00-introduction.qmd
-        - href: 01-meet-qualcoder.qmd
-        - href: 02-set-up-project.qmd
-        - href: 03-code-your-data.qmd
-        - href: 04-analyze-report.qmd
-        - href: 05-ai-features.qmd
-        - href: wrap-up.qmd
+      - text: "Episodes"
+        menu:
+          - href: 00-introduction.qmd
+          - href: 01-meet-qualcoder.qmd
+          - href: 02-set-up-project.qmd
+          - href: 03-code-your-data.qmd
+          - href: 04-analyze-report.qmd
+          - href: 05-ai-features.qmd
+          - href: wrap-up.qmd
+      
 
     - id: reference
       title: "Reference"
