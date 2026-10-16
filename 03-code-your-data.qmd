@@ -2,7 +2,7 @@
 title: "Coding Data"
 ---
 
-## QualCoder Coding
+## Coding Features
 
 As covered before, coding means attaching a short label (a **code**) to a passage of data that expresses an idea relevant to your research question. Codes are then grouped into **categories**, which can grow into themes.
 
