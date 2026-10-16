@@ -4,47 +4,77 @@ title: "AI Features"
 
 ## AI in QualCoder: setup, privacy and responsible use
 
-QualCoder's AI tools are **off by default** and entirely optional. In this workshop they are a facilitator demo, not a student task.
+When starting the program for the first time, probably you were asked if you wanted to activate QualCoder's AI tools or keep them off. They are completely optional, and if you are not interested in using them. For the last part of this workshop, we'll show you, as a demo, how to use some of the AI features. **But you don't have to follow along if you don't want to**.
 
-### Setting up (facilitator only)
+::: {.callout-tip icon="false"}
+## Reflection on AI
+- What are your feelings regarding AI?
+- Do you consider it appropriate or acceptable to use AI as an assistance tool in qualitative coding?
+- What could be the advantages and disadvantages of using AI?
+:::
 
-1.  Run the setup wizard (shown after a fresh install, or via **AI \> Setup Wizard**).
-2.  Turn on AI integration and choose a model. Options include commercial models (OpenAI, Anthropic, Google) with an API key, university-hosted services, other providers such as Mistral or OpenRouter, or a **local model via Ollama**, which keeps data on your computer.
-3.  Wait while QualCoder builds a local "AI memory" of your documents. It downloads an embedding model of about 2.5 GB once, and the status bar shows *AI: reading* until it is ready.
+### Setting up
 
-### Privacy
-
--   QualCoder sends only short, selected chunks of text (around 500 characters each) to a cloud model, not whole documents.
--   Anything in a memo after a `#####` line is never sent to the AI.
--   Anonymize/de-identify data before using any cloud service, and check what your ethics approval allows.
+1.  In the top menu, go to **AI \> Settings**).
+2.  Turn on "AI integration" and choose a model. Options include commercial models (OpenAI, Anthropic, Google, Mistral, etc.) with an API key, free services for researchers like Blablador, AI gateways for multiple models like OpenRouter, local models via Ollama (which keeps data on your computer), or university-provided services like UCSB's AI Commons.
+3. In this demo, we will use UCSB's [AI Commons](https://app.aicommons.ucsb.edu/). You can get an API key going to this website: [https://app.aicommons.ucsb.edu/account/api-keys](https://app.aicommons.ucsb.edu/account/api-keys).
+    1. Take note of the Base URL and the API key you generated, as QualCoder will ask for them.
+    2. On QualCoder, select "Advanced AI Options...", and then "New AI Profile...". Enter the name you prefer for the profile name, for example, "ai-commons".
+4. Paste the API key (and the API Base URL if using a custom model) in the appropriate field.
+5. Select a Large and a Fast Model from the list.
+        - The fast model is used only for housekeeping tasks, such as generating automatic titles for new AI agent chats, while the large will do the analysis of data.
+        - For this example with the AI Commons, select *claude-v5-sonnet* as the Large Model and *openai-gpt-oss-20b* as the Fast Model.
+6. Select the permissions you want to give to the model. We will use "Read-only", where the AI can only read codes, memos, and attributes, but it can't create or modify them. In QualCoder's documentation you can find more [information on the permission levels](https://qualcoder.org/doc/en/5.1.-AI-chat-based-analysis/?h=sandbox#what-are-its-limitations).
+5.  Wait while QualCoder builds its local AI memory. This process only happens at this moment and when you add new files, and its purpose is to search empirical documents quickly and find relevant passages.
 
 **Prepare the project:** a clear project memo, readable file names, and labelled speakers in transcripts all improve AI results.
 
-## AI-assisted coding and AI chat
+### Privacy
 
-**AI-assisted coding** searches your data by *meaning*, not exact words. You pick a code (or type a free topic), choose an analytic prompt, and optionally filter by documents, cases or attributes. QualCoder first searches its local memory, then asks the language model to rank and explain the best matches. You review each suggestion and decide whether to code it. The docs stress this is *assisted*, not automated, coding.
+-   QualCoder sends only short, selected chunks of text (around 500 characters each) to a cloud model, not entire documents.
+-   Anything in a memo after a `#####` line is never sent to the AI.
+-   Anonymize/de-identify data before using any cloud service, and check what your ethics approval allows.
 
-**AI chat** offers four kinds of conversation:
 
-| Chat type | What it does |
-|------------------------------------|------------------------------------|
-| Topic analysis | Explores a theme across all your data, even before you've coded |
-| Text analysis | Discusses a selected passage: brainstorm, summarize, suggest themes, or look for the unexpected |
-| Code analysis | Sends everything under one code or category for a summary or comparison; watch the cost on large codes |
-| General chat | Open conversation about your project |
+## Available tools
+QualCoder includes AI features that support your own analysis without replacing it. The AI suggests, searches, and discusses, while you review, interpret, and decide.
 
-**Prompt library:** the instructions sent to the AI are plain-language prompts you can view, copy and edit via **AI \> Prompt library**. Built-in system prompts must be duplicated before editing. Prompts are in English but work with data in other languages.
+### The AI Agent
 
-## Demo and discussion
+A chat-based assistant with its own tab, which you can also dock as a sidebar. It reads your code system, memos, coded passages, cases, and attributes, and can search the corpus by meaning, keyword, or regular expression. 
 
-::: {.callout-tip icon="false"}
-## Demo 5.1 – AI-assisted coding (5 min, facilitator)
+It asks before major changes, labels everything it creates “AI Agent”, and lets you undo its latest changes. It can never modify your original documents.
 
-**Notes to fix:**
+You can start a conversation in four ways:
 
--   **What to show:** [e.g. run AI-assisted coding for the code *"fix*]{.todo}*me"*[ on the sample data; accept one suggestion, reject one]{.todo}
--   **Model used:** [e.g. local Ollama free model/institutional service]{.todo} \<fixme\>
+1. New, open chat: The most flexible and open ended option. Explore ideas, find comparable cases, merge overlapping codes, or retrieve information across documents.
+2. Topic exploration: Describe a topic, choose documents or cases, and pick an analytic prompt: topic-summary, analize-differences, and analyze-unexpected.
+3. Text analysis: Select a passage in the text coding workspace and right-click for AI Text Analysis. Use it for close reading, brainstorming interpretations, or discussing ambiguities. Results can be saved as an annotation.
+4. Code analysis: Analyze everything coded under one or more codes or categories. There are some powerful options, like:
+    - Summarize all content coded with a given code
+    - Compare similar or overlapping codes to clarify boundaries
+    - Critique your code to find strenghts and limitations on light of the data
+    - Check for the theoretical saturation, searching the material for uncoded variations, borderline cases, and counterexamples to see whether the code captures the relevant variants of a phenomenon.
+    
+::: callout-tip
+
+Supporting tools you can access from the AI menu:
+
+- Prompt Library: Save and reuse your own prompts and analytic strategies. Call them in chat with slash notation (e.g. /in-vivo-coding). They also appear in the topic, text, and code analysis options.
+- Check project AI readiness: The agent reviews your project and suggests improvements so the AI can work with it more effectively.
+- Ask the AI agent (Help menu): Answers questions about using QualCoder, based on its documentation.
+
 :::
+
+### AI-assisted coding
+
+For this demonstration, we will show how to use this AI tool to find pieces of data given a code and its memo. You can find it in multiple places: under Coding > AI-assisted coding, AI > AI-assisted coding, or the “AI Assistance” tab in the text coding workspace.
+
+This is assisted, not automated coding, meaning QualCoder will show you the recommended extracts for a given code and the AI interpretation of why it should be coded. However, the AI will not automatically code your data (which is different to the [auto-code](https://qualcoder.org/doc/en/4.1.-Coding-Text/#auto-code) feature based keywords).
+
+With AI-assisted coding, you pick a code (or type a free topic), choose an analytic prompt, and optionally filter by documents, cases or attributes. QualCoder first searches its local memory, then asks the language model to rank and explain the best matches.
+
+
 
 ::: {.callout-tip icon="false"}
 ## Discussion 5.1 – Should we use AI here? (5 min) - fixme
