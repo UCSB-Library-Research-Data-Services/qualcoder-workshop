@@ -7,7 +7,7 @@ title: "Coding Data"
 As covered before, coding means attaching a short label (a **code**) to a passage of data that expresses an idea relevant to your research question. Codes are then grouped into **categories**, which can grow into themes.
 
 | Term | Meaning | Example |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Code | A label applied to a passage | *Sleep loss* |
 | Category | A group of related codes | *Physical effects of stress* |
 | Coded segment | The passage a code is attached to | "I barely slept the week before finals." |

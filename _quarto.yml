@@ -44,15 +44,14 @@ website:
       collapse-level: 2
       align: left
       contents:
-        - href: 00-agenda.qmd
-          text: "Agenda & Introduction"
+        - href: agenda.qmd
+          text: "Agenda"
         
 
     - id: episodes
       title: "Episodes"
       contents:
-        - href: episodes.qmd
-          text: All Episodes
+        - href: 00-introduction.qmd
         - href: 01-meet-qualcoder.qmd
         - href: 02-set-up-project.qmd
         - href: 03-code-your-data.qmd
