@@ -41,7 +41,7 @@ The first step will be to add a project memo. Adding short memo (about 300–700
 Let's copy the project memo below and add it:
 
 ::: callout-important
-# Project Memo: Investigating & Archiving the Scholarly Git Experience (IASGE) — Behavioral Study
+# Project Memo: Investigating & Archiving the Scholarly Git Experience (IASGE) - Behavioral Study
 
 This project contains the data underlying the behavioral study of *Investigating & Archiving the Scholarly Git Experience (IASGE)*. The study investigates how scholars use Git and Git hosting platforms (GHPs), such as GitHub and GitLab, to conduct research, manage scholarly materials, and collaborate with others. It explores how researchers with varying levels of experience adopt version control in their workflows, what challenges they encounter, how they learn to use these tools, and how libraries and other scholarly support organizations can better support the sustainable management and preservation of research outputs.
 
@@ -85,13 +85,6 @@ Ultimately, the behavioral study contributes to IASGE’s broader goal of unders
 :::
 
 ![](images/project-memo.png){width="487"}
-
-::: callout-warning
-## Important Tips - move this FIXME
-
--   Save projects on your computer's own drive, not in a cloud-synced folder or on a USB stick. Syncing while QualCoder is open can corrupt the database.
--   Keep backup copies in more than one location. You can use cloud storage, USB drives, external hard drives, or a combination of these options for added protection.
-:::
 
 ## Bringing in the data: Manage Files
 
