@@ -330,18 +330,15 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#qualcoder-coding" id="toc-qualcoder-coding" class="nav-link active" data-scroll-target="#qualcoder-coding">QualCoder Coding</a></li>
   <li><a href="#codebook" id="toc-codebook" class="nav-link" data-scroll-target="#codebook">Codebook</a></li>
+  <li><a href="#importing-a-codebook" id="toc-importing-a-codebook" class="nav-link" data-scroll-target="#importing-a-codebook">Importing a Codebook</a></li>
+  <li><a href="#building-organizing-the-code-tree" id="toc-building-organizing-the-code-tree" class="nav-link" data-scroll-target="#building-organizing-the-code-tree">Building &amp; Organizing the Code Tree</a></li>
   <li><a href="#coding-text-step-by-step" id="toc-coding-text-step-by-step" class="nav-link" data-scroll-target="#coding-text-step-by-step">Coding text step by step</a>
   <ul class="collapse">
-  <li><a href="#create-codes-and-categories" id="toc-create-codes-and-categories" class="nav-link" data-scroll-target="#create-codes-and-categories">Create codes and categories</a></li>
-  <li><a href="#apply-a-code" id="toc-apply-a-code" class="nav-link" data-scroll-target="#apply-a-code">Apply a code</a></li>
-  <li><a href="#check-and-fix-your-coding" id="toc-check-and-fix-your-coding" class="nav-link" data-scroll-target="#check-and-fix-your-coding">Check and fix your coding</a></li>
-  <li><a href="#add-your-thinking" id="toc-add-your-thinking" class="nav-link" data-scroll-target="#add-your-thinking">Add your thinking</a></li>
+  <li><a href="#coding-with-search-assistance" id="toc-coding-with-search-assistance" class="nav-link" data-scroll-target="#coding-with-search-assistance">Coding with Search Assistance</a></li>
+  <li><a href="#where-should-a-selection-begin-and-end" id="toc-where-should-a-selection-begin-and-end" class="nav-link" data-scroll-target="#where-should-a-selection-begin-and-end"><strong>Where should a selection begin and end?</strong></a></li>
+  <li><a href="#in-vivo-coding" id="toc-in-vivo-coding" class="nav-link" data-scroll-target="#in-vivo-coding">In Vivo Coding</a></li>
+  <li><a href="#add-your-reasoning" id="toc-add-your-reasoning" class="nav-link" data-scroll-target="#add-your-reasoning">Add your Reasoning</a></li>
   <li><a href="#auto-coding-use-with-care" id="toc-auto-coding-use-with-care" class="nav-link" data-scroll-target="#auto-coding-use-with-care">Auto-coding (use with care!)</a></li>
-  <li><a href="#handy-shortcuts" id="toc-handy-shortcuts" class="nav-link" data-scroll-target="#handy-shortcuts">Handy shortcuts</a></li>
-  </ul></li>
-  <li><a href="#building-and-organizing-your-code-tree" id="toc-building-and-organizing-your-code-tree" class="nav-link" data-scroll-target="#building-and-organizing-your-code-tree">Building and organizing your code tree</a>
-  <ul class="collapse">
-  <li><a href="#the-code-organizer" id="toc-the-code-organizer" class="nav-link" data-scroll-target="#the-code-organizer">The Code Organizer</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -421,35 +418,74 @@ ul.task-list li input[type="checkbox"] {
 <p>Similarly to codes, codebooks can be built deductively from theory or prior literature, inductively from patterns that emerge during close reading, or through a mix of both. Often it changes over several rounds as the team refines, merges, splits, or retires codes. That evolution is itself part of the analytic record, so keeping versions and logging changes helps document how interpretations developed. When several researchers code the same material, the codebook keeps them aligned. It makes intercoder agreement possible to assess, and it gives the team a concrete reference for talking through disagreements instead of relying on each person’s intuition.</p>
 <p>Beyond the life of a single project, a well-documented codebook makes qualitative work more transparent and credible. Readers and reviewers can see how claims were grounded in the data, and other researchers can understand, critique, or adapt the analytic approach. It also makes archived qualitative data far more usable for secondary analysis, since the meaning behind each code stays clear long after the original team has moved on.</p>
 </section>
+<section id="importing-a-codebook" class="level2">
+<h2 class="anchored" data-anchor-id="importing-a-codebook">Importing a Codebook</h2>
+<p>To get started, we’ve prepared a sample codebook. Starting from a set of predefined codes is typical of a <strong>deductive</strong> approach. Later, we’ll also try an <strong>inductive</strong> approach, where we create new codes for themes that come up as we read the transcripts.</p>
+<p>You can export a codebook from QualCoder and share it as a <code>.qdc</code> file, which we’ll do near the end of the workshop. If you’re starting a project from scratch, you can also import a list of codes from a plain-text file, and each code can include a description (memo).</p>
+<p>In the project example folder, find the file <code>Steeves_Interview_Codebook.csv</code> and open it in a text editor or spreadsheet program. Here’s how it’s structured:</p>
+<p><img src="images/codebook-structure.png" class="img-fluid" width="731"></p>
+<p>The first column contains the code names, and the second contains each code’s description, which QualCoder imports as the code’s memo. Notice the double angle brackets (<code>&gt;&gt;</code>) in some code names. They show how a code relates to a higher-level category. For example, <code>emotion&gt;&gt;confused</code> means the code <em>confused</em> belongs under the category <em>emotion</em>.</p>
+<p>Alright, let’s now import the codebook by following <strong>Project &gt; Import &gt; Import plain text codes list</strong>.</p>
+<p><img src="images/importing-codebook.png" class="img-fluid" width="676"></p>
+<p>Great! You should now see your list of codes in the lower-right panel. Each code has been given a color automatically. You can change these colors under <strong>Code &gt; Color Scheme</strong>. Colors give you quick visual cues, and giving related codes similar shades makes them easier to spot together. For now, we’ll leave the default colors as they are.</p>
+<p><img src="images/imported-codebook.png" class="img-fluid" width="736"></p>
+<p>Clicking <strong>Memo</strong> opens a separate window with the code’s description, or definition. Expect to revise these descriptions as your analysis develops. As you code more transcripts, you’ll find edge cases and clarify where one code ends and another begins.</p>
+</section>
+<section id="building-organizing-the-code-tree" class="level2">
+<h2 class="anchored" data-anchor-id="building-organizing-the-code-tree">Building &amp; Organizing the Code Tree</h2>
+<p>Codebooks are represented hierarchically as a tree: categories act like folders, codes sit inside them, and can also have sub-codes. A code can belong to only one category. If an idea fits two places, we recommend creating two similarly named codes.</p>
+<p>While we will stick to this structure for this workshop, you can rearrange things, through right-clicking for options to move, merge, delete, sort and more.</p>
+<p><img src="images/codetree-edits.png" class="img-fluid" width="465"></p>
+<p>For a bigger clean-up, open the <strong>Code Organizer</strong> under <strong>Coding</strong>. It shows your codes and categories as a diagram you can restructure: move, merge, rename and remove codes and categories, add new categories, and export the view as a PNG.</p>
+<p>With files and our code tree in place, let’s get started with practicing some coding.</p>
+</section>
 <section id="coding-text-step-by-step" class="level2">
 <h2 class="anchored" data-anchor-id="coding-text-step-by-step">Coding text step by step</h2>
 <p>Open <strong>Coding &gt; Code text</strong>. The code tree sits on the left, your document in the center, and the file list nearby.</p>
-<section id="create-codes-and-categories" class="level3">
-<h3 class="anchored" data-anchor-id="create-codes-and-categories">Create codes and categories</h3>
+<p>We will start by examining File 02. Since we won’t have time to examinethe entire file, let’s scroll down and jumpt to line 120. Great! We can now see the excerpt where the interviewer asks, “VS: So can you just narrate what you’re doing there?”</p>
+<p>Although we don’t need to read every detail, we can see that the interviewee is describing a process while expressing uncertainty, frustration, and confusion.</p>
+<p>Select the paragraph at line 122. Our codebook already includes the code <strong>Emotion &gt; Confused</strong>, so we can apply it to this excerpt by clicking the code. The selected passage takes on the code’s color, and a number appears next to the code showing how many times it has been applied. That count also adds to the total for its parent category, <strong>Emotion</strong>. The parent’s number is the total for all of its sub-codes. This lets you see how often a broad theme comes up, as well as each specific variation of it.</p>
+<p><img src="images/assign-code-01.png" class="img-fluid"></p>
+<p>If you select a text segment by mistake or need to undo the coding, you can right-click the selection and select Unmark (U). Shortcuts after highlighting: <strong>Q</strong> reuses your most recent code, <strong>R</strong> lists recent codes, and <strong>V</strong> makes an <em>in vivo</em> code from the selected words.</p>
+<p>Before you start, look at the code list. The number next to <strong>confused</strong> is gone, but <strong>emotion</strong> still shows <strong>1</strong>. The code list only shows counts for the file that’s currently open, so <strong>confused</strong> has no count in file 07. <strong>Emotion</strong> still shows <strong>1</strong> because the code you applied in the previous file still counts toward it.</p>
+<p>Your work hasn’t been lost. Everything you coded in the previous file is saved. In a later episode, we’ll look at reports that show code counts across all files.</p>
+<p>Going back to <strong>file 07</strong> let’s look for <strong>line 71,</strong> where the interviewee starts describing their approach to editing multiple files in the repository. Skim through the passage, for this exercise we will consider it expresses confidence in the workflow, and code it as <strong>determined</strong>.</p>
+<section id="coding-with-search-assistance" class="level3">
+<h3 class="anchored" data-anchor-id="coding-with-search-assistance">Coding with Search Assistance</h3>
+<p>See the question mark on the left-hand side of the top bar? That allows us to search for words across files, and can be useful to identify relevant terms before we apply codes. Let’s look for GUI, which stands for Graphic User Interface, and apply the GUI code the excerpts with the first 5 results (in order of appearance). Select “Aa” to make the search case sensitive, and navigate matches across files using the arrows.</p>
+</section>
+<section id="where-should-a-selection-begin-and-end" class="level3">
+<h3 class="anchored" data-anchor-id="where-should-a-selection-begin-and-end"><strong>Where should a selection begin and end?</strong></h3>
+<p>Deciding how much text to select is one of the main choices you make when coding. A few guidelines:</p>
 <ul>
-<li>Right-click the code tree and choose to add a new code or category. In the text area, the shortcuts are <strong>N</strong> (new code) and <strong>C</strong> (new category).</li>
-<li>Right-click a code to rename it, change its color, or add a memo.</li>
+<li><p><strong>Select a complete thought.</strong> Start where the participant begins the idea and stop when they finish it or move on to a new topic. That might be a phrase, a sentence or a whole paragraph.</p></li>
+<li><p><strong>Include enough context to understand it later.</strong> Someone reading the excerpt by itself, for example in a report, should still be able to tell why it was coded. If “It was a nightmare” only makes sense with the sentence before it, select both sentences.</p></li>
+<li><p><strong>Leave out what doesn’t belong.</strong> Don’t add filler, the interviewer’s next question or a new topic just to fill out the excerpt. Extra text makes reports harder to read and blurs what the code means.</p></li>
+<li><p><strong>Overlapping is fine.</strong> A passage can have more than one code, and selections for different codes can overlap. For example, one sentence might be coded <strong>Confused</strong> while the whole paragraph is coded <strong>GUI</strong>.</p></li>
+<li><p><strong>Be consistent.</strong> Use the same approach across all transcripts, especially if you’re coding with other people. Some teams agree on a default unit, such as “the full answer to one question,” before they start.</p></li>
 </ul>
 </section>
-<section id="apply-a-code" class="level3">
-<h3 class="anchored" data-anchor-id="apply-a-code">Apply a code</h3>
-<ol type="1">
-<li>Highlight a passage with the mouse.</li>
-<li>Click a code in the code tree. The passage takes on the code’s color.</li>
-</ol>
-<p>Shortcuts after highlighting: <strong>Q</strong> reuses your most recent code, <strong>R</strong> lists recent codes, and <strong>V</strong> makes an <em>in vivo</em> code from the selected words.</p>
-</section>
-<section id="check-and-fix-your-coding" class="level3">
-<h3 class="anchored" data-anchor-id="check-and-fix-your-coding">Check and fix your coding</h3>
+<section id="in-vivo-coding" class="level3">
+<h3 class="anchored" data-anchor-id="in-vivo-coding">In Vivo Coding</h3>
+<p>As most QDAS, QualCoder also offers the option for researchers to apply InVivo coding. <strong>In vivo coding</strong> means using the participant’s own words as the name of a code. Instead of making up a label such as <strong>Frustration</strong>, you take a short phrase straight from the transcript, such as <strong>“I just nuked the whole repo.”</strong> <em>In vivo</em> is Latin for “in the living,” meaning the code comes from the data itself.</p>
+<p>In vivo coding is an <strong>inductive</strong> approach because the codes come from the transcripts, not from a predefined codebook. It’s useful when you want to:</p>
 <ul>
-<li>Hover over coloured text to see which code is attached.</li>
-<li>To remove a code, click the coded text and press <strong>U</strong> (or the Unmark button). <strong>Ctrl+Z</strong> brings back the last code you removed.</li>
-<li>To resize a segment, click it and press <strong>Shift + arrow</strong> to extend or <strong>Alt + arrow</strong> to shrink.</li>
-<li>Where codes overlap, click there and press <strong>O</strong> to cycle through them.</li>
+<li><p>keep participants’ voices and terms in your analysis</p></li>
+<li><p>capture slang, jargon or vivid expressions that a generic label would lose</p></li>
+<li><p>start exploring data before you have a clear set of themes</p></li>
 </ul>
+<p>In vivo codes are often renamed or grouped into broader categories later. For example, <strong>“I just nuked the whole repo”</strong> might end up under the existing code <strong>conflict-burn-repo</strong>. Let’s select File <strong>04</strong> and look for <strong>line 131</strong>, where the interviewer mentions The Carpentries, and let’s apply an in vivo code to that, using the right-click or the shortcut (Command or Ctrl + V).</p>
 </section>
-<section id="add-your-thinking" class="level3">
-<h3 class="anchored" data-anchor-id="add-your-thinking">Add your thinking</h3>
+<section id="add-your-reasoning" class="level3">
+<h3 class="anchored" data-anchor-id="add-your-reasoning">Add your Reasoning</h3>
+<p>Codes show <em>what</em> you noticed. Memos and annotations record <em>why</em>. Writing down your reasoning as you go makes your analysis easier to explain, review and share with others.</p>
+<p>Besides code memos, QualCoder lets you add notes to the text itself:</p>
+<ul>
+<li><p><strong>Coded excerpt memo:</strong> A note attached to one coded excerpt. Use it to explain why you applied that code to that text, or to flag a borderline case. For example: <em>“Coded as Confused, but this could also be Overloaded. Revisit.”</em></p></li>
+<li><p><strong>Annotation:</strong> A note attached to a piece of text, whether or not it’s coded. Use it for first impressions, questions or links to other parts of the data. For example: <em>“Compare with the participant’s answer in file 03.”</em></p></li>
+</ul>
+<p>To add either one, right-click the text and choose the option from the menu.</p>
+<p>These notes become a record of how your thinking developed. They’re especially useful when you refine codes, merge or split them, or code with other people.</p>
 <ul>
 <li><strong>Memo</strong> a coded segment: hover over it and press <strong>M</strong>. Memoed text appears in italics.</li>
 <li><strong>Annotate</strong> any selected text, coded or not, by pressing <strong>A</strong>. Annotated text turns bold.</li>
@@ -458,6 +494,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="auto-coding-use-with-care" class="level3">
 <h3 class="anchored" data-anchor-id="auto-coding-use-with-care">Auto-coding (use with care!)</h3>
+<p><strong>Auto-code</strong> in QualCoder applies a code to every passage that matches text you specify, so you don’t have to select each passage by hand. You’ll find the options as buttons at the top right of the text-coding window. First select the code you want to apply, then choose an option:</p>
+<ul>
+<li><p><strong>Auto-code exact text</strong> codes every occurrence of a word or phrase. QualCoder asks which files to search, so you can code across several transcripts at once. Separate alternatives with <code>|</code> to catch several terms with one code, for example <code>GitHub Desktop|GUI</code>. Matching is <strong>case-sensitive</strong>.</p></li>
+<li><p><strong>Auto-code sentences</strong> codes the whole sentence that contains a text fragment, not just the fragment. You can set what counts as the end of a sentence. The default is a period followed by a space.</p></li>
+<li><p><strong>Auto-code between start and end marks</strong> codes everything between a start text and an end text in the current file. It’s useful for structured transcripts, such as coding everything from one interview question to the next.</p></li>
+<li><p><strong>Regex</strong> is a checkbox that lets you use regular expressions for more flexible matching, such as wildcards and word variations.</p></li>
+<li><p><strong>First or last match only (version 3.8 and later)</strong> is a right-click option that codes only the first or last match in each file.</p></li>
+<li><p><strong>Mark speakers</strong> codes each paragraph with the speaker’s name when transcripts label speakers as <code>[name]</code>, <code>{name}</code> or <code>name:</code>.</p></li>
+<li><p><strong>Undo</strong> reverses recent auto-coding, but only until you close the project.</p></li>
+</ul>
+<p>For the workshop, keep in mind that auto-coding matches words, not meaning. Searching for “confused” won’t catch “I had no idea what was going on,” and it will catch “I wasn’t confused at all.” Treat auto-coding as a first pass, and review every coded passage before you rely on it.</p>
 <p>Buttons at the top right can code every exact match of a word (case-sensitive; separate options with <code>|</code>, e.g.&nbsp;<code>exam|exams</code>), every sentence containing a fragment, or the section between two markers. <strong>Mark speakers</strong> creates a code for each speaker in a transcript.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -469,119 +516,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Auto-coding can be undone only until you close the project, so always review the results.</p>
-</div>
-</div>
-</section>
-<section id="handy-shortcuts" class="level3">
-<h3 class="anchored" data-anchor-id="handy-shortcuts">Handy shortcuts</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Key</th>
-<th>Action</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N / C</td>
-<td>New code / new category</td>
-</tr>
-<tr class="even">
-<td>Q</td>
-<td>Apply most recent code</td>
-</tr>
-<tr class="odd">
-<td>R</td>
-<td>Choose from recent codes</td>
-</tr>
-<tr class="even">
-<td>V</td>
-<td>In vivo code</td>
-</tr>
-<tr class="odd">
-<td>U</td>
-<td>Remove code at the cursor</td>
-</tr>
-<tr class="even">
-<td>Ctrl+Z</td>
-<td>Restore last removed code</td>
-</tr>
-<tr class="odd">
-<td>M</td>
-<td>Memo on coded segment</td>
-</tr>
-<tr class="even">
-<td>A</td>
-<td>Annotate selection</td>
-</tr>
-<tr class="odd">
-<td>I</td>
-<td>Mark as important</td>
-</tr>
-<tr class="even">
-<td>S</td>
-<td>Search text</td>
-</tr>
-<tr class="odd">
-<td>B / Shift+B</td>
-<td>Set bookmark / jump to bookmark</td>
-</tr>
-<tr class="even">
-<td>H</td>
-<td>Hide or show the top panel</td>
-</tr>
-<tr class="odd">
-<td>Ctrl+E</td>
-<td>Turn edit mode on or off</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="building-and-organizing-your-code-tree" class="level2">
-<h2 class="anchored" data-anchor-id="building-and-organizing-your-code-tree">Building and organizing your code tree</h2>
-<p>Your codes live in a tree: categories act like folders, codes sit inside them, and from version 4.0 codes can have sub-codes.</p>
-<p><strong>Example tree for the sample research question:</strong></p>
-<ul>
-<li>Physical effects of stress (category)
-<ul>
-<li>Sleep loss (code)</li>
-<li>Eating habits (code)</li>
-</ul></li>
-<li>Coping strategies (category)
-<ul>
-<li>Social support (code)
-<ul>
-<li>Friends (sub-code)</li>
-<li>Family (sub-code)</li>
-</ul></li>
-<li>Time management (code)</li>
-</ul></li>
-</ul>
-<p><strong>Everyday tree tasks (right-click in the code tree):</strong></p>
-<ul>
-<li><strong>Move</strong> a code into a category, or a category into a larger one.</li>
-<li><strong>Merge</strong> by dropping one code onto another; their coded segments combine. Don’t drop items on each other unless you mean to merge.</li>
-<li><strong>Rename, recolor or memo</strong> any code or category. <strong>Coding &gt; Color scheme</strong> recolors several codes at once and previews how colors look to people with color blindness.</li>
-<li><strong>Filter</strong> a long tree: <strong>F9</strong> shows codes matching some text, <strong>F10</strong> shows codes of one color. <strong>F11/F12</strong> sort it.</li>
-<li><strong>Show coded files:</strong> right-click a code to list every passage tagged with it, open each in context, and export them to a text file. This is a quick way to check that a code is used consistently.</li>
-</ul>
-<p>A code can belong to only one category. If an idea fits two places, create two similarly named codes.</p>
-<section id="the-code-organizer" class="level3">
-<h3 class="anchored" data-anchor-id="the-code-organizer">The Code Organizer</h3>
-<p>For a bigger clean-up, open the <strong>Code Organizer</strong>. It shows your codes and categories as a diagram you can restructure: move, merge, rename and remove codes and categories, add new categories, and export the view as a PNG.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Nothing changes until you click <strong>Apply</strong>, and once applied the changes cannot be undone. Make a backup first; QualCoder will prompt you to.</p>
+<p>Auto-coding can be undone only until you close the project, so always review the results and proceed with care.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-empty-content callout-titled">
