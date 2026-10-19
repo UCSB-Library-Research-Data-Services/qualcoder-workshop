@@ -331,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ai-in-qualcoder-setup-privacy-and-responsible-use" id="toc-ai-in-qualcoder-setup-privacy-and-responsible-use" class="nav-link active" data-scroll-target="#ai-in-qualcoder-setup-privacy-and-responsible-use">AI in QualCoder: setup, privacy and responsible use</a>
   <ul class="collapse">
   <li><a href="#setting-up" id="toc-setting-up" class="nav-link" data-scroll-target="#setting-up">Setting up</a></li>
-  <li><a href="#privacy" id="toc-privacy" class="nav-link" data-scroll-target="#privacy">Privacy</a></li>
+  <li><a href="#privacy-and-data-security" id="toc-privacy-and-data-security" class="nav-link" data-scroll-target="#privacy-and-data-security">Privacy and Data Security</a></li>
   </ul></li>
   <li><a href="#available-tools" id="toc-available-tools" class="nav-link" data-scroll-target="#available-tools">Available tools</a>
   <ul class="collapse">
@@ -366,7 +366,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="ai-in-qualcoder-setup-privacy-and-responsible-use" class="level2">
 <h2 class="anchored" data-anchor-id="ai-in-qualcoder-setup-privacy-and-responsible-use">AI in QualCoder: setup, privacy and responsible use</h2>
-<p>When starting the program for the first time, probably you were asked if you wanted to activate QualCoder’s AI tools or keep them off. They are completely optional, and if you are not interested in using them. For the last part of this workshop, we’ll show you, as a demo, how to use some of the AI features. <strong>But you don’t have to follow along if you don’t want to</strong>.</p>
+<p>When launching the software for the first time, you were likely prompted to choose whether to activate QualCoder’s AI features or keep them disabled. These tools are completely optional. In this final section of the workshop, we will demonstrate how to use several of these AI features. <strong>Following along with these practical steps is entirely optional.</strong></p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -379,55 +379,55 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <ul>
 <li>What are your feelings regarding AI?</li>
-<li>Do you consider it appropriate or acceptable to use AI as an assistance tool in qualitative coding?</li>
-<li>What could be the advantages and disadvantages of using AI?</li>
+<li>Do you consider it appropriate to use AI as an assistive tool for qualitative coding?</li>
+<li>What are the primary advantages and disadvantages of integrating AI into your qualitative workflow?</li>
 </ul>
 </div>
 </div>
 <section id="setting-up" class="level3">
 <h3 class="anchored" data-anchor-id="setting-up">Setting up</h3>
 <ol type="1">
-<li>In the top menu, go to <code>AI &gt; Settings</code>).</li>
-<li>Turn on “AI integration” and choose a model. Options include commercial models (OpenAI, Anthropic, Google, Mistral, etc.) with an API key, free services for researchers like Blablador, AI gateways for multiple models like OpenRouter, local models via Ollama (which keeps data on your computer), or university-provided services like UCSB’s AI Commons.</li>
-<li>In this demo, we will use UCSB’s <a href="https://app.aicommons.ucsb.edu/">AI Commons</a>. You can get an API key going to this website: <a href="https://app.aicommons.ucsb.edu/account/api-keys">https://app.aicommons.ucsb.edu/account/api-keys</a>.
+<li>In the top menu, navigate to <code>AI &gt; Settings</code>).</li>
+<li>Enable “AI integration” and select a model. Options include commercial models (such as OpenAI, Anthropic, Google, and Mistral) requiring an API key, free services for researchers like Blablador, multi-model gateways like OpenRouter, local models via Ollama (which process data locally on your machine), or institutionally hosted services such as UCSB’s AI Commons.</li>
+<li>For this demonstration, we will use UCSB’s <a href="https://app.aicommons.ucsb.edu/">AI Commons</a>. You can generate an API by visiting <a href="https://app.aicommons.ucsb.edu/account/api-keys">https://app.aicommons.ucsb.edu/account/api-keys</a>.
 <ol type="1">
-<li>Take note of the Base URL and the API key you generated, as QualCoder will ask for them.</li>
-<li>On QualCoder, select <code>"Advanced AI Options..."</code>, and then <code>"New AI Profile..."</code>. Enter the name you prefer for the profile name, for example, <code>"ai-commons"</code>.</li>
+<li>Note both the Base URL and the generated API key, as QualCoder requires both parameters.</li>
+<li>In QualCoder, select <code>"Advanced AI Options..."</code>, then <code>"New AI Profile..."</code>. Enter a profile name of your choice (e.g.&nbsp;<code>"ai-commons"</code>).</li>
 </ol></li>
-<li>Paste the API key (and the API Base URL if using a custom model) in the appropriate field.</li>
-<li>Select a Large and a Fast Model from the list. - The fast model is used only for housekeeping tasks, such as generating automatic titles for new AI agent chats, while the large will do the analysis of data. - For this example with the AI Commons, select <code>claude-v5-sonnet</code> as the Large Model and <code>openai-gpt-oss-20b</code> as the Fast Model.</li>
-<li>Select the permissions you want to give to the model. We will use <code>"Read-only"</code>, where the AI can only read codes, memos, and attributes, but it can’t create or modify them. In QualCoder’s documentation you can find more <a href="https://qualcoder.org/doc/en/5.1.-AI-chat-based-analysis/?h=sandbox#what-are-its-limitations">information on the permission levels</a>.</li>
-<li>Wait while QualCoder builds its local AI memory. This process only happens at this moment and when you add new files, and its purpose is to search empirical documents quickly and find relevant passages.</li>
+<li>Paste the API key (and the API Base URL, if using a custom model)into the designated fields.</li>
+<li>Select a Large Model and a Fast Model from the drop-down menus - The Fast Model handles administrative and background tasks (such as generating titles for new chat sessions), whereas the Large Model executes data analysis tasks. - For this demo using AI Commons, select <code>claude-v5-sonnet</code> as the Large Model and <code>openai-gpt-oss-20b</code> as the Fast Model.</li>
+<li>Configure permissions for the AI model. Select <code>"Read-only"</code>, which grants the AI permission to read existing codes, memos, and attributes without allowing it to create or modify data. For additional details, consult the QualCoder documentation on <a href="https://qualcoder.org/doc/en/5.1.-AI-chat-based-analysis/?h=sandbox#what-are-its-limitations">permission levels and limitations</a>.</li>
+<li>Wait while QualCoder generates its local memory. This indexing process occurs only during initial setup and when new files are added, enabling rapid search and retrieval across empirical documents.</li>
 </ol>
-<p><strong>Prepare the project:</strong> The AI will have better results if you add a clear project memo, code memos, readable file names, and labelled speakers in transcripts.</p>
+<p><strong>Preparing your project:</strong> AI tools produce more accurate results when your project includes clear project memos, descriptive code memos, standardized file names, and labeled speakers in interview transcripts.</p>
 </section>
-<section id="privacy" class="level3">
-<h3 class="anchored" data-anchor-id="privacy">Privacy</h3>
+<section id="privacy-and-data-security" class="level3">
+<h3 class="anchored" data-anchor-id="privacy-and-data-security">Privacy and Data Security</h3>
 <ul>
-<li>QualCoder sends only short, selected chunks of text (around 500 characters each) to a cloud model, not entire documents.</li>
+<li>QualCoder transmits only brief text excerpts (approximately 500 characters each) to cloud models rather than entire documents.</li>
 <li>Anything in a memo after a <code>#####</code> line is never sent to the AI.</li>
-<li>Anonymize/de-identify data before using any cloud service, and check what your ethics approval allows.</li>
+<li>Always de-identify and anonymize sensitive data prior to using cloud services, and check what your ethics approval allows.</li>
 </ul>
 </section>
 </section>
 <section id="available-tools" class="level2">
 <h2 class="anchored" data-anchor-id="available-tools">Available tools</h2>
-<p>QualCoder includes AI features that support your own analysis without replacing it. The AI suggests, searches, and discusses, while you review, interpret, and decide.</p>
+<p>QualCoder offers AI features designed to support, rather than replace, your qualitative analysis. The AI assists by suggesting, searching, and synthesizing patterns, while the researcher retains full control over interpretation and decision-making.</p>
 <section id="the-ai-agent" class="level3">
 <h3 class="anchored" data-anchor-id="the-ai-agent">The AI Agent</h3>
-<p>A chat-based assistant with its own tab, which you can also dock as a sidebar. It reads your code system, memos, coded passages, cases, and attributes, and can search the corpus by meaning, keyword, or regular expression.</p>
-<p>It asks before major changes, labels everything it creates “AI Agent”, and lets you undo its latest changes. It can never modify your original documents.</p>
+<p>The AI Agent is a dedicated chat interface accessible in its own tab or dockable as a sidebar. It analyzes your coding system, memos, coded passages, cases, and attributes, enabling semantic, keyword, and regular expression searches across your corpus.</p>
+<p>The agent prompts for confirmation before applying major changes, marks all created items as “AI Agent,” and allows you to revert recent actions. It cannot modify your original source documents.</p>
 <p>You can start a conversation in four ways:</p>
 <ol type="1">
-<li>New, open chat: The most flexible and open ended option. Explore ideas, find comparable cases, merge overlapping codes, or retrieve information across documents.</li>
-<li>Topic exploration: Describe a topic, choose documents or cases, and pick an analytic prompt: topic-summary, analize-differences, and analyze-unexpected.</li>
-<li>Text analysis: Select a passage in the text coding workspace and right-click for AI Text Analysis. Use it for close reading, brainstorming interpretations, or discussing ambiguities. Results can be saved as an annotation.</li>
-<li>Code analysis: Analyze everything coded under one or more codes or categories. There are some powerful options, like:
+<li><strong>New, open chat:</strong> The most flexible option for exploring emerging ideas, identifying comparable cases, evaluating overlapping codes, or retrieving information across documents.</li>
+<li><strong>Topic exploration:</strong> Describe a topic, choose documents or cases, and pick an analytic prompt (topic-summary, analize-differences, or analyze-unexpected).</li>
+<li><strong>Text analysis:</strong> Highlight a passage in the text coding workspace and right-click to open AI Text Analysis. Use it for close reading, brainstorming interpretations, or discussing ambiguities. Results can be saved as an annotation.</li>
+<li><strong>Code analysis:</strong> Analyze data aggregated under specific codes or categories. Useful workflows include:
 <ul>
-<li>Summarize all content coded with a given code</li>
-<li>Compare similar or overlapping codes to clarify boundaries</li>
-<li>Critique your code to find strenghts and limitations on light of the data</li>
-<li>Check for the theoretical saturation, searching the material for uncoded variations, borderline cases, and counterexamples to see whether the code captures the relevant variants of a phenomenon.</li>
+<li>Summarizing all content associated with a given code</li>
+<li>Comparing overlapping codes to clarify category boundaries</li>
+<li>Critiquing code definitions in light of the underlying data</li>
+<li>Evaluating theoretical saturation by searching for uncoded variations, borderline cases, and counterexamples</li>
 </ul></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -440,10 +440,10 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Supporting tools you can access from the AI menu:</p>
+<p>Additional tools available from the AI menu:</p>
 <ul>
-<li>Prompt Library: Save and reuse your own prompts and analytic strategies. Call them in chat with slash notation (e.g.&nbsp;/in-vivo-coding). They also appear in the topic, text, and code analysis options.</li>
-<li>Check project AI readiness: The agent reviews your project and suggests improvements so the AI can work with it more effectively.</li>
+<li>Prompt Library: Save and reuse your own prompts and analytic strategies. Call them in chat with slash notation (e.g.&nbsp;<code>/in-vivo-coding</code>). Saved prompts also appear within topic, text, and code analysis menus.</li>
+<li>Check project AI readiness: Reviews project setup and provides recommendations to optimize AI performance.</li>
 <li>Ask the AI agent (Help menu): Answers questions about using QualCoder, based on its documentation.</li>
 </ul>
 </div>
@@ -451,25 +451,31 @@ Tip
 </section>
 <section id="ai-assisted-coding" class="level3">
 <h3 class="anchored" data-anchor-id="ai-assisted-coding">AI-assisted coding</h3>
-<p>For this demonstration, we will show you how to find extracts that potentially match a code with the help of QualCoder’s AI tool. You can find it in multiple places: under <code>Coding &gt; AI-assisted coding</code>, <code>AI &gt; AI-assisted coding</code>, or the “AI Assistance” tab in the text coding workspace (which you access going to <code>Coding &gt; Code text</code>).</p>
-<p>This is assisted, not automated coding, meaning QualCoder will show you the recommended extracts for a given code and the AI interpretation of why it should be coded. However, the AI will not automatically code your data (which is different to the keyword-based <a href="https://qualcoder.org/doc/en/4.1.-Coding-Text/#auto-code">auto-code</a> feature).</p>
-<p>With AI-assisted coding, you pick a code (or type a free topic), choose an analytic prompt, and optionally filter by documents, cases or attributes. QualCoder first searches its local memory, then asks the language model to rank and explain the best matches.</p>
-<p>When you are in the text coding workspace, click <code>&lt;Start AI Search&gt;</code>, as shown in this screenshot.</p>
+<p>This demonstration illustrates how to identify candidate excerpts matching a specific code using QualCoder’s AI capabilities. This feature is accessible via <code>Coding &gt; AI-assisted coding</code>, <code>AI &gt; AI-assisted coding</code>, or the “AI Assistance” tab within the text coding workspace (<code>Coding &gt; Code text</code>).</p>
+<p>This process provides <em>assisted</em> rather than <em>automated</em> coding. QualCoder presents recommended excerpts alongside the model’s rationale, leaving final coding decisions to you (unlike the automated, keyword-based <a href="https://qualcoder.org/doc/en/4.1.-Coding-Text/#auto-code">auto-code</a> tool).</p>
+<p>To start, select a code (or enter a topic), select an analytic prompt, and optionally filter by document, case, or attribute. QualCoder searches its local memory before querying the language model to rank and explain match results.</p>
+<p>In the text coding workspace, click <code>&lt;Start AI Search&gt;</code>, as shown below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-start.jpeg" class="img-fluid figure-img"></p>
 <figcaption>Screenshot of the Text Coding Workspace, with the “Start AI Search” button highligted in red</figcaption>
 </figure>
 </div>
-<p>Then, select: 1) the code you want to search for, 2) filter the data you want to search in for file, case, or attributes, 3) the analytic prompt to use during the search.</p>
-<p>As for the analytic prompt, it has three default prompts (also called system prompts), which you can edit or create new ones:</p>
+<p>Next, specify: 1) The target code to search for 2) Optional data filters (file, case, or attribute) 3) The desired analytic prompt</p>
+<p>QualCoder includes three default analytic (system) prompts, which you can modify or create new ones:</p>
 <ul>
 <li>Content analysis with coding rules: Instructs the AI to follow coding rules outlined in the code memo.</li>
-<li>Focused search: Suitable for specific, well-defined topics. It selects less data than open search, but also results are more precise.</li>
-<li>Open search: Used to gather a wide range of data potentially relevant to the specified code. For this reason, it may yield more unrelated results than average.</li>
+<li>Focused search: Best suited for well-defined topics; returns fewer, highly precise results.</li>
+<li>Open search: Identifies a broader range of potentially relevant material, which may yield more unrelated results.</li>
 </ul>
-<p><img src="images/ai-coding-menu.jpg" class="img-fluid" alt="Screenshot of the AI-assited coding menu, selecting the communcation code, no data filters, and the “open search” analytic prompt"> QualCoder will start looking for relevant passages and send them to the AI to decide if they are indeed appropriate for the code or not. On the left, you will get a result list. You can click each of the results, and when you review it is a relevant extract, select a code for it. A pop-up window will ask you if you want to add as a memo the AI interpretation of why the data should be coded that way.</p>
-<p><img src="images/ai-coding-result.jpeg" class="img-fluid" alt="Screenshot of the AI-assited coding results, with a passage coded following the AI suggestion, and showing a memo included"> QualCoder will return the more relevant results first, but you can click the <code>&gt;&gt; Find more...</code> button at the end of the result list to continue searching.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-coding-menu.jpg" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of the AI-assited coding menu, selecting the communcation code, no data filters, and the “open search” analytic prompt</figcaption>
+</figure>
+</div>
+<p>QualCoder will start looking for relevant passages and send them to the AI to decide if they are indeed appropriate for the code or not. Results populate in the left panel. Selecting an item allows you to review the passage and confirm the code assignment. A prompt will ask whether you wish to attach the AI’s explanation as a memo.</p>
+<p><img src="images/ai-coding-result.jpeg" class="img-fluid" alt="Screenshot of the AI-assited coding results, with a passage coded following the AI suggestion, and showing a memo included"> Results are sorted by relevance. To expand the search, click <code>&gt;&gt; Find more...</code> at the bottom of the list.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -481,9 +487,9 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>[Prompt 1, e.g.&nbsp;“What did the AI find that you missed? What did it get wrong?”]</li>
-<li>[Prompt 2, e.g.&nbsp;“Who is responsible for an interpretation suggested by AI?”]</li>
-<li>[Prompt 3, e.g.&nbsp;“Would your participants have agreed to their words being sent to an AI company?”]</li>
+<li>What did the AI find that you missed? What did it get wrong?</li>
+<li>Who is responsible for an interpretation suggested by AI?</li>
+<li>Would your participants have agreed to their words being sent to an AI company?</li>
 </ul>
 </div>
 </div>
