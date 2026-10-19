@@ -2,21 +2,26 @@
 title: "Analyzing and Reporting"
 ---
 
-## Journals: your research diary
+Beyond annotating your data, QualCoder provides powerful tools to analyze your results and make reports and graphs. If you want to report an issue in QualCoder or request an additional feature, please open a `New issue` on the [GitHub repository for the project](https://github.com/ccbogel/QualCoder/issues).
 
-Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.
+We'll dive into five of the most frequently used tools, but bear in mind, there is much more to explore:
 
--   The journal window floats, so you can keep it open beside the coding screen.
--   Add simple formatting with Markdown: `#` for headings (up to three levels), `*italics*` and `**bold**`. Web links become clickable from the right-click menu.
--   Search journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.
+- Code retrieval: Show all coded passages, of a subset of them based on the chosen filters.
+- Code co-occurrence: Code matrix counting the number of times two codes have been used in the same text.
+- Charts: Insightful graphs based on your data, like word clouds, bar charts counting code frequency or pie charts showing their relative frequency, code heatmaps by file or case.
+- File and code summaries: For a given file or code, show how many characters were coded and what are the most frequent words in the data, optionally removing common words.
+- Database queries: advanced users can run SQL queries on the project database. Back up first, as queries can change data.
 
-**Memo vs journal:** a memo belongs to one code, file or passage; a journal entry is about the project as a whole.
+Other tools:
+- Code comparison, in case you have multiple coders and are making inter-coder reliability analysis.
+- Code text exact matches, to see if identical excerpts have been given different codes.
+- Code frequencies, by coder.
+- Journals, a place in your project to keep note of your ideas .
 
-## Retrieving and comparing coded data (Analysis menu)
+
+## Code retrieval
 
 The Analysis menu turns your coding into evidence. **Code retrieval** (sometimes called the coding report) is the main tool.
-
-### Code retrieval
 
 1.  Choose one or more codes or categories.
 2.  Optionally narrow by file, case or attribute, e.g. only second-year students.
@@ -36,15 +41,35 @@ A **matrix view** places codes against files or cases, so you can see who talked
 
 When you export an HTML report that includes images or media, keep the report's companion folder with it.
 
-## Reports menu
+## Code co-occurence
 
-Reports summarize your project in numbers and charts.
 
--   **Code frequencies:** how often each code was used, by each coder, optionally per file.
--   **File summary/code summary:** details about a file or code, including word frequencies (common words removed) and average segment length.
--   **Charts:** bar charts, sunbursts, heatmaps, stacked bars and word clouds, opened in your web browser and exportable as HTML.
--   **Coding comparison:** compares two coders on the same text using percentage agreement and **Cohen's kappa**, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.
--   **Database queries:** advanced users can run SQL queries on the project database. Back up first, as queries can change data.
+
+## Charts
+
+The Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.
+
+- Choose what to show: all categories or selected ones.
+- Drag items into position; use the buttons at lower left to space them evenly, and **+ / –** to zoom.
+- Right-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.
+- Right-click empty space to add free text boxes, file or case boxes, and extra lines.
+- Save graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.
+
+A graph exported as PNG is a quick way to include a thematic map in a report or presentation.
+
+## File and code summaries
+
+## Database queries
+
+## Other tools
+
+### Code comparison
+
+compares two coders on the same text using percentage agreement and **Cohen's kappa**, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.
+
+### Code text exact matches
+
+### Code frequencies
 
 ::: callout-note
 ## Teaching point
@@ -52,17 +77,28 @@ Reports summarize your project in numbers and charts.
 Counting codes is not the same as finding meaning. Frequencies show where to look; reading the passages tells you what they mean.
 :::
 
-## Visualizing codes with the Graph tool {#visualising-codes-with-the-graph-tool}
+### Journals: your research diary
 
-The Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.
+Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.
 
--   Choose what to show: all categories or selected ones.
--   Drag items into position; use the buttons at lower left to space them evenly, and **+ / –** to zoom.
--   Right-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.
--   Right-click empty space to add free text boxes, file or case boxes, and extra lines.
--   Save graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.
+- The journal window floats, so you can keep it open beside the coding screen.
+- Add simple formatting with Markdown: `#` for headings (up to three levels), `*italics*` and `**bold**`. Web links become clickable from the right-click menu.
+- Search journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.
 
-A graph exported as PNG is a quick way to include a thematic map in a report or presentation.
+**Memo vs journal:** a memo belongs to one code, file or passage; a journal entry is about the project as a whole.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ::: {.callout-tip icon="false"}
 ## Activity 4.1 –
