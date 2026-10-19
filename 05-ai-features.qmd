@@ -15,19 +15,19 @@ When starting the program for the first time, probably you were asked if you wan
 
 ### Setting up
 
-1.  In the top menu, go to **AI \> Settings**).
+1.  In the top menu, go to `AI > Settings`).
 2.  Turn on "AI integration" and choose a model. Options include commercial models (OpenAI, Anthropic, Google, Mistral, etc.) with an API key, free services for researchers like Blablador, AI gateways for multiple models like OpenRouter, local models via Ollama (which keeps data on your computer), or university-provided services like UCSB's AI Commons.
 3. In this demo, we will use UCSB's [AI Commons](https://app.aicommons.ucsb.edu/). You can get an API key going to this website: [https://app.aicommons.ucsb.edu/account/api-keys](https://app.aicommons.ucsb.edu/account/api-keys).
     1. Take note of the Base URL and the API key you generated, as QualCoder will ask for them.
-    2. On QualCoder, select "Advanced AI Options...", and then "New AI Profile...". Enter the name you prefer for the profile name, for example, "ai-commons".
+    2. On QualCoder, select `"Advanced AI Options..."`, and then `"New AI Profile..."`. Enter the name you prefer for the profile name, for example, `"ai-commons"`.
 4. Paste the API key (and the API Base URL if using a custom model) in the appropriate field.
 5. Select a Large and a Fast Model from the list.
         - The fast model is used only for housekeeping tasks, such as generating automatic titles for new AI agent chats, while the large will do the analysis of data.
-        - For this example with the AI Commons, select *claude-v5-sonnet* as the Large Model and *openai-gpt-oss-20b* as the Fast Model.
-6. Select the permissions you want to give to the model. We will use "Read-only", where the AI can only read codes, memos, and attributes, but it can't create or modify them. In QualCoder's documentation you can find more [information on the permission levels](https://qualcoder.org/doc/en/5.1.-AI-chat-based-analysis/?h=sandbox#what-are-its-limitations).
+        - For this example with the AI Commons, select `claude-v5-sonnet` as the Large Model and `openai-gpt-oss-20b` as the Fast Model.
+6. Select the permissions you want to give to the model. We will use `"Read-only"`, where the AI can only read codes, memos, and attributes, but it can't create or modify them. In QualCoder's documentation you can find more [information on the permission levels](https://qualcoder.org/doc/en/5.1.-AI-chat-based-analysis/?h=sandbox#what-are-its-limitations).
 5.  Wait while QualCoder builds its local AI memory. This process only happens at this moment and when you add new files, and its purpose is to search empirical documents quickly and find relevant passages.
 
-**Prepare the project:** a clear project memo, readable file names, and labelled speakers in transcripts all improve AI results.
+**Prepare the project:** The AI will have better results if you add a clear project memo, code memos, readable file names, and labelled speakers in transcripts.
 
 ### Privacy
 
@@ -68,18 +68,34 @@ Supporting tools you can access from the AI menu:
 
 ### AI-assisted coding
 
-For this demonstration, we will show how to use this AI tool to find pieces of data given a code and its memo. You can find it in multiple places: under Coding > AI-assisted coding, AI > AI-assisted coding, or the “AI Assistance” tab in the text coding workspace.
+For this demonstration, we will show you how to find extracts that potentially match a code with the help of QualCoder's AI tool. You can find it in multiple places: under `Coding > AI-assisted coding`, `AI > AI-assisted coding`, or the “AI Assistance” tab in the text coding workspace (which you access going to `Coding > Code text`).
 
-This is assisted, not automated coding, meaning QualCoder will show you the recommended extracts for a given code and the AI interpretation of why it should be coded. However, the AI will not automatically code your data (which is different to the [auto-code](https://qualcoder.org/doc/en/4.1.-Coding-Text/#auto-code) feature based keywords).
+This is assisted, not automated coding, meaning QualCoder will show you the recommended extracts for a given code and the AI interpretation of why it should be coded. However, the AI will not automatically code your data (which is different to the keyword-based [auto-code](https://qualcoder.org/doc/en/4.1.-Coding-Text/#auto-code) feature).
 
 With AI-assisted coding, you pick a code (or type a free topic), choose an analytic prompt, and optionally filter by documents, cases or attributes. QualCoder first searches its local memory, then asks the language model to rank and explain the best matches.
 
+When you are in the text coding workspace, click `<Start AI Search>`, as shown in this screenshot.
 
+![Screenshot of the Text Coding Workspace, with the "Start AI Search" button highligted in red](images/ai-start.jpeg)
+
+Then, select: 1) the code you want to search for, 2) filter the data you want to search in for file, case, or attributes, 3) the analytic prompt to use during the search.
+
+As for the analytic prompt, it has three default prompts (also called system prompts), which you can edit or create new ones:
+
+- Content analysis with coding rules: Instructs the AI to follow coding rules outlined in the code memo.
+- Focused search: Suitable for specific, well-defined topics. It selects less data than open search, but also results are more precise.
+- Open search: Used to gather a wide range of data potentially relevant to the specified code. For this reason, it may yield more unrelated results than average.
+
+![Screenshot of the AI-assited coding menu, selecting the communcation code, no data filters, and the "open search" analytic prompt](images/ai-coding-menu.jpg)
+QualCoder will start looking for relevant passages and send them to the AI to decide if they are indeed appropriate for the code or not. On the left, you will get a result list. You can click each of the results, and when you review it is a relevant extract, select a code for it. A pop-up window will ask you if you want to add as a memo the AI interpretation of why the data should be coded that way.
+
+![Screenshot of the AI-assited coding results, with a passage coded following the AI suggestion, and showing a memo included](images/ai-coding-result.jpeg)
+QualCoder will return the more relevant results first, but you can click the `>> Find more...` button at the end of the result list to continue searching.
 
 ::: {.callout-tip icon="false"}
-## Discussion 5.1 – Should we use AI here? (5 min) - fixme
+## Discussion – Should we use AI here? (5 min)
 
--   [Prompt 1, e.g. "What did the AI find that you missed? What did it get wrong?"]{.todo}
--   [Prompt 2, e.g. "Who is responsible for an interpretation suggested by AI?"]{.todo}
--   [Prompt 3, e.g. "Would your participants have agreed to their words being sent to an AI company?"]{.todo}
+-   [Prompt 1, e.g. "What did the AI find that you missed? What did it get wrong?"]
+-   [Prompt 2, e.g. "Who is responsible for an interpretation suggested by AI?"]
+-   [Prompt 3, e.g. "Would your participants have agreed to their words being sent to an AI company?"]
 :::
