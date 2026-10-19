@@ -4,35 +4,49 @@
     "href": "04-analyze-report.html",
     "title": "Analyzing and Reporting",
     "section": "",
-    "text": "Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.\n\nThe journal window floats, so you can keep it open beside the coding screen.\nAdd simple formatting with Markdown: # for headings (up to three levels), *italics* and **bold**. Web links become clickable from the right-click menu.\nSearch journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.\n\nMemo vs journal: a memo belongs to one code, file or passage; a journal entry is about the project as a whole."
+    "text": "Beyond annotating your data, QualCoder provides powerful tools to analyze your results and make reports and graphs. If you want to report an issue in QualCoder or request an additional feature, please open a New issue on the GitHub repository for the project.\nWe’ll dive into five of the most frequently used tools, but bear in mind, there is much more to explore:\nOther tools: - Code comparison, in case you have multiple coders and are making inter-coder reliability analysis. - Code text exact matches, to see if identical excerpts have been given different codes. - Code frequencies, by coder. - Journals, a place in your project to keep note of your ideas ."
   },
   {
-    "objectID": "04-analyze-report.html#journals-your-research-diary",
-    "href": "04-analyze-report.html#journals-your-research-diary",
+    "objectID": "04-analyze-report.html#code-retrieval",
+    "href": "04-analyze-report.html#code-retrieval",
     "title": "Analyzing and Reporting",
-    "section": "",
-    "text": "Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.\n\nThe journal window floats, so you can keep it open beside the coding screen.\nAdd simple formatting with Markdown: # for headings (up to three levels), *italics* and **bold**. Web links become clickable from the right-click menu.\nSearch journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.\n\nMemo vs journal: a memo belongs to one code, file or passage; a journal entry is about the project as a whole."
+    "section": "Code retrieval",
+    "text": "Code retrieval\nThe Analysis menu turns your coding into evidence. Code retrieval (sometimes called the coding report) is the main tool.\n\nChoose one or more codes or categories.\nOptionally narrow by file, case or attribute, e.g. only second-year students.\nOptionally search within results or show only segments marked Important.\nRead the matching passages together, then export them as TXT, CSV, XLSX, ODT or HTML.\n\nA matrix view places codes against files or cases, so you can see who talked about what.\n\nOther analysis options\n\n\n\nOption\nQuestion it answers\n\n\n\n\nCode co-occurrence\nWhich codes tend to appear on the same passages?\n\n\nCode relations\nHow do two codes sit in the text: overlapping, one inside another, close by, or exactly the same? (Text only)\n\n\nCodes by text segments\nWhich codes does each segment carry?\n\n\nGraph\nHow do codes and categories connect visually? (See below.)\n\n\n\nWhen you export an HTML report that includes images or media, keep the report’s companion folder with it."
   },
   {
-    "objectID": "04-analyze-report.html#retrieving-and-comparing-coded-data-analysis-menu",
-    "href": "04-analyze-report.html#retrieving-and-comparing-coded-data-analysis-menu",
+    "objectID": "04-analyze-report.html#code-co-occurence",
+    "href": "04-analyze-report.html#code-co-occurence",
     "title": "Analyzing and Reporting",
-    "section": "Retrieving and comparing coded data (Analysis menu)",
-    "text": "Retrieving and comparing coded data (Analysis menu)\nThe Analysis menu turns your coding into evidence. Code retrieval (sometimes called the coding report) is the main tool.\n\nCode retrieval\n\nChoose one or more codes or categories.\nOptionally narrow by file, case or attribute, e.g. only second-year students.\nOptionally search within results or show only segments marked Important.\nRead the matching passages together, then export them as TXT, CSV, XLSX, ODT or HTML.\n\nA matrix view places codes against files or cases, so you can see who talked about what.\n\n\nOther analysis options\n\n\n\nOption\nQuestion it answers\n\n\n\n\nCode co-occurrence\nWhich codes tend to appear on the same passages?\n\n\nCode relations\nHow do two codes sit in the text: overlapping, one inside another, close by, or exactly the same? (Text only)\n\n\nCodes by text segments\nWhich codes does each segment carry?\n\n\nGraph\nHow do codes and categories connect visually? (See below.)\n\n\n\nWhen you export an HTML report that includes images or media, keep the report’s companion folder with it."
+    "section": "Code co-occurence",
+    "text": "Code co-occurence"
   },
   {
-    "objectID": "04-analyze-report.html#reports-menu",
-    "href": "04-analyze-report.html#reports-menu",
+    "objectID": "04-analyze-report.html#charts",
+    "href": "04-analyze-report.html#charts",
     "title": "Analyzing and Reporting",
-    "section": "Reports menu",
-    "text": "Reports menu\nReports summarize your project in numbers and charts.\n\nCode frequencies: how often each code was used, by each coder, optionally per file.\nFile summary/code summary: details about a file or code, including word frequencies (common words removed) and average segment length.\nCharts: bar charts, sunbursts, heatmaps, stacked bars and word clouds, opened in your web browser and exportable as HTML.\nCoding comparison: compares two coders on the same text using percentage agreement and Cohen’s kappa, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.\nDatabase queries: advanced users can run SQL queries on the project database. Back up first, as queries can change data.\n\n\n\n\n\n\n\nNoteTeaching point\n\n\n\nCounting codes is not the same as finding meaning. Frequencies show where to look; reading the passages tells you what they mean."
+    "section": "Charts",
+    "text": "Charts\nThe Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.\n\nChoose what to show: all categories or selected ones.\nDrag items into position; use the buttons at lower left to space them evenly, and + / – to zoom.\nRight-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.\nRight-click empty space to add free text boxes, file or case boxes, and extra lines.\nSave graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.\n\nA graph exported as PNG is a quick way to include a thematic map in a report or presentation."
   },
   {
-    "objectID": "04-analyze-report.html#visualising-codes-with-the-graph-tool",
-    "href": "04-analyze-report.html#visualising-codes-with-the-graph-tool",
+    "objectID": "04-analyze-report.html#file-and-code-summaries",
+    "href": "04-analyze-report.html#file-and-code-summaries",
     "title": "Analyzing and Reporting",
-    "section": "Visualizing codes with the Graph tool",
-    "text": "Visualizing codes with the Graph tool\nThe Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.\n\nChoose what to show: all categories or selected ones.\nDrag items into position; use the buttons at lower left to space them evenly, and + / – to zoom.\nRight-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.\nRight-click empty space to add free text boxes, file or case boxes, and extra lines.\nSave graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.\n\nA graph exported as PNG is a quick way to include a thematic map in a report or presentation.\n\n\n\n\n\n\nTipActivity 4.1 –\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 4.2\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 4.3"
+    "section": "File and code summaries",
+    "text": "File and code summaries"
+  },
+  {
+    "objectID": "04-analyze-report.html#database-queries",
+    "href": "04-analyze-report.html#database-queries",
+    "title": "Analyzing and Reporting",
+    "section": "Database queries",
+    "text": "Database queries"
+  },
+  {
+    "objectID": "04-analyze-report.html#other-tools",
+    "href": "04-analyze-report.html#other-tools",
+    "title": "Analyzing and Reporting",
+    "section": "Other tools",
+    "text": "Other tools\n\nCode comparison\ncompares two coders on the same text using percentage agreement and Cohen’s kappa, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.\n\n\nCode text exact matches\n\n\nCode frequencies\n\n\n\n\n\n\nNoteTeaching point\n\n\n\nCounting codes is not the same as finding meaning. Frequencies show where to look; reading the passages tells you what they mean.\n\n\n\n\nJournals: your research diary\nJournals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.\n\nThe journal window floats, so you can keep it open beside the coding screen.\nAdd simple formatting with Markdown: # for headings (up to three levels), *italics* and **bold**. Web links become clickable from the right-click menu.\nSearch journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.\n\nMemo vs journal: a memo belongs to one code, file or passage; a journal entry is about the project as a whole.\n\n\n\n\n\n\nTipActivity 4.1 –\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 4.2\n\n\n\n\n\n\n\n\n\n\n\n\nTipActivity 4.3"
   },
   {
     "objectID": "ref-teamwork.html",

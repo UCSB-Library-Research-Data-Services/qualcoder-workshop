@@ -328,14 +328,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#journals-your-research-diary" id="toc-journals-your-research-diary" class="nav-link active" data-scroll-target="#journals-your-research-diary">Journals: your research diary</a></li>
-  <li><a href="#retrieving-and-comparing-coded-data-analysis-menu" id="toc-retrieving-and-comparing-coded-data-analysis-menu" class="nav-link" data-scroll-target="#retrieving-and-comparing-coded-data-analysis-menu">Retrieving and comparing coded data (Analysis menu)</a>
+  <li><a href="#code-retrieval" id="toc-code-retrieval" class="nav-link active" data-scroll-target="#code-retrieval">Code retrieval</a>
   <ul class="collapse">
-  <li><a href="#code-retrieval" id="toc-code-retrieval" class="nav-link" data-scroll-target="#code-retrieval">Code retrieval</a></li>
   <li><a href="#other-analysis-options" id="toc-other-analysis-options" class="nav-link" data-scroll-target="#other-analysis-options">Other analysis options</a></li>
   </ul></li>
-  <li><a href="#reports-menu" id="toc-reports-menu" class="nav-link" data-scroll-target="#reports-menu">Reports menu</a></li>
-  <li><a href="#visualising-codes-with-the-graph-tool" id="toc-visualising-codes-with-the-graph-tool" class="nav-link" data-scroll-target="#visualising-codes-with-the-graph-tool">Visualizing codes with the Graph tool</a></li>
+  <li><a href="#code-co-occurence" id="toc-code-co-occurence" class="nav-link" data-scroll-target="#code-co-occurence">Code co-occurence</a></li>
+  <li><a href="#charts" id="toc-charts" class="nav-link" data-scroll-target="#charts">Charts</a></li>
+  <li><a href="#file-and-code-summaries" id="toc-file-and-code-summaries" class="nav-link" data-scroll-target="#file-and-code-summaries">File and code summaries</a></li>
+  <li><a href="#database-queries" id="toc-database-queries" class="nav-link" data-scroll-target="#database-queries">Database queries</a></li>
+  <li><a href="#other-tools" id="toc-other-tools" class="nav-link" data-scroll-target="#other-tools">Other tools</a>
+  <ul class="collapse">
+  <li><a href="#code-comparison" id="toc-code-comparison" class="nav-link" data-scroll-target="#code-comparison">Code comparison</a></li>
+  <li><a href="#code-text-exact-matches" id="toc-code-text-exact-matches" class="nav-link" data-scroll-target="#code-text-exact-matches">Code text exact matches</a></li>
+  <li><a href="#code-frequencies" id="toc-code-frequencies" class="nav-link" data-scroll-target="#code-frequencies">Code frequencies</a></li>
+  <li><a href="#journals-your-research-diary" id="toc-journals-your-research-diary" class="nav-link" data-scroll-target="#journals-your-research-diary">Journals: your research diary</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -362,21 +369,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="journals-your-research-diary" class="level2">
-<h2 class="anchored" data-anchor-id="journals-your-research-diary">Journals: your research diary</h2>
-<p>Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.</p>
+<p>Beyond annotating your data, QualCoder provides powerful tools to analyze your results and make reports and graphs. If you want to report an issue in QualCoder or request an additional feature, please open a <code>New issue</code> on the <a href="https://github.com/ccbogel/QualCoder/issues">GitHub repository for the project</a>.</p>
+<p>We’ll dive into five of the most frequently used tools, but bear in mind, there is much more to explore:</p>
 <ul>
-<li>The journal window floats, so you can keep it open beside the coding screen.</li>
-<li>Add simple formatting with Markdown: <code>#</code> for headings (up to three levels), <code>*italics*</code> and <code>**bold**</code>. Web links become clickable from the right-click menu.</li>
-<li>Search journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.</li>
+<li>Code retrieval: Show all coded passages, of a subset of them based on the chosen filters.</li>
+<li>Code co-occurrence: Code matrix counting the number of times two codes have been used in the same text.</li>
+<li>Charts: Insightful graphs based on your data, like word clouds, bar charts counting code frequency or pie charts showing their relative frequency, code heatmaps by file or case.</li>
+<li>File and code summaries: For a given file or code, show how many characters were coded and what are the most frequent words in the data, optionally removing common words.</li>
+<li>Database queries: advanced users can run SQL queries on the project database. Back up first, as queries can change data.</li>
 </ul>
-<p><strong>Memo vs journal:</strong> a memo belongs to one code, file or passage; a journal entry is about the project as a whole.</p>
-</section>
-<section id="retrieving-and-comparing-coded-data-analysis-menu" class="level2">
-<h2 class="anchored" data-anchor-id="retrieving-and-comparing-coded-data-analysis-menu">Retrieving and comparing coded data (Analysis menu)</h2>
+<p>Other tools: - Code comparison, in case you have multiple coders and are making inter-coder reliability analysis. - Code text exact matches, to see if identical excerpts have been given different codes. - Code frequencies, by coder. - Journals, a place in your project to keep note of your ideas .</p>
+<section id="code-retrieval" class="level2">
+<h2 class="anchored" data-anchor-id="code-retrieval">Code retrieval</h2>
 <p>The Analysis menu turns your coding into evidence. <strong>Code retrieval</strong> (sometimes called the coding report) is the main tool.</p>
-<section id="code-retrieval" class="level3">
-<h3 class="anchored" data-anchor-id="code-retrieval">Code retrieval</h3>
 <ol type="1">
 <li>Choose one or more codes or categories.</li>
 <li>Optionally narrow by file, case or attribute, e.g.&nbsp;only second-year students.</li>
@@ -384,7 +389,6 @@ ul.task-list li input[type="checkbox"] {
 <li>Read the matching passages together, then export them as TXT, CSV, XLSX, ODT or HTML.</li>
 </ol>
 <p>A <strong>matrix view</strong> places codes against files or cases, so you can see who talked about what.</p>
-</section>
 <section id="other-analysis-options" class="level3">
 <h3 class="anchored" data-anchor-id="other-analysis-options">Other analysis options</h3>
 <table class="caption-top table">
@@ -416,16 +420,38 @@ ul.task-list li input[type="checkbox"] {
 <p>When you export an HTML report that includes images or media, keep the report’s companion folder with it.</p>
 </section>
 </section>
-<section id="reports-menu" class="level2">
-<h2 class="anchored" data-anchor-id="reports-menu">Reports menu</h2>
-<p>Reports summarize your project in numbers and charts.</p>
+<section id="code-co-occurence" class="level2">
+<h2 class="anchored" data-anchor-id="code-co-occurence">Code co-occurence</h2>
+</section>
+<section id="charts" class="level2">
+<h2 class="anchored" data-anchor-id="charts">Charts</h2>
+<p>The Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.</p>
 <ul>
-<li><strong>Code frequencies:</strong> how often each code was used, by each coder, optionally per file.</li>
-<li><strong>File summary/code summary:</strong> details about a file or code, including word frequencies (common words removed) and average segment length.</li>
-<li><strong>Charts:</strong> bar charts, sunbursts, heatmaps, stacked bars and word clouds, opened in your web browser and exportable as HTML.</li>
-<li><strong>Coding comparison:</strong> compares two coders on the same text using percentage agreement and <strong>Cohen’s kappa</strong>, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.</li>
-<li><strong>Database queries:</strong> advanced users can run SQL queries on the project database. Back up first, as queries can change data.</li>
+<li>Choose what to show: all categories or selected ones.</li>
+<li>Drag items into position; use the buttons at lower left to space them evenly, and <strong>+ / –</strong> to zoom.</li>
+<li>Right-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.</li>
+<li>Right-click empty space to add free text boxes, file or case boxes, and extra lines.</li>
+<li>Save graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.</li>
 </ul>
+<p>A graph exported as PNG is a quick way to include a thematic map in a report or presentation.</p>
+</section>
+<section id="file-and-code-summaries" class="level2">
+<h2 class="anchored" data-anchor-id="file-and-code-summaries">File and code summaries</h2>
+</section>
+<section id="database-queries" class="level2">
+<h2 class="anchored" data-anchor-id="database-queries">Database queries</h2>
+</section>
+<section id="other-tools" class="level2">
+<h2 class="anchored" data-anchor-id="other-tools">Other tools</h2>
+<section id="code-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="code-comparison">Code comparison</h3>
+<p>compares two coders on the same text using percentage agreement and <strong>Cohen’s kappa</strong>, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.</p>
+</section>
+<section id="code-text-exact-matches" class="level3">
+<h3 class="anchored" data-anchor-id="code-text-exact-matches">Code text exact matches</h3>
+</section>
+<section id="code-frequencies" class="level3">
+<h3 class="anchored" data-anchor-id="code-frequencies">Code frequencies</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -440,17 +466,15 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="visualising-codes-with-the-graph-tool" class="level2">
-<h2 class="anchored" data-anchor-id="visualising-codes-with-the-graph-tool">Visualizing codes with the Graph tool</h2>
-<p>The Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.</p>
+<section id="journals-your-research-diary" class="level3">
+<h3 class="anchored" data-anchor-id="journals-your-research-diary">Journals: your research diary</h3>
+<p>Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.</p>
 <ul>
-<li>Choose what to show: all categories or selected ones.</li>
-<li>Drag items into position; use the buttons at lower left to space them evenly, and <strong>+ / –</strong> to zoom.</li>
-<li>Right-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.</li>
-<li>Right-click empty space to add free text boxes, file or case boxes, and extra lines.</li>
-<li>Save graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.</li>
+<li>The journal window floats, so you can keep it open beside the coding screen.</li>
+<li>Add simple formatting with Markdown: <code>#</code> for headings (up to three levels), <code>*italics*</code> and <code>**bold**</code>. Web links become clickable from the right-click menu.</li>
+<li>Search journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.</li>
 </ul>
-<p>A graph exported as PNG is a quick way to include a thematic map in a report or presentation.</p>
+<p><strong>Memo vs journal:</strong> a memo belongs to one code, file or passage; a journal entry is about the project as a whole.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-empty-content callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -492,6 +516,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
