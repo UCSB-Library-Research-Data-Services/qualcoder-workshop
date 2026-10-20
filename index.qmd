@@ -6,16 +6,16 @@ In this 3 hour workshop, attendees with no QualCoder experience will set up a pr
 
 ## **Agenda**
 
-| Time | **Block** | **Minutes** | **Focus** | **Hands-on** |
-|---------------|---------------|---------------|---------------|---------------|
-| 0-10 | [Qualitative Data Analysis](#introduction-warm-up) | 10 | What is qualitative coding? Icebreaker | Activity |
-|  | [Meet QualCoder!](01-meet-qualcoder.qmd) |  | Tour of basic settings and functionalities. | Activity |
-|  | [Setting Up Your Project](02-set-up-project.qmd) |  | Starting a new project and importing files. Describing cases and attributes. | Activities |
-|  | Break |  | — | — |
-|  | [Coding Data](03-code-your-data.qmd) |  | Working with codes and categories. Different coding approaches. The role of memos. | Activities |
-|  | [Analysis and Reporting](04-analyze-report.qmd) |  | Querying data, code retrieval, reports and graphs | Activities |
-|  | [AI Features](05-ai-features.qmd) |  | Setting up AI and integrating it into your coding workflow | Discussion |
-|  | [Wrapping-up](wrap-up.qmd) |  | Recapping and final considerations | Exit Survey |
+| Time | **Block** | **Minutes** | **Focus** |
+|---------|---------------|--------|-----------------------------|
+| 9:05 | [Qualitative Data Analysis](00-introduction.qmd) | 15 | What is qualitative coding? Icebreaker |
+| 9:20 | [Meet QualCoder!](01-meet-qualcoder.qmd) | 15 | Tour of basic settings and functionalities. |
+| 9:35 | [Setting Up Your Project](02-set-up-project.qmd) | 30 | Starting a new project and importing files. Describing cases and attributes. |
+| 10:05 | [Coding Data](03-code-your-data.qmd) | 40 | Working with codes and categories. Different coding approaches. The role of memos. |
+| 10:45 | Break | 15 | — |
+| 11:00 | [Analysis and Reporting](04-analyze-report.qmd) | 30 | Querying data, code retrieval, reports and graphs |
+| 11:30 | [AI Features](05-ai-features.qmd) | 20 | Setting up AI and integrating it into your coding workflow |
+| 11:50 | [Wrap-up](wrap-up.qmd) | 10 | Recapping and final considerations |
 
 ## Learning Outcomes
 
@@ -38,7 +38,7 @@ For our workshop, you need to install QualCoder, which you can do with the follo
 
 1.  Download from GitHub the QualCoder installer [QualCoder_4.0_Win_INSTALLER.exe](https://github.com/ccbogel/QualCoder/releases/download/4.0/QualCoder_4.0_Win_INSTALLER.exe)
 2.  Open the installer
-    - A window saying "Windows protected your PC" may open up. Don't worry, QualCoder is safe to install, this just happens because it is from an unknown publisher. **Click "More Info", and then "Run anyway"**.
+    -   A window saying "Windows protected your PC" may open up. Don't worry, QualCoder is safe to install, this just happens because it is from an unknown publisher. **Click "More Info", and then "Run anyway"**.
 3.  Follow the instructions in the installer.
 
 An alternative to the previous steps is to download the portable version [Qualcoder-4.0_Win_PORTABLE.exe](https://github.com/ccbogel/QualCoder/releases/download/4.0/Qualcoder-4.0_Win_PORTABLE.exe). The portable version works without installation, just double clicking the .exe file. However, Qualcoder will take longer to start each time.
@@ -53,11 +53,11 @@ An alternative to the previous steps is to download the portable version [Qualco
 
 4.  Start QualCoder by double-clicking the app within your applications folder.
 
-    - You may get a pop-up warning that QualCoder is from an unregistered developer or "QualCoder can't be opened because Apple cannot check it for malicious software." Don't worry, QualCoder is safe to install, this just happens because it is from an unknown publisher.
+    -   You may get a pop-up warning that QualCoder is from an unregistered developer or "QualCoder can't be opened because Apple cannot check it for malicious software." Don't worry, QualCoder is safe to install, this just happens because it is from an unknown publisher.
 
-    - Go to Settings -\> Privacy and Security -\> Scroll down until you see a message stating QualCoder was prevented from starting. Click on "open anyway". ou may be prompted to enter your password and may need to click "Open" again.
+    -   Go to Settings -\> Privacy and Security -\> Scroll down until you see a message stating QualCoder was prevented from starting. Click on "open anyway". ou may be prompted to enter your password and may need to click "Open" again.
 
-    - From now on, QualCoder should start without issues.
+    -   From now on, QualCoder should start without issues.
 
 If you are having issues with installation, you may have an older Intel-based Mac. Please visit the [QualCoder GitHub website](https://github.com/ccbogel/QualCoder/releases/tag/4.0) for additional instructions, and reach out to us if you need help.
 
@@ -67,7 +67,7 @@ The following instructions will only work for Debian-based systems (Debian, Ubun
 
 1.  Download from GitHub the QualCoder Debian package [qualcoder_4.0_amd64.deb](https://github.com/ccbogel/QualCoder/releases/download/4.0/qualcoder_4.0_amd64.deb)
 2.  Double click to run
-    - You might first need to right-click on the file and go to Properties, then check the Executable checkbox.
+    -   You might first need to right-click on the file and go to Properties, then check the Executable checkbox.
 
 For installation instructions in other Linux systems, please visit the [QualCoder GitHub website](https://github.com/ccbogel/QualCoder/releases/tag/4.0).
 :::
