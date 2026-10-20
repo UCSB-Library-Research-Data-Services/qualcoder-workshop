@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -47,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-51adc06de5936cb6fd83ab3bfd4897ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-061d730147e8f308330e8135107763b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -267,7 +302,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-episodes">    
         <li>
     <a class="dropdown-item" href="./00-introduction.html">
- <span class="dropdown-text">Inroduction to Qualitative Data Analysis</span></a>
+ <span class="dropdown-text">Introduction to Qualitative Data Analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./01-meet-qualcoder.html">
@@ -364,15 +399,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="creating-a-new-project" class="level2">
 <h2 class="anchored" data-anchor-id="creating-a-new-project">Creating a New Project</h2>
 <p>On the main window, before exploring QualCoder and its features, let’s create a new project. For this workshop, save the project to your Desktop so it’s easy to locate and access. Choose <strong>Project &gt; Create New Project</strong>.</p>
-<p><img src="images/new-project.png" class="img-fluid" width="149"></p>
+<p><img src="images/new-project.png" class="img-fluid" alt="Screenshot of QualCoder to create a new project" width="149"></p>
 <p>Then, let’s name it named <code>git-experience</code>. Note this will create a folder <code>git-experience.qda</code> in your desktop. If you open it you will notice that it contains a set of preset subfolders:</p>
-<p><img src="images/qda folder.png" class="img-fluid" width="389"></p>
+<p><img src="images/qda folder.png" class="img-fluid" alt="Screenshot of the file explorer, showing the top level .qda folder for the project itself, the .qda file with the database, and other folders for imported data." width="389"></p>
 <p>This is a <strong>QualCoder project folder</strong>. QualCoder saves each project as an ordinary folder whose name ends in <code>.qda</code>. Here’s what each item in it does:</p>
 <ul>
-<li><p><strong>git-experience.qda/</strong> is the project itself. To open it, choose <em>Project → Open</em> in QualCoder and select this folder. If you move or back up the project, copy the whole folder. Taking only some of the files inside it will break the project.</p></li>
+<li><p><strong>git-experience.qda/</strong> is the project itself. To open it, choose <em>Project → Open</em> in QualCoder and select this folder. If you move or back up the project, copy the whole folder. Taking only some of the files inside will break it.</p></li>
 <li><p><strong>data.qda</strong> is the most important file. It’s a SQLite database that holds all your analysis work: Your codes and code categories (the code tree). Every coded segment of text, image, audio and video. Cases, attributes, journals and memos. The plain text QualCoder pulls out of your imported documents (this is the text you actually code). Project settings and the list of imported files</p></li>
-<li><p><strong>project_in_use.lock</strong> is a temporary file. QualCoder creates it when the project is open, so the same project can’t be edited from two places at once. It’s normally removed when you close the project. If it’s still there and QualCoder isn’t running, the app probably crashed or was force-quit, and QualCoder may warn you the project is in use the next time you open it. In that case it’s safe to delete, as long as the project really isn’t open anywhere else.</p></li>
-<li><p><strong>ai_data/</strong> holds data for QualCoder’s AI-assisted features (available in newer versions). It’s a local vector database of embeddings made from your documents, which powers AI search and AI-assisted coding. QualCoder can rebuild it from your documents. If it’s empty, you probably haven’t used the AI features yet.</p></li>
+<li><p><strong>project_in_use.lock</strong> is a temporary file. QualCoder creates it when the project is open, so the same project can’t be edited from two places at once. It’s normally removed when you close the project.</p></li>
+<li><p><strong>ai_data/</strong> holds data for QualCoder’s AI-assisted features. It’s a local vector database of embeddings made from your documents, which powers AI search and AI-assisted coding. QualCoder can rebuild it from your documents. If it’s empty, you probably haven’t used the AI features yet.</p></li>
 <li><p><strong>documents/</strong> stores copies of the text files you imported (.txt, .docx, .pdf, .odt and so on). Your coding is tied to the extracted text in data.qda, not to these files.</p></li>
 <li><p><strong>images/</strong> stores imported images (.jpg, .png and so on) that you can code by region.</p></li>
 <li><p><strong>audio/</strong> stores imported audio (.mp3, .wav, .m4a and so on). You can transcribe it and code it by time segment.</p></li>
@@ -382,8 +417,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="navigating-basic-functions" class="level2">
 <h2 class="anchored" data-anchor-id="navigating-basic-functions">Navigating Basic Functions</h2>
 <p>The main screen has five tabs: Action log, Manage, Reports, Coding and AI chat. But since our project is empty there isn’t much to explore yet.</p>
-<p>The first step will be to add a project memo. Adding short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and the AI tools use it as context. Anything written after a line of <code>#####</code> is kept private from the AI as we will see in later episodes.</p>
-<p><img src="images/menu-project-memo.png" class="img-fluid"></p>
+<p>The first step will be to add a project memo. Adding a short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and also for the AI tools to use it as context. Anything written after a line of <code>#####</code> is kept private from the AI, as we will see in later episodes.</p>
+<p><img src="images/menu-project-memo.png" class="img-fluid" alt="QualCoder screenshot of the options inside the Project menu"></p>
 <p>Let’s copy the project memo below and add it:</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -391,43 +426,54 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Project Memo: Investigating &amp; Archiving the Scholarly Git Experience (IASGE) - Behavioral Study
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This project contains the data underlying the behavioral study of <em>Investigating &amp; Archiving the Scholarly Git Experience (IASGE)</em>. The study investigates how scholars use Git and Git hosting platforms (GHPs), such as GitHub and GitLab, to conduct research, manage scholarly materials, and collaborate with others. It explores how researchers with varying levels of experience adopt version control in their workflows, what challenges they encounter, how they learn to use these tools, and how libraries and other scholarly support organizations can better support the sustainable management and preservation of research outputs.</p>
-<section id="research-questions-and-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="research-questions-and-objectives">Research Questions and Objectives</h2>
-<p>The study seeks to understand how scholars incorporate Git and Git hosting platforms into individual and collaborative research practices. It considers both scholars who actively use Git in their academic work and those who are familiar with Git but have not fully adopted it into a standardized workflow. The research examines how these groups use platform features, learn version control practices, and navigate the technical and social aspects of collaborative research.</p>
-<p>Key research questions include:</p>
-<ul>
-<li><p>How do scholars with different levels of experience use Git and Git hosting platforms in their research workflows?</p></li>
-<li><p>How do researchers learn Git, find instructions, and develop practices for managing files, tracking changes, and synchronizing collaborative work?</p></li>
-<li><p>How do scholars resolve merge conflicts, reuse and adapt existing code, and communicate with collaborators or external researchers through issues, discussions, and other platform features?</p></li>
-<li><p>How do researchers discover, evaluate, reuse, and cite code hosted in public repositories?</p></li>
-<li><p>What challenges do scholars encounter when using Git hosting platforms for academic collaboration, and what features or improvements would better support their needs?</p></li>
-<li><p>How can libraries and other scholarly support services help researchers make their code, data, and other research outputs citable, stable, accessible, and suitable for long-term preservation?</p></li>
-</ul>
-</section>
-<section id="research-design-and-methods" class="level2">
-<h2 class="anchored" data-anchor-id="research-design-and-methods">Research Design and Methods</h2>
-<p>The behavioral study uses a three-part, mixed-methods empirical approach consisting of focus groups, a survey, and semi-structured interviews. These methods provide complementary perspectives on scholarly users’ experiences, practices, preferences, and needs.</p>
-<p>Focus groups gather perspectives on Git adoption, research collaboration, common challenges, and opportunities for improving scholarly workflows. The survey collects information about users’ backgrounds, experience levels, platform use, feature adoption, and research practices. Semi-structured interviews provide a more detailed examination of individual experiences through open-ended questions and task-based scenarios. Together, these methods support an understanding of both broader usage patterns and the reasoning behind specific user behaviors.</p>
-<p>During interviews, participants discuss their research processes and demonstrate how they approach representative Git and Git hosting platform tasks. Scenarios include editing multiple files, comparing versions of a document, synchronizing local and remote repositories, resolving conflicts, forking repositories, and collaborating with other researchers. Additional tasks explore how participants communicate feedback about code, submit or respond to issues, search for reusable code, obtain citations for repositories, and arrange for persistent identifiers and long-term preservation of research materials. Participants are also asked how they learned each task, where they seek instructions, and how they would teach the same practices to others.</p>
-</section>
-<section id="data-and-scope" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-scope">Data and Scope</h2>
-<p>The project data include, but are not limited to, information about participant experiences and practices, user profiles, levels of Git experience, frequency of feature use, collaboration patterns, learning strategies, and perceptions of platform functionality. Data generated through the study’s research methods provide insight into how scholars engage with version control and Git hosting platforms across different stages of adoption.</p>
-<p>The interview component also captures participants’ approaches to specific tasks, their decision-making processes, the resources they consult, and the difficulties they encounter. These observations help distinguish between knowing that a feature exists and being able to use it effectively in a research context. The study further considers participants’ preferences for collaboration, peer feedback, code reuse, citation, and repository preservation.</p>
-</section>
-<section id="significance-and-expected-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="significance-and-expected-outcomes">Significance and Expected Outcomes</h2>
-<p>The findings aim to inform how libraries, research support professionals, and platform developers can better meet the needs of scholars using Git and Git hosting platforms. By identifying common practices, barriers to adoption, and gaps in existing learning resources, the study can help shape instruction, training, and support services for researchers at different experience levels.</p>
-<p>Ultimately, the behavioral study contributes to IASGE’s broader goal of understanding how scholarly materials hosted on Git platforms can transition from active, collaborative development to stable, permanently citable research outputs supported by professional preservation practices. The project provides an empirical basis for improving the discoverability, usability, citation, and long-term accessibility of scholarship created and shared through Git-based research workflows.</p>
-</section>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Project Memo: Investigating &amp; Archiving the Scholarly Git Experience (IASGE) - Behavioral Study</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>This project contains the data underlying the behavioral study of *Investigating &amp; Archiving the Scholarly Git Experience (IASGE)*. The study investigates how scholars use Git and Git hosting platforms (GHPs), such as GitHub and GitLab, to conduct research, manage scholarly materials, and collaborate with others. It explores how researchers with varying levels of experience adopt version control in their workflows, what challenges they encounter, how they learn to use these tools, and how libraries and other scholarly support organizations can better support the sustainable management and preservation of research outputs.</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Research Questions and Objectives</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>The study seeks to understand how scholars incorporate Git and Git hosting platforms into individual and collaborative research practices. It considers both scholars who actively use Git in their academic work and those who are familiar with Git but have not fully adopted it into a standardized workflow. The research examines how these groups use platform features, learn version control practices, and navigate the technical and social aspects of collaborative research.</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Key research questions include:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How do scholars with different levels of experience use Git and Git hosting platforms in their research workflows?</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How do researchers learn Git, find instructions, and develop practices for managing files, tracking changes, and synchronizing collaborative work?</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How do scholars resolve merge conflicts, reuse and adapt existing code, and communicate with collaborators or external researchers through issues, discussions, and other platform features?</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How do researchers discover, evaluate, reuse, and cite code hosted in public repositories?</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What challenges do scholars encounter when using Git hosting platforms for academic collaboration, and what features or improvements would better support their needs?</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How can libraries and other scholarly support services help researchers make their code, data, and other research outputs citable, stable, accessible, and suitable for long-term preservation?</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Research Design and Methods</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>The behavioral study uses a three-part, mixed-methods empirical approach consisting of focus groups, a survey, and semi-structured interviews. These methods provide complementary perspectives on scholarly users’ experiences, practices, preferences, and needs.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Focus groups gather perspectives on Git adoption, research collaboration, common challenges, and opportunities for improving scholarly workflows. The survey collects information about users’ backgrounds, experience levels, platform use, feature adoption, and research practices. Semi-structured interviews provide a more detailed examination of individual experiences through open-ended questions and task-based scenarios. Together, these methods support an understanding of both broader usage patterns and the reasoning behind specific user behaviors.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>During interviews, participants discuss their research processes and demonstrate how they approach representative Git and Git hosting platform tasks. Scenarios include editing multiple files, comparing versions of a document, synchronizing local and remote repositories, resolving conflicts, forking repositories, and collaborating with other researchers. Additional tasks explore how participants communicate feedback about code, submit or respond to issues, search for reusable code, obtain citations for repositories, and arrange for persistent identifiers and long-term preservation of research materials. Participants are also asked how they learned each task, where they seek instructions, and how they would teach the same practices to others.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data and Scope</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>The project data include, but are not limited to, information about participant experiences and practices, user profiles, levels of Git experience, frequency of feature use, collaboration patterns, learning strategies, and perceptions of platform functionality. Data generated through the study’s research methods provide insight into how scholars engage with version control and Git hosting platforms across different stages of adoption.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>The interview component also captures participants’ approaches to specific tasks, their decision-making processes, the resources they consult, and the difficulties they encounter. These observations help distinguish between knowing that a feature exists and being able to use it effectively in a research context. The study further considers participants’ preferences for collaboration, peer feedback, code reuse, citation, and repository preservation.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Significance and Expected Outcomes</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>The findings aim to inform how libraries, research support professionals, and platform developers can better meet the needs of scholars using Git and Git hosting platforms. By identifying common practices, barriers to adoption, and gaps in existing learning resources, the study can help shape instruction, training, and support services for researchers at different experience levels.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Ultimately, the behavioral study contributes to IASGE’s broader goal of understanding how scholarly materials hosted on Git platforms can transition from active, collaborative development to stable, permanently citable research outputs supported by professional preservation practices. The project provides an empirical basis for improving the discoverability, usability, citation, and long-term accessibility of scholarship created and shared through Git-based research workflows.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
-<p><img src="images/project-memo.png" class="img-fluid" width="487"></p>
+<p><img src="images/project-memo.png" class="img-fluid" alt="Screenshot of the project memo window" width="487"></p>
 </section>
 <section id="bringing-in-the-data-manage-files" class="level2">
 <h2 class="anchored" data-anchor-id="bringing-in-the-data-manage-files">Bringing in the Data: Manage Files</h2>
@@ -459,12 +505,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Click the first icon (the document with a plus sign). A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.</p>
-<p><img src="images/add-files.png" class="img-fluid" width="250"></p>
-<p><img src="images/selecting-files.png" class="img-fluid"></p>
+<p>Click the first icon (the document with a plus sign) to import files. A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.</p>
+<p><img src="images/add-files.png" class="img-fluid" alt="Tool buttons on the Manage Files tab" width="250"></p>
+<p><img src="images/selecting-files.png" class="img-fluid" alt="Screenshot select files to be added to the project"></p>
 <p><br>
 The files should be displayed in our window, and double-clicking a file should open and display its contents.</p>
-<p><img src="images/file-displays.png" class="img-fluid"></p>
+<p><img src="images/file-displays.png" class="img-fluid" alt="Screenshot showing the imported files and a window with the contents of one of them"></p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -475,16 +521,15 @@ Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<blockquote class="blockquote">
 <p><strong>QualCoder should not be used for editing, de-identifying, or pseudonymizing raw data.</strong> Best practice dictates importing only final, analysis-ready transcripts and notes into the platform for coding.</p>
-</blockquote>
 </div>
 </div>
-<p>The <code>memo</code> field can be used to record any notes or annotations relevant to the file. For example, it may document the duration of an interview, its location or setting, the mode of data collection (e.g., in-person, telephone, or online), or its relationship to other files or data sources. More generally, the memo can capture contextual information, methodological notes, or other details that help document the file and support subsequent analysis. We won’t be using file memos in this workshop, but you may find them useful in your own projects for documenting additional information about your data and keeping track of details that may be relevant during analysis.</p>
+<p>The <code>memo</code> field can be used to record any notes or annotations relevant to the file. For example, it may document the duration of an interview, its location or setting, the mode of data collection (e.g., in-person, telephone, or online), or its relationship to other files or data sources.</p>
+<p>More generally, the memo can capture contextual information, methodological notes, or other details that help document the file and support subsequent analysis. We won’t be using file memos in this workshop, but you may find them useful in your own projects for documenting additional information about your data and keeping track of details that may be relevant during analysis.</p>
 <p>Note that that the time and date stamp reflect the import, not the file creation. IDs are sequentially assigned. But what are <code>cases</code> for?</p>
 <section id="cases" class="level3">
 <h3 class="anchored" data-anchor-id="cases">Cases</h3>
-<p><strong><code>Cases</code></strong> allow you to group data around a person, place, organization, or situation. In QualCoder, a case provides a way to bring together files and descriptive information associated with the same entity, making it easier to organize and compare data during analysis. You can also assign attributes to cases, such as a participant’s age group, gender, occupation, or other characteristics relevant to your research.</p>
+<p><strong><code>Cases</code></strong> allow you to group data around a person, place, organization, or situation. In QualCoder, a case provides a way to bring together files and descriptive information associated with the same entity, making it easier to organize and compare data during analysis. You can also assign <strong><code>attributes</code></strong> to cases, such as a participant’s age group, gender, occupation, or other characteristics relevant to your research.</p>
 <p><em>Do you need cases?</em> Not always! If each participant has only one interview file, you can assign attributes directly to the file, without creating a separate case for each participant.</p>
 <p>Cases become more useful when your data are more complex. For example, if you interview the same participant several times, you can use a single case to group their interview files and associate them with the same participant attributes. This allows you to examine what the participant said across different interviews without treating each interview as a separate person.</p>
 <p>Cases can also be useful when a single file contains data from multiple participants, as in a focus group transcript. You can create a separate case for each participant and associate relevant segments of the transcript with the appropriate cases. This helps you distinguish participants’ contributions and compare their perspectives, even though their statements appear in the same file. Understanding how they work will be helpful as you begin working with larger or more complex datasets in your own projects.</p>
@@ -511,14 +556,14 @@ Caution
 </div>
 </div>
 <p>Attributes can be added manually in the Manage Attributes, Manage Files, Manage Cases or Manage Journals sections by clicking on the (x) button, shown below.</p>
-<p><img src="images/attributes-manual.png" class="img-fluid" width="483"></p>
-<p>However, there is an easier way to import them from a survey. QualCoder allows researchers to import csv or xls files with the description of cases and their associated attributes, and we have prepared it for you.</p>
-<p>Select <strong>Manage &gt; Import Survey</strong>, then choose the `cases-attributes.xls` file from the workshop folder.</p>
-<p><img src="images/attributes-case-import.png" class="img-fluid"></p>
+<p><img src="images/attributes-manual.png" class="img-fluid" alt="Screenshot showing the Manage Attributes window while adding an attribute" width="483"></p>
+<p>However, there is an easier way to import them from a survey. QualCoder allows researchers to import csv or xlsx files with the description of cases and their associated attributes, and we have prepared it for you.</p>
+<p>Select <strong>Manage Files &gt; Import Survey</strong>, then choose the <code>cases-attributes.xlsx</code> file from the workshop folder.</p>
+<p><img src="images/attributes-case-import.png" class="img-fluid" alt="Screenshot of the Survey Import options"></p>
 <p>If everything looks good, click OK. Now, let’s go to <strong>Manage &gt; Cases</strong>. Note that the column files shows 0. Why? Because we have yet to link files to cases. Double-click the 0 value to prompt the case file manager window.</p>
-<p><img src="images/case-file-manager.png" class="img-fluid"></p>
+<p><img src="images/case-file-manager.png" class="img-fluid" alt="Screenshot of the Case file manager to link cases with files"></p>
 <p>Now, we will assign files to cases. Select the corresponding file to match case numbers. We can assign by clicking on the file and choosing “Add selected files to case”.</p>
-<p><img src="images/matching-cases-files-1.png" class="img-fluid"></p>
+<p><img src="images/matching-cases-files-1.png" class="img-fluid" alt="Screenshot showing a successful link between a case and a file"></p>
 <p>Before confirming, please note that the file assignment now displays “YES.” You can also undo assignments or bulk-assign multiple documents within a selected range, though that won’t be relevant in this case. You might also click “Hide Assigned Files” to reduce the list and avoid confusion.</p>
 <p><img src="images/matching-cases-files-2.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">

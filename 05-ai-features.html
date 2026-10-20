@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-51adc06de5936cb6fd83ab3bfd4897ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-061d730147e8f308330e8135107763b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -267,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-episodes">    
         <li>
     <a class="dropdown-item" href="./00-introduction.html">
- <span class="dropdown-text">Inroduction to Qualitative Data Analysis</span></a>
+ <span class="dropdown-text">Introduction to Qualitative Data Analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./01-meet-qualcoder.html">
@@ -389,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li>In the top menu, navigate to <code>AI &gt; Settings</code>).</li>
 <li>Enable “AI integration” and select a model. Options include commercial models (such as OpenAI, Anthropic, Google, and Mistral) requiring an API key, free services for researchers like Blablador, multi-model gateways like OpenRouter, local models via Ollama (which process data locally on your machine), or institutionally hosted services such as UCSB’s AI Commons.</li>
-<li>For this demonstration, we will use UCSB’s <a href="https://app.aicommons.ucsb.edu/">AI Commons</a>. You can generate an API by visiting <a href="https://app.aicommons.ucsb.edu/account/api-keys">https://app.aicommons.ucsb.edu/account/api-keys</a>.
+<li>For this demonstration, we will use UCSB’s <a href="https://app.aicommons.ucsb.edu/">AI Commons</a>. You can generate an API by visiting <a href="https://app.aicommons.ucsb.edu/account/api-keys" class="uri">https://app.aicommons.ucsb.edu/account/api-keys</a>.
 <ol type="1">
 <li>Note both the Base URL and the generated API key, as QualCoder requires both parameters.</li>
 <li>In QualCoder, select <code>"Advanced AI Options..."</code>, then <code>"New AI Profile..."</code>. Enter a profile name of your choice (e.g.&nbsp;<code>"ai-commons"</code>).</li>
@@ -455,12 +455,7 @@ Tip
 <p>This process provides <em>assisted</em> rather than <em>automated</em> coding. QualCoder presents recommended excerpts alongside the model’s rationale, leaving final coding decisions to you (unlike the automated, keyword-based <a href="https://qualcoder.org/doc/en/4.1.-Coding-Text/#auto-code">auto-code</a> tool).</p>
 <p>To start, select a code (or enter a topic), select an analytic prompt, and optionally filter by document, case, or attribute. QualCoder searches its local memory before querying the language model to rank and explain match results.</p>
 <p>In the text coding workspace, click <code>&lt;Start AI Search&gt;</code>, as shown below:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-start.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Screenshot of the Text Coding Workspace, with the “Start AI Search” button highligted in red</figcaption>
-</figure>
-</div>
+<p><img src="images/ai-start.jpeg" class="img-fluid">{fig-alt=“Screenshot of the Text Coding Workspace, with the”Start AI Search” button highligted in red”}</p>
 <p>Next, specify: 1) The target code to search for 2) Optional data filters (file, case, or attribute) 3) The desired analytic prompt</p>
 <p>QualCoder includes three default analytic (system) prompts, which you can modify or create new ones:</p>
 <ul>
@@ -468,14 +463,10 @@ Tip
 <li>Focused search: Best suited for well-defined topics; returns fewer, highly precise results.</li>
 <li>Open search: Identifies a broader range of potentially relevant material, which may yield more unrelated results.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-coding-menu.jpg" class="img-fluid figure-img"></p>
-<figcaption>Screenshot of the AI-assited coding menu, selecting the communcation code, no data filters, and the “open search” analytic prompt</figcaption>
-</figure>
-</div>
+<p><img src="images/ai-coding-menu.jpg" class="img-fluid">{fig-alt=“Screenshot of the AI-assited coding menu, selecting the communcation code, no data filters, and the”open search” analytic prompt”}</p>
 <p>QualCoder will start looking for relevant passages and send them to the AI to decide if they are indeed appropriate for the code or not. Results populate in the left panel. Selecting an item allows you to review the passage and confirm the code assignment. A prompt will ask whether you wish to attach the AI’s explanation as a memo.</p>
-<p><img src="images/ai-coding-result.jpeg" class="img-fluid" alt="Screenshot of the AI-assited coding results, with a passage coded following the AI suggestion, and showing a memo included"> Results are sorted by relevance. To expand the search, click <code>&gt;&gt; Find more...</code> at the bottom of the list.</p>
+<p><img src="images/ai-coding-result.jpeg" class="img-fluid" alt="Screenshot of the AI-assited coding results, with a passage coded following the AI suggestion, and showing a memo included"></p>
+<p>Results are sorted by relevance. To expand the search, click <code>&gt;&gt; Find more...</code> at the bottom of the list.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

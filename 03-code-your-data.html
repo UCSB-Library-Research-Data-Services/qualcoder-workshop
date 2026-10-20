@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-51adc06de5936cb6fd83ab3bfd4897ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-061d730147e8f308330e8135107763b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -267,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-episodes">    
         <li>
     <a class="dropdown-item" href="./00-introduction.html">
- <span class="dropdown-text">Inroduction to Qualitative Data Analysis</span></a>
+ <span class="dropdown-text">Introduction to Qualitative Data Analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./01-meet-qualcoder.html">
@@ -415,41 +415,42 @@ ul.task-list li input[type="checkbox"] {
 <section id="codebook" class="level2">
 <h2 class="anchored" data-anchor-id="codebook">Codebook</h2>
 <p>As we start assigning codes to excerpts we start developing what it is called a codebook. In qualitative research, a codebook is the shared framework that turns raw text into analyzable data. Each entry typically names a code, gives a concise definition (memo), and sets inclusion and exclusion criteria for when the code applies and when it doesn’t.</p>
-<p>Similarly to codes, codebooks can be built deductively from theory or prior literature, inductively from patterns that emerge during close reading, or through a mix of both. Often it changes over several rounds as the team refines, merges, splits, or retires codes. That evolution is itself part of the analytic record, so keeping versions and logging changes helps document how interpretations developed. When several researchers code the same material, the codebook keeps them aligned. It makes intercoder agreement possible to assess, and it gives the team a concrete reference for talking through disagreements instead of relying on each person’s intuition.</p>
+<p>Similarly to codes, codebooks can be built deductively from theory or prior literature, inductively from patterns that emerge during close reading, or through a mix of both. Often it changes over several rounds as the team refines, merges, splits, or retires codes. That evolution is itself part of the analytic record, so keeping versions and logging changes helps document how interpretations developed.</p>
+<p>When several researchers code the same material, the codebook keeps them aligned. It makes inter-coder agreement possible to assess, and it gives the team a concrete reference for talking through disagreements instead of relying on each person’s intuition.</p>
 <p>Beyond the life of a single project, a well-documented codebook makes qualitative work more transparent and credible. Readers and reviewers can see how claims were grounded in the data, and other researchers can understand, critique, or adapt the analytic approach. It also makes archived qualitative data far more usable for secondary analysis, since the meaning behind each code stays clear long after the original team has moved on.</p>
 </section>
 <section id="importing-a-codebook" class="level2">
 <h2 class="anchored" data-anchor-id="importing-a-codebook">Importing a Codebook</h2>
 <p>To get started, we’ve prepared a sample codebook. Starting from a set of predefined codes is typical of a <strong>deductive</strong> approach. Later, we’ll also try an <strong>inductive</strong> approach, where we create new codes for themes that come up as we read the transcripts.</p>
-<p>You can export a codebook from QualCoder and share it as a <code>.qdc</code> file, which we’ll do near the end of the workshop. If you’re starting a project from scratch, you can also import a list of codes from a plain-text file, and each code can include a description (memo).</p>
+<p>You can export a codebook from QualCoder and share it as a <code>.qdc</code> file. If you’re starting a project from scratch, you can also import a list of codes from a plain-text file, and each code can include a description (memo).</p>
 <p>In the project example folder, find the file <code>Steeves_Interview_Codebook.csv</code> and open it in a text editor or spreadsheet program. Here’s how it’s structured:</p>
-<p><img src="images/codebook-structure.png" class="img-fluid" width="731"></p>
-<p>The first column contains the code names, and the second contains each code’s description, which QualCoder imports as the code’s memo. Notice the double angle brackets (<code>&gt;&gt;</code>) in some code names. They show how a code relates to a higher-level category. For example, <code>emotion&gt;&gt;confused</code> means the code <em>confused</em> belongs under the category <em>emotion</em>.</p>
+<p><img src="images/codebook-structure.png" class="img-fluid" alt="Screenshot of the codebook used in this exercise, both containing the codes and a memo for each" width="731"></p>
+<p>The first column contains the code names, and the second contains each code’s description, which QualCoder imports as the code’s memo. Notice the double angle brackets (<code>&gt;&gt;</code>) in some code names. They show how a code that relates to a higher-level category. For example, <code>emotion&gt;&gt;confused</code> means the code <em>confused</em> belongs under the category <em>emotion</em>.</p>
 <p>Alright, let’s now import the codebook by following <strong>Project &gt; Import &gt; Import plain text codes list</strong>.</p>
-<p><img src="images/importing-codebook.png" class="img-fluid" width="676"></p>
+<p><img src="images/importing-codebook.png" class="img-fluid" alt="Screenshot of the Project menu to import a plain text code list" width="676"></p>
 <p>Great! You should now see your list of codes in the lower-right panel. Each code has been given a color automatically. You can change these colors under <strong>Code &gt; Color Scheme</strong>. Colors give you quick visual cues, and giving related codes similar shades makes them easier to spot together. For now, we’ll leave the default colors as they are.</p>
-<p><img src="images/imported-codebook.png" class="img-fluid" width="736"></p>
-<p>Clicking <strong>Memo</strong> opens a separate window with the code’s description, or definition. Expect to revise these descriptions as your analysis develops. As you code more transcripts, you’ll find edge cases and clarify where one code ends and another begins.</p>
+<p><img src="images/imported-codebook.png" class="img-fluid" alt="Screenshot of the code text workspace, with the files at the top-left and the imported codes at the bottom-left" width="736"></p>
+<p>Clicking <strong>Memo</strong> opens a separate window with the code’s description. Expect to revise these descriptions as your analysis develops. As you code more transcripts, you’ll find edge cases and clarify where one code ends and another begins.</p>
 </section>
 <section id="building-organizing-the-code-tree" class="level2">
 <h2 class="anchored" data-anchor-id="building-organizing-the-code-tree">Building &amp; Organizing the Code Tree</h2>
-<p>Codebooks are represented hierarchically as a tree: categories act like folders, codes sit inside them, and can also have sub-codes. A code can belong to only one category. If an idea fits two places, we recommend creating two similarly named codes.</p>
+<p>Codebooks are represented hierarchically as a tree: categories act like folders, codes sit inside them, and can also have sub-codes. A code can belong to only one category. If an idea fits in two places, we recommend creating two similarly named codes.</p>
 <p>While we will stick to this structure for this workshop, you can rearrange things, through right-clicking for options to move, merge, delete, sort and more.</p>
-<p><img src="images/codetree-edits.png" class="img-fluid" width="465"></p>
+<p><img src="images/codetree-edits.png" class="img-fluid" alt="Screenshot of options for editing the code tree" width="465"></p>
 <p>For a bigger clean-up, open the <strong>Code Organizer</strong> under <strong>Coding</strong>. It shows your codes and categories as a diagram you can restructure: move, merge, rename and remove codes and categories, add new categories, and export the view as a PNG.</p>
 <p>With files and our code tree in place, let’s get started with practicing some coding.</p>
 </section>
 <section id="coding-text-step-by-step" class="level2">
 <h2 class="anchored" data-anchor-id="coding-text-step-by-step">Coding text step by step</h2>
 <p>Open <strong>Coding &gt; Code text</strong>. The code tree sits on the left, your document in the center, and the file list nearby.</p>
-<p>We will start by examining File 02. Since we won’t have time to examinethe entire file, let’s scroll down and jumpt to line 120. Great! We can now see the excerpt where the interviewer asks, “VS: So can you just narrate what you’re doing there?”</p>
+<p>We will start by examining File 02. Since we won’t have time to examine the entire file, let’s scroll down to line 120. Great! We can now see the excerpt where the interviewer asks, “VS: So can you just narrate what you’re doing there?”</p>
 <p>Although we don’t need to read every detail, we can see that the interviewee is describing a process while expressing uncertainty, frustration, and confusion.</p>
 <p>Select the paragraph at line 122. Our codebook already includes the code <strong>Emotion &gt; Confused</strong>, so we can apply it to this excerpt by clicking the code. The selected passage takes on the code’s color, and a number appears next to the code showing how many times it has been applied. That count also adds to the total for its parent category, <strong>Emotion</strong>. The parent’s number is the total for all of its sub-codes. This lets you see how often a broad theme comes up, as well as each specific variation of it.</p>
-<p><img src="images/assign-code-01.png" class="img-fluid"></p>
+<p><img src="images/assign-code-01.png" class="img-fluid" alt="Screenshot of the code text workspace with a passage of text coded"></p>
 <p>If you select a text segment by mistake or need to undo the coding, you can right-click the selection and select Unmark (U). Shortcuts after highlighting: <strong>Q</strong> reuses your most recent code, <strong>R</strong> lists recent codes, and <strong>V</strong> makes an <em>in vivo</em> code from the selected words.</p>
-<p>Before you start, look at the code list. The number next to <strong>confused</strong> is gone, but <strong>emotion</strong> still shows <strong>1</strong>. The code list only shows counts for the file that’s currently open, so <strong>confused</strong> has no count in file 07. <strong>Emotion</strong> still shows <strong>1</strong> because the code you applied in the previous file still counts toward it.</p>
+<p>Let’s move to File 07. Before we start, look at the code list. The number next to <strong>confused</strong> is gone, but <strong>emotion</strong> still shows <strong>1</strong>. The code list only shows counts for the file that’s currently open, so <strong>confused</strong> has no count in file 07. <strong>Emotion</strong> still shows <strong>1</strong> because the code you applied in the previous file still counts toward it.</p>
 <p>Your work hasn’t been lost. Everything you coded in the previous file is saved. In a later episode, we’ll look at reports that show code counts across all files.</p>
-<p>Going back to <strong>file 07</strong> let’s look for <strong>line 71,</strong> where the interviewee starts describing their approach to editing multiple files in the repository. Skim through the passage, for this exercise we will consider it expresses confidence in the workflow, and code it as <strong>determined</strong>.</p>
+<p>Going back to File 07, let’s look for line 71, where the interviewee starts describing their approach to editing multiple files in the repository. Skim through the passage, for this exercise we will consider it expresses confidence in the workflow, and code it as <strong>determined</strong>.</p>
 <section id="coding-with-search-assistance" class="level3">
 <h3 class="anchored" data-anchor-id="coding-with-search-assistance">Coding with Search Assistance</h3>
 <p>See the question mark on the left-hand side of the top bar? That allows us to search for words across files, and can be useful to identify relevant terms before we apply codes. Let’s look for GUI, which stands for Graphic User Interface, and apply the GUI code the excerpts with the first 5 results (in order of appearance). Select “Aa” to make the search case sensitive, and navigate matches across files using the arrows.</p>
@@ -479,12 +480,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="add-your-reasoning" class="level3">
 <h3 class="anchored" data-anchor-id="add-your-reasoning">Add your Reasoning</h3>
 <p>Codes show <em>what</em> you noticed. Memos and annotations record <em>why</em>. Writing down your reasoning as you go makes your analysis easier to explain, review and share with others.</p>
-<p>Besides code memos, QualCoder lets you add notes to the text itself:</p>
+<p>Besides project and code memos, QualCoder lets you add notes to the text itself:</p>
 <ul>
 <li><p><strong>Coded excerpt memo:</strong> A note attached to one coded excerpt. Use it to explain why you applied that code to that text, or to flag a borderline case. For example: <em>“Coded as Confused, but this could also be Overloaded. Revisit.”</em></p></li>
 <li><p><strong>Annotation:</strong> A note attached to a piece of text, whether or not it’s coded. Use it for first impressions, questions or links to other parts of the data. For example: <em>“Compare with the participant’s answer in file 03.”</em></p></li>
 </ul>
-<p>To add either one, right-click the text and choose the option from the menu.</p>
+<p>To add either one, right-click the text and choose the option from the pop-up menu.</p>
 <p>These notes become a record of how your thinking developed. They’re especially useful when you refine codes, merge or split them, or code with other people.</p>
 <ul>
 <li><strong>Memo</strong> a coded segment: hover over it and press <strong>M</strong>. Memoed text appears in italics.</li>
@@ -500,12 +501,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Auto-code sentences</strong> codes the whole sentence that contains a text fragment, not just the fragment. You can set what counts as the end of a sentence. The default is a period followed by a space.</p></li>
 <li><p><strong>Auto-code between start and end marks</strong> codes everything between a start text and an end text in the current file. It’s useful for structured transcripts, such as coding everything from one interview question to the next.</p></li>
 <li><p><strong>Regex</strong> is a checkbox that lets you use regular expressions for more flexible matching, such as wildcards and word variations.</p></li>
-<li><p><strong>First or last match only (version 3.8 and later)</strong> is a right-click option that codes only the first or last match in each file.</p></li>
+<li><p><strong>First or last match only</strong> is a right-click option that codes only the first or last match in each file.</p></li>
 <li><p><strong>Mark speakers</strong> codes each paragraph with the speaker’s name when transcripts label speakers as <code>[name]</code>, <code>{name}</code> or <code>name:</code>.</p></li>
 <li><p><strong>Undo</strong> reverses recent auto-coding, but only until you close the project.</p></li>
 </ul>
 <p>For the workshop, keep in mind that auto-coding matches words, not meaning. Searching for “confused” won’t catch “I had no idea what was going on,” and it will catch “I wasn’t confused at all.” Treat auto-coding as a first pass, and review every coded passage before you rely on it.</p>
-<p>Buttons at the top right can code every exact match of a word (case-sensitive; separate options with <code>|</code>, e.g.&nbsp;<code>exam|exams</code>), every sentence containing a fragment, or the section between two markers. <strong>Mark speakers</strong> creates a code for each speaker in a transcript.</p>
+<p>Buttons at the top right can code every exact match of a word (case-sensitive; separate options with <code>|</code>, e.g.&nbsp;<code>exam|exams</code>), every sentence containing a fragment, or the section between two markers.</p>
+<p><strong>Mark speakers</strong> creates a code for each speaker in a transcript.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

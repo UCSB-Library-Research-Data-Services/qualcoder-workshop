@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-51adc06de5936cb6fd83ab3bfd4897ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-061d730147e8f308330e8135107763b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -267,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-episodes">    
         <li>
     <a class="dropdown-item" href="./00-introduction.html">
- <span class="dropdown-text">Inroduction to Qualitative Data Analysis</span></a>
+ <span class="dropdown-text">Introduction to Qualitative Data Analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./01-meet-qualcoder.html">
@@ -390,7 +390,7 @@ ul.task-list li input[type="checkbox"] {
 <li>It aims to follow the <strong>REFI-QDA</strong> exchange standard, so projects can move to and from tools such as NVivo, ATLAS.ti and MAXQDA, with some limits.</li>
 <li>It is licensed under the LGPL v3. If you use it in coursework or research, cite it (the citation is on the QualCoder website).</li>
 </ul>
-<p>The simplest route is a ready-made installer from the <a href="https://github.com/ccbogel/QualCoder/releases">releases page</a>. Choose the one appropriate for your laptop.</p>
+<p>The simplest route to install the software is to follow the instructions on the <a href="./index.html#setup">setup page</a> . For updated instructions from QualCoder themselves, download the ready-made installer from the <a href="https://github.com/ccbogel/QualCoder/releases">releases page</a>. Choose the one appropriate for your laptop.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -427,35 +427,31 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>VLC</strong> media player is needed to code audio and video</li>
 <li><strong>ffmpeg</strong> lets QualCoder draw audio waveforms.</li>
 </ul>
-<p>Please note that Audio and video do not work on Fedora Linux.</p>
 </section>
 <section id="launching-qualcoder" class="level2">
 <h2 class="anchored" data-anchor-id="launching-qualcoder">Launching Qualcoder</h2>
 <p>After installation is completed, to open QualCoder:</p>
 <ul>
-<li><strong>macOS:</strong> Open <strong>QualCoder</strong> from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.</li>
+<li><p><strong>macOS:</strong> Open <strong>QualCoder</strong> from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.</p></li>
+<li><p><strong>Windows:</strong> Double-click the <strong>QualCoder</strong> shortcut on your desktop or search for <em>QualCoder</em> in the Start Menu.</p></li>
 </ul>
-<!-- -->
-<ul>
-<li><strong>Windows:</strong> Double-click the <strong>QualCoder</strong> shortcut on your desktop or search for <em>QualCoder</em> in the Start Menu.</li>
-</ul>
-<p><strong>Important:</strong> Windows users may see a shell/terminal window pop up, which upon closing will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.</p>
+<p><strong>Important:</strong> Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.</p>
 </section>
 <section id="basic-preferencessettings" class="level2">
 <h2 class="anchored" data-anchor-id="basic-preferencessettings">Basic Preferences/Settings</h2>
 <p>We’ll start by adjusting a few settings. Open the main menu and choose <strong>QualCoder &gt; Preferences</strong> (Mac) or <strong>Project &gt; Settings</strong> (Windows).</p>
-<p><img src="images/settings-preferences.png" class="img-fluid" alt="Settings and preferences"></p>
+<p><img src="images/settings-preferences.png" class="img-fluid" alt="Settings and preferences in QualCoder"></p>
 <p>Only a few settings matter for now:</p>
 <ol type="1">
 <li><p><strong>Coder name:</strong> Every code you apply is stamped with your coder name. Set your own name (or initials) before you start, using the <strong>Change</strong> button. This matters later if you compare coding with a collaborator. For this, choose <code>change</code> and <code>rename</code> the system default.</p>
-<p><img src="images/coder-name.png" class="img-fluid"></p></li>
+<p><img src="images/coder-name.png" class="img-fluid" alt="Window to change the name of the coder and add new coders in QualCoder"></p></li>
 <li><p><strong>Show IDs:</strong> It is a good practice to check this option so that you will see the unique ID for each file, code, cases and other project components.</p></li>
 <li><p><strong>Language:</strong> English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.</p></li>
 <li><p><strong>Font and display:</strong> Increase the font size if text is hard to read on a projector or small screen.</p></li>
-<li><p><strong>Backups”</strong> QualCoder can back up your project every hour and keep the most recent copies, named like <em>projectname_BKP_yyyymmdd_hh.qda</em>. Let’s leave this on!</p></li>
+<li><p><strong>Backups:</strong> QualCoder can back up your project every hour and keep the most recent copies, named like <em>projectname_BKP_yyyymmdd_hh.qda</em>. Let’s leave this on!</p></li>
 </ol>
 <p>Applying these changes, your settings and preferences should look like:</p>
-<p><img src="images/settings-preferences-modified.png" class="img-fluid"></p>
+<p><img src="images/settings-preferences-modified.png" class="img-fluid" alt="Screenshot showing the changed settings and preferences in QualCoder"></p>
 <p>As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don’t worry about these for now—we’ll explore them later in the workshop.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -467,8 +463,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><br>
-Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.</p>
+<p>Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -482,14 +477,17 @@ Enter your name or initials so QualCoder can identify who is coding the data. Th
 </div>
 <div class="callout-body-container callout-body">
 <p>If you already use QualCoder and want to start from a blank slate, you can clear the settings, recent projects and saved coder name left over from earlier work. Your existing projects won’t be affected. QualCoder keeps these preferences in a hidden folder called .qualcoder in your home directory. Your projects are stored separately as .qda folders, so resetting preferences doesn’t touch them.</p>
+<p>To reset your preferences:</p>
 <ol type="1">
 <li><p>Quit QualCoder</p></li>
-<li><p>Rename the preferences folder.</p></li>
+<li><p>Rename the preferences folder</p>
+<ul>
+<li><p>macOS / Linux (Terminal): <code>mv ~/.qualcoder ~/.qualcoder_backup</code></p></li>
+<li><p>Windows (PowerShell): <code>Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"</code></p></li>
+</ul></li>
+<li><p>Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.</p></li>
 </ol>
-<p>macOS / Linux (Terminal): <code>mv ~/.qualcoder ~/.qualcoder_backup</code></p>
-<p>Windows (PowerShell): <code>Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"</code></p>
-<p>Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.</p>
-<p>Tip: Renaming the folder instead of deleting it keeps a backup. To undo the reset, rename .qualcoder_backup back to .qualcoder. Coder names are saved inside each project’s .qda file, so a new project starts with no coders from earlier projects.</p>
+<p>Tip: Renaming the folder instead of deleting it keeps a backup. To undo the reset, rename <code>.qualcoder_backup</code> back to <code>.qualcoder</code>. Coder names are saved inside each project’s .qda file, so a new project starts with no coders from earlier projects.</p>
 </div>
 </div>
 
