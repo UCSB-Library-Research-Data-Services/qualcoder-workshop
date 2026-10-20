@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-061d730147e8f308330e8135107763b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-9f1b5b2e2fc6444b2c3658aa06371ddc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-51adc06de5936cb6fd83ab3bfd4897ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-b76c418e845be2ce7f8892b4d34c6887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -328,10 +328,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#code-retrieval" id="toc-code-retrieval" class="nav-link active" data-scroll-target="#code-retrieval">Code retrieval</a>
-  <ul class="collapse">
-  <li><a href="#other-analysis-options" id="toc-other-analysis-options" class="nav-link" data-scroll-target="#other-analysis-options">Other analysis options</a></li>
-  </ul></li>
+  <li><a href="#code-retrieval" id="toc-code-retrieval" class="nav-link active" data-scroll-target="#code-retrieval">Code retrieval</a></li>
   <li><a href="#code-co-occurence" id="toc-code-co-occurence" class="nav-link" data-scroll-target="#code-co-occurence">Code co-occurence</a></li>
   <li><a href="#charts" id="toc-charts" class="nav-link" data-scroll-target="#charts">Charts</a></li>
   <li><a href="#file-and-code-summaries" id="toc-file-and-code-summaries" class="nav-link" data-scroll-target="#file-and-code-summaries">File and code summaries</a></li>
@@ -372,53 +369,60 @@ ul.task-list li input[type="checkbox"] {
 <p>Beyond annotating your data, QualCoder provides powerful tools to analyze your results and make reports and graphs. If you want to report an issue in QualCoder or request an additional feature, please open a <code>New issue</code> on the <a href="https://github.com/ccbogel/QualCoder/issues">GitHub repository for the project</a>.</p>
 <p>We’ll dive into five of the most frequently used tools, but bear in mind, there is much more to explore:</p>
 <ul>
-<li>Code retrieval: Show all coded passages, of a subset of them based on the chosen filters.</li>
-<li>Code co-occurrence: Code matrix counting the number of times two codes have been used in the same text.</li>
-<li>Charts: Insightful graphs based on your data, like word clouds, bar charts counting code frequency or pie charts showing their relative frequency, code heatmaps by file or case.</li>
-<li>File and code summaries: For a given file or code, show how many characters were coded and what are the most frequent words in the data, optionally removing common words.</li>
-<li>Database queries: advanced users can run SQL queries on the project database. Back up first, as queries can change data.</li>
+<li><strong>Code retrieval:</strong> Show all coded passages, of a subset of them based on the chosen filters.</li>
+<li><strong>Code co-occurrence:</strong> Code matrix counting the number of times two codes have been used in the same text.</li>
+<li><strong>Charts:</strong> Insightful graphs based on your data, like word clouds, bar charts counting code frequency or pie charts showing their relative frequency, code heatmaps by file or case.</li>
+<li><strong>File and code summaries:</strong> For a given file or code, show how many characters were coded and what are the most frequent words in the data, optionally removing common words.</li>
+<li><strong>Database queries:</strong> advanced users can run SQL queries on the project database. Back up first, as queries can change data.</li>
 </ul>
-<p>Other tools: - Code comparison, in case you have multiple coders and are making inter-coder reliability analysis. - Code text exact matches, to see if identical excerpts have been given different codes. - Code frequencies, by coder. - Journals, a place in your project to keep note of your ideas .</p>
+<p>Other tools:</p>
+<ul>
+<li>Code comparison, in case you have multiple coders and are making inter-coder reliability analysis.</li>
+<li>Code frequencies, by coder.</li>
+<li>Code text exact matches, to see if identical excerpts have been given different codes.</li>
+<li>Journals, a place in your project to keep note of your ideas.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Before we start: Merging coding
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 <section id="code-retrieval" class="level2">
 <h2 class="anchored" data-anchor-id="code-retrieval">Code retrieval</h2>
-<p>The Analysis menu turns your coding into evidence. <strong>Code retrieval</strong> (sometimes called the coding report) is the main tool.</p>
+<p>To have all the coded excerpts in one place to analyze your data as a whole, the best place to start is the Code retrieval (sometimes called the coding report) tool, which you can access in the top menu <strong>Analysis &gt; Code retrieval</strong>.</p>
+<p><img src="images/code-retrieval.jpeg" class="img-fluid" alt="Screenshot of the code retrieval window"></p>
+<p>Once you are there, the usual workflow is:</p>
 <ol type="1">
 <li>Choose one or more codes or categories.</li>
-<li>Optionally narrow by file, case or attribute, e.g.&nbsp;only second-year students.</li>
-<li>Optionally search within results or show only segments marked Important.</li>
-<li>Read the matching passages together, then export them as TXT, CSV, XLSX, ODT or HTML.</li>
+<li>Select one or more files. If you want to return all coded excerpts for the given code(s), select all the files.</li>
+<li>Optionally narrow by case, attribute (e.g.&nbsp;only second-year students), or coder.</li>
+<li>Click the <code>Play</code> button (as highlighted in red in the next screenshot) to show the results on the right pane.</li>
 </ol>
-<p>A <strong>matrix view</strong> places codes against files or cases, so you can see who talked about what.</p>
-<section id="other-analysis-options" class="level3">
-<h3 class="anchored" data-anchor-id="other-analysis-options">Other analysis options</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Option</th>
-<th>Question it answers</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Code co-occurrence</td>
-<td>Which codes tend to appear on the same passages?</td>
-</tr>
-<tr class="even">
-<td>Code relations</td>
-<td>How do two codes sit in the text: overlapping, one inside another, close by, or exactly the same? (Text only)</td>
-</tr>
-<tr class="odd">
-<td>Codes by text segments</td>
-<td>Which codes does each segment carry?</td>
-</tr>
-<tr class="even">
-<td>Graph</td>
-<td>How do codes and categories connect visually? (See <a href="#visualising-codes-with-the-graph-tool">below</a>.)</td>
-</tr>
-</tbody>
-</table>
-<p>When you export an HTML report that includes images or media, keep the report’s companion folder with it.</p>
-</section>
+<p><img src="images/run-code-retrieval.jpeg" class="img-fluid" alt="Screenshot of the code retrieval window, selecting all files, the bestpractice code, and highlighting the play button that shows the results"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip: Selecting multiple files, codes or cases
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Whenever you want to select multiple files, codes or cases, the fastest way is to use the <code>Shift</code> key. For example, if you want to select all the files, you would: 1) Select the first file, File 001, 2) Press and hold the <code>Shift</code> key, 3) Select the last file, File 010, 4) Release the <code>Shift</code> key.</p>
+<p>To select multiple files one by one, press and hold the <code>Ctrl</code> or <code>Cmd</code> key while selecting the files.</p>
+</div>
+</div>
+<p>You can analyze your data directly on this screen, scrolling up and down on the right pane. You can also export the results to HTML, TXT, CSV, XLSX, or ODT to read them in a different software.</p>
+<p>Another option is use the <strong>matrix view</strong>, to place codes (or categories) against files or cases, so you can see who talked about what. This tool is located at the right of the <code>Play</code> button we used to show the results. You can export the resulting matrix to XLSX.</p>
 </section>
 <section id="code-co-occurence" class="level2">
 <h2 class="anchored" data-anchor-id="code-co-occurence">Code co-occurence</h2>
