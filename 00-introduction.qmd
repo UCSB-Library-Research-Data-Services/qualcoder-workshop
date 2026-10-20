@@ -1,5 +1,5 @@
 ---
-title: "Inroduction to Qualitative Data Analysis"
+title: "Introduction to Qualitative Data Analysis"
 ---
 
 ## Qualitative Data Analysis {#introduction-warm-up}
@@ -18,9 +18,7 @@ This process involves identifying specific labels applied to small pieces of dat
 
 Data can be arranged and coded following two types of approaches: a more inductive (bottom-up) approach, where insights and themes emerge more organically and directly from the data without prior assumptions, or a deductive (top-down) approach, where researchers apply preexisting theoretical frameworks or concepts to the data. The approaches can also be combined as researchers engage with and learn more details from the data.
 
-![](images/inductive-deductive-coding.jpg){width="567"}
-
-Adapted from: https://delvetool.com/blog/deductiveinductive
+![Adapted from: https://delvetool.com/blog/deductiveinductive](images/inductive-deductive-coding.jpg){width="567" fig-alt="Diagram comparing Inductive (bottom-up) and Deductive (top-down) qualitative coding processes, separated by two central up/down arrows."}
 
 The top-down approach begins with a specific theoretical framework or research question. Data collection and analysis are guided by preconceived hypotheses, focusing on confirming or refuting these hypotheses. While it provides more direction to the research process, it may limit alternative perspectives or emergent themes not accounted for in the initial framework. In contrast, the bottom-up approach is exploratory and highly flexible as there are no predetermined categories or hypotheses; it has its basis in grounded theory, meaning that themes emerge directly from the data through open coding and analysis, allowing a wide range of topics and potential unexpected insights to be extracted from the data.
 
