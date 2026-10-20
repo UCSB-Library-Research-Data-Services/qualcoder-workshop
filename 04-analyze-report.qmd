@@ -6,44 +6,57 @@ Beyond annotating your data, QualCoder provides powerful tools to analyze your r
 
 We'll dive into five of the most frequently used tools, but bear in mind, there is much more to explore:
 
-- Code retrieval: Show all coded passages, of a subset of them based on the chosen filters.
-- Code co-occurrence: Code matrix counting the number of times two codes have been used in the same text.
-- Charts: Insightful graphs based on your data, like word clouds, bar charts counting code frequency or pie charts showing their relative frequency, code heatmaps by file or case.
-- File and code summaries: For a given file or code, show how many characters were coded and what are the most frequent words in the data, optionally removing common words.
-- Database queries: advanced users can run SQL queries on the project database. Back up first, as queries can change data.
+- **Code retrieval:** Show all coded passages, of a subset of them based on the chosen filters.
+- **Code co-occurrence:** Code matrix counting the number of times two codes have been used in the same text.
+- **Charts:** Insightful graphs based on your data, like word clouds, bar charts counting code frequency or pie charts showing their relative frequency, code heatmaps by file or case.
+- **File and code summaries:** For a given file or code, show how many characters were coded and what are the most frequent words in the data, optionally removing common words.
+- **Database queries:** advanced users can run SQL queries on the project database. Back up first, as queries can change data.
 
 Other tools:
-- Code comparison, in case you have multiple coders and are making inter-coder reliability analysis.
-- Code text exact matches, to see if identical excerpts have been given different codes.
-- Code frequencies, by coder.
-- Journals, a place in your project to keep note of your ideas .
 
+- Code comparison, in case you have multiple coders and are making inter-coder reliability analysis.
+- Code frequencies, by coder.
+- Code text exact matches, to see if identical excerpts have been given different codes.
+- Journals, a place in your project to keep note of your ideas.
+
+::: {.callout-note}
+
+## Before we start: Merging coding
+
+:::
 
 ## Code retrieval
 
-The Analysis menu turns your coding into evidence. **Code retrieval** (sometimes called the coding report) is the main tool.
+To have all the coded excerpts in one place to analyze your data as a whole, the best place to start is the Code retrieval (sometimes called the coding report) tool, which you can access in the top menu **Analysis > Code retrieval**.
 
-1.  Choose one or more codes or categories.
-2.  Optionally narrow by file, case or attribute, e.g. only second-year students.
-3.  Optionally search within results or show only segments marked Important.
-4.  Read the matching passages together, then export them as TXT, CSV, XLSX, ODT or HTML.
+![](images/code-retrieval.jpeg){fig-alt="Screenshot of the code retrieval window"}
 
-A **matrix view** places codes against files or cases, so you can see who talked about what.
+Once you are there, the usual workflow is:
 
-### Other analysis options
+1. Choose one or more codes or categories.
+2. Select one or more files. If you want to return all coded excerpts for the given code(s), select all the files.
+3. Optionally narrow by case, attribute (e.g. only second-year students), or coder.
+4. Click the `Play` button (as highlighted in red in the next screenshot) to show the results on the right pane.
 
-| Option | Question it answers |
-|------------------------------------|------------------------------------|
-| Code co-occurrence | Which codes tend to appear on the same passages? |
-| Code relations | How do two codes sit in the text: overlapping, one inside another, close by, or exactly the same? (Text only) |
-| Codes by text segments | Which codes does each segment carry? |
-| Graph | How do codes and categories connect visually? (See [below](#visualising-codes-with-the-graph-tool).) |
+![](images/run-code-retrieval.jpeg){fig-alt="Screenshot of the code retrieval window, selecting all files, the bestpractice code, and highlighting the play button that shows the results"}
 
-When you export an HTML report that includes images or media, keep the report's companion folder with it.
+::: callout-tip
+
+## Tip: Selecting multiple files, codes or cases
+
+Whenever you want to select multiple files, codes or cases, the fastest way is to use the `Shift` key.
+For example, if you want to select all the files, you would: 1) Select the first file, File 001, 2) Press and hold the `Shift` key, 3) Select the last file, File 010, 4) Release the `Shift` key.
+
+To select multiple files one by one, press and hold the `Ctrl` or `Cmd` key while selecting the files.
+:::
+
+You can analyze your data directly on this screen, scrolling up and down on the right pane.
+You can also export the results to HTML, TXT, CSV, XLSX, or ODT to read them in a different software.
+
+Another option is use the **matrix view**, to place codes (or categories) against files or cases, so you can see who talked about what. This tool is located at the right of the `Play` button we used to show the results. You can export the resulting matrix to XLSX.
+
 
 ## Code co-occurence
-
-
 
 ## Charts
 
@@ -86,19 +99,6 @@ Journals are free-form notes for recording ideas, decisions and emerging themes 
 - Search journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.
 
 **Memo vs journal:** a memo belongs to one code, file or passage; a journal entry is about the project as a whole.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ::: {.callout-tip icon="false"}
 ## Activity 4.1 –
