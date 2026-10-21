@@ -62,4 +62,6 @@ The original project, funded by the Alfred P. Sloan Foundation, is a mixed-metho
 
 [![](images/clipboard-3061620755.png){fig-alt="download icon" width="72" height="58"}](https://drive.google.com/drive/folders/1ySRkXnDSW_unpis24fuG-vqg3AfnPgY8?usp=drive_link)
 
-[Access and download files](https://drive.google.com/drive/folders/1ySRkXnDSW_unpis24fuG-vqg3AfnPgY8?usp=drive_link) for this workshop.
+[Access and download](#0) the `qualcoder-workshop-project` which should contain the following files:
+
+![](images/folder-structure.png){fig-alt="Folder structure containing workshop files." width="406"}
