@@ -228,21 +228,7 @@
     "href": "wrap-up.html",
     "title": "Wrap-up",
     "section": "",
-    "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyse: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI."
-  },
-  {
-    "objectID": "wrap-up.html#recap",
-    "href": "wrap-up.html#recap",
-    "title": "Wrap-up",
-    "section": "",
-    "text": "In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.\n\nSet up: project, files, cases, attributes.\nCode: codes, categories, memos, important quotes.\nAnalyse: retrieve, filter by attributes, compare, visualise.\nReflect: journals, and critical thinking about AI."
-  },
-  {
-    "objectID": "wrap-up.html#exit-ticket",
-    "href": "wrap-up.html#exit-ticket",
-    "title": "Wrap-up",
-    "section": "Exit ticket",
-    "text": "Exit ticket\n\n\n\n\n\n\nTipExit ticket (placeholder) fixme\n\n\n\n\nQuestion 1, e.g. “One thing I can now do in QualCoder”\nQuestion 2, e.g. “One thing I’m still unsure about”\nQuestion 3, e.g. “How confident do I feel coding my own data? (1–5)”\nLink to exit survey: insert link"
+    "text": "QualCoder is a free, open-source tool for organizing and conducting qualitative data analysis. It lets you bring together text (and other formats such as video and image, not covered in this workshop) in one project, then code your data, write memos, and organize materials into cases and categories. Built-in visualization and reporting features help you spot patterns, compare codes across your data, and share your findings, while support for standard exchange formats keeps your work portable to other qualitative analysis software.\nQualCoder can also be integrated with AI tools to support tasks like exploring themes or searching your data. Its design keeps humans in the loop: AI can suggest, but researchers stay at the center of interpretation and decision-making.\nThis workshop was a quick introduction to the tool. We recognize that every research project is different, and you may run into questions as you apply QualCoder to your own data. The QualCoder documentation and its user community are good places to keep learning.\nIf you have questions about specific features or about how to set up your project, contact Research Data Services at rds@library.ucsb.edu to schedule a consultation."
   },
   {
     "objectID": "wrap-up.html#before-you-leave",
@@ -250,6 +236,13 @@
     "title": "Wrap-up",
     "section": "Before you leave",
     "text": "Before you leave\n\nClose QualCoder before copying or zipping your project.\nZip the whole .qda folder and save a copy somewhere safe.\n\n\n\n\n\n\n\nTipBackup Important Tips\n\n\n\n\nSave projects on your computer’s own drive, not in a cloud-synced folder or on a USB stick. Syncing while QualCoder is open can corrupt the database.\nKeep backup copies in more than one location. You can use cloud storage, USB drives, external hard drives, or a combination of these options for added protection."
+  },
+  {
+    "objectID": "wrap-up.html#exit-ticket",
+    "href": "wrap-up.html#exit-ticket",
+    "title": "Wrap-up",
+    "section": "Exit ticket",
+    "text": "Exit ticket\n\n\n\n\n\n\nTip\n\n\n\nYour feedback helps us improve future workshops. Please take a few minutes to tell us what worked and what we could do better.”\nFeedback survey"
   },
   {
     "objectID": "04-analyze-report.html",
