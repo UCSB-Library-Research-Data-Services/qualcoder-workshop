@@ -14,14 +14,26 @@ We'll dive into five of the most frequently used tools, but bear in mind, there 
 
 Other tools:
 
-- Code comparison, in case you have multiple coders and are making inter-coder reliability analysis.
+- Code comparison, in case you have multiple coders and are making intercoder reliability analysis.
 - Code frequencies, by coder.
 - Code text exact matches, to see if identical excerpts have been given different codes.
 - Journals, a place in your project to keep note of your ideas.
 
 ::: {.callout-note}
 
-## Before we start: Merging coding
+## Before we start: Merging projects
+
+As we don't have a big amount of text coded until now, we will merge another project to the one we are working on now.
+This will enrich the demonstration of the different analysis and report tools, as we will have more data show up in our outputs and plots.
+
+Beyond this specific purpose for the workshop, merging projects is useful when your workflow has multiple coders analyzing the same files and you want to bring it all together.
+
+To merge the project we have prepared for you follow these steps:
+
+1. Make sure the `qualcoder-workshop-project` folder you downloaded for the workshop contains a folder called `coded-project.qda`. Take note of the location of this folder in your computer.
+2. In QualCoder, go to **Help > Special functions**
+3. In the pop-up window, click the button inside the `Merge project into this project` section
+4. Click the `Run` button
 
 :::
 
@@ -36,9 +48,9 @@ Once you are there, the usual workflow is:
 1. Choose one or more codes or categories.
 2. Select one or more files. If you want to return all coded excerpts for the given code(s), select all the files.
 3. Optionally narrow by case, attribute (e.g. only second-year students), or coder.
-4. Click the `Play` button (as highlighted in red in the next screenshot) to show the results on the right pane.
+4. Click the `Run` button (as highlighted in red in the next screenshot) to show the results on the right pane.
 
-![](images/run-code-retrieval.jpeg){fig-alt="Screenshot of the code retrieval window, selecting all files, the bestpractice code, and highlighting the play button that shows the results"}
+![](images/run-code-retrieval.jpeg){fig-alt="Screenshot of the code retrieval window, selecting all files, the bestpractice code, and highlighting the run button that shows the results"}
 
 ::: callout-tip
 
@@ -53,44 +65,123 @@ To select multiple files one by one, press and hold the `Ctrl` or `Cmd` key whil
 You can analyze your data directly on this screen, scrolling up and down on the right pane.
 You can also export the results to HTML, TXT, CSV, XLSX, or ODT to read them in a different software.
 
-Another option is use the **matrix view**, to place codes (or categories) against files or cases, so you can see who talked about what. This tool is located at the right of the `Play` button we used to show the results. You can export the resulting matrix to XLSX.
+Another option is use the **matrix view**, to place codes (or categories) against files or cases, so you can see who talked about what. This tool is located at the right of the `Run` button we used to show the results. You can export the resulting matrix to XLSX.
 
 
-## Code co-occurence
+## Code co-occurrence
+
+This tool creates a matrix with all your codes both in the vertical and horizontal axes, each cell representing the number of times the given codes have overlapped or are right next to each other in your data. You can open it navigating to **Analysis > Code co-occurrence**.
+
+![](https://qualcoder.org/images/651895717-c043a401-d066-42ea-affa-912a935b5e60.png){fig-alt="Screenshot of the Code co-occurrence tool, showing the options each button in the screen enables"}
+
+Clicking on a cell shows the text where both codes have overlapped.
+
+![](https://qualcoder.org/images/fadccf7b-d18b-44a9-8637-650ea3421f66.png){fig-alt="Screenshot of the Code co-occurrence tool, showing the text details for a given combination of codes"}
+
+This is a useful result for your analysis, mainly in two ways:
+
+- If you notice redundant codes (being used for the same phenomenon), you could make the decision to **merge the codes**.
+- You spot a pattern where different codes tend to be close together in multiple cases, which you could infer as a **relationship between two phenomena**, an emerging theme.
+
 
 ## Charts
 
-The Graph tool draws your categories and codes as a diagram you can rearrange, which helps you see and explain how themes connect.
+There are a number of different graphs with aggregated data you can easily generate and export.
 
-- Choose what to show: all categories or selected ones.
-- Drag items into position; use the buttons at lower left to space them evenly, and **+ / –** to zoom.
-- Right-click a code to show its memo or its coded text. Right-click a line to change its thickness, style or color.
-- Right-click empty space to add free text boxes, file or case boxes, and extra lines.
-- Save graphs to reopen later, and export them as PNG, PDF, ODT or draw.io.
+Going to **Reports > Charts** shows the available charts. For all of them you can filter what data is included in the plot with the options below "Data filters".
 
-A graph exported as PNG is a quick way to include a thematic map in a report or presentation.
+- **Pie** and **sunburst** and **treemap charts**, to show the relative frequency (percentage) of times a code is used.
+- **Bar** and **cumulative bar charts**, to show the absolute frequency (number) of times a code is used, per file or case if you choose a cumulative bar chart.
+- **Heatmaps** to show and compare visually the frequency a code is used by file or case.
+- **Attribute charts** to describe your cases or files by the attributes you have assigned them.
+- **Word clouds** to show the most frequent words in your coded data.
+
+::: {.callout-tip icon="false"}
+## Activity: Explore the charts available
+
+Choose one of the available charts and try it out. Then, write a little analysis about what the graph is showing.
+
+:::
+
+Once the plot shows up in your web browser, you can download it by clicking the camera icon on the top-left corner.
 
 ## File and code summaries
 
+In the **Reports menu** you can find **File summary** and **Code summary**.
+
+- File summary shows the following statistics for the file you select on the left pane:
+    - Total number of characters, words, and unique words on the file
+    - Top 100 words in the file and their frequency. Make sure to filter out common words (also known as stopwords), with the drop-down menu shown in the screenshot below
+    - For each code used in the file: the number of times it was used, the number of characters that the coded text contains, and a percentage calculated on the total number of characters in the document
+    
+![](images/file-summary.jpeg){fig-alt="Screenshot of the File summary tool, highlighting the option at the top to filter stopwords"}
+- On the other hand, Code summary shows:
+    - Coders and files that used the code
+    - Number of times the code has been used, along with the number of characters in the excerpts and the average per excerpt
+    - Number of words and unique words on the coded excerpts
+    - Top 100 words on the excerpts and their frequency. The option to remove stopwords is also available here
+
+    
+![](images/code-summary.jpeg){fig-alt="Screenshot of the Code summary tool"}
+
 ## Database queries
+
+QualCoder gives us the great feature to directly access the database behind all our data, accessible in **Reports > Database queries**.
+For users who are comfortable with SQL queries, it will be useful to get custom reports from their project.
+
+Let's see three examples:
+
+1. Using a default query to list files not including a given code
+
+    - On the left pane, scroll all the way down to "Default Queries"
+    - Select "FILES THAT ARE NOT CODED with code id 1"
+    - Click the `Run` button to execute the query
+    - The result shows the files that don't have the code with ID 1, which in our example represents "bestpractice"
+        - You can see the query includes not only coded text (code_text), but also audio/video (code_av) and images (code_image)
+        - Try modifying the query to use a different code ID, or to show the files that do have the code
+
+![](images/database-query.jpeg){fig-alt="Screenshot of the Database query tool"}
+
+2. Let's write ourselves a simple query, returning all file names where the full text contains the word "github"
+
+   ```sql
+   SELECT id, name
+   FROM source
+   WHERE fulltext LIKE '%rstudio%' OR fulltext LIKE '%r studio%'
+   ```
+
+   We could read this query as follows:
+    
+   - The database has a table of data called `source`, which contains all our file sources
+   - This table has fields `id`, `name`, and `fulltext`, containing our files id, name and its entire text
+   - We filter our results with the `WHERE` clause, filtering text that contains either "rstudio" or "r studio"
+
+3. A more complex query, involving the `code_name` and `code_text` tables, searching for coded text that contains the word "jupyter"
+
+   ```sql
+   SELECT source.name, code_name.name, code_text.seltext
+   FROM code_text
+      JOIN source ON code_text.fid = source.id
+      JOIN code_name ON code_text.cid = code_name.cid
+   WHERE code_text.seltext LIKE '%jupyter%'
+   ```
+
+If you want to learn more about databases and SQL, we invite you to read the [Software Carpentry](https://swcarpentry.github.io/sql-novice-survey/) or [Library Carpentry](https://librarycarpentry.github.io/lc-sql/) lessons.
+
+
 
 ## Other tools
 
-### Code comparison
+### Code comparison and code frequencies
 
-compares two coders on the same text using percentage agreement and **Cohen's kappa**, a measure of agreement beyond chance. Useful for a class exercise in inter-coder reliability.
+If your project involves multiple coders reviewing the same data, probably you will be interested in comparing their coding agreement. In other words, you're interested in [intercoder reliability](https://perma.cc/C8ES-SSPH), also known as inter-rater reliability. The tool in **Reports > Comparison** compares two coders on the same text using percentage agreement and **Cohen's kappa**, a measure of agreement beyond chance.
 
-### Code text exact matches
+Another tool to see the number of passages coded, disaggregated by code name and coder is found in **Reports > Code frequencies**
 
-### Code frequencies
+If you want are interested in learning more about intercoder reliability for your project, reach out to the Library's Research Data Services department at [rds@library.ucsb.edu](mailto:rds@library.ucsb.edu).
 
-::: callout-note
-## Teaching point
 
-Counting codes is not the same as finding meaning. Frequencies show where to look; reading the passages tells you what they mean.
-:::
-
-### Journals: your research diary
+### Journals
 
 Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.
 
@@ -98,16 +189,10 @@ Journals are free-form notes for recording ideas, decisions and emerging themes 
 - Add simple formatting with Markdown: `#` for headings (up to three levels), `*italics*` and `**bold**`. Web links become clickable from the right-click menu.
 - Search journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.
 
+You can see and manage all your journals under **Manage > Journals**.
+
+::: {.callout-note}
+
 **Memo vs journal:** a memo belongs to one code, file or passage; a journal entry is about the project as a whole.
 
-::: {.callout-tip icon="false"}
-## Activity 4.1 –
-:::
-
-::: {.callout-tip icon="false"}
-## Activity 4.2
-:::
-
-::: {.callout-tip icon="false"}
-## Activity 4.3
 :::
