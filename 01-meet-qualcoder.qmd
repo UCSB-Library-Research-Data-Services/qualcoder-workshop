@@ -8,11 +8,11 @@ QualCoder is a free, open-source desktop program for qualitative data analysis. 
 
 **What you can do with it:**
 
-- **Code many kinds of data:** text, PDFs, images, audio and video.
-- **Write as you think:** keep journals and attach memos to codes, files and coded passages.
-- **Organize ideas:** group codes into categories in a tree, like folders.
-- **Analyse and report:** retrieve everything tagged with a code, compare codes, and export reports.
-- **Use optional AI tools:** search for themes and discuss your data with a large language model. These are switched off by default.
+-   **Code many kinds of data:** text, PDFs, images, audio and video.
+-   **Write as you think:** keep journals and attach memos to codes, files and coded passages.
+-   **Organize ideas:** group codes into categories in a tree, like folders.
+-   **Analyse and report:** retrieve everything tagged with a code, compare codes, and export reports.
+-   **Use optional AI tools:** search for themes and discuss your data with a large language model. These are switched off by default.
 
 **Applications**
 
@@ -26,10 +26,10 @@ QualCoder can be used to analyze a wide range of qualitative data files and comb
 
 **Good to know:**
 
-- It runs on Windows, macOS and Linux, and works offline.
-- It is designed for **one person at a time**. Teams take turns on a project or merge copies later (see [Working in a team](ref-teamwork.qmd)).
-- It aims to follow the **REFI-QDA** exchange standard, so projects can move to and from tools such as NVivo, ATLAS.ti and MAXQDA, with some limits.
-- It is licensed under the LGPL v3. If you use it in coursework or research, cite it (the citation is on the QualCoder website).
+-   It runs on Windows, macOS and Linux, and works offline.
+-   It is designed for **one person at a time**. Teams take turns on a project or merge copies later (see [Working in a team](ref-teamwork.qmd)).
+-   It aims to follow the **REFI-QDA** exchange standard, so projects can move to and from tools such as NVivo, ATLAS.ti and MAXQDA, with some limits.
+-   It is licensed under the LGPL v3. If you use it in coursework or research, cite it (the citation is on the QualCoder website).
 
 The simplest route to install the software is to follow the instructions on the [setup page](index.qmd#setup) . For updated instructions from QualCoder themselves, download the ready-made installer from the [releases page](https://github.com/ccbogel/QualCoder/releases). Choose the one appropriate for your laptop.
 
@@ -41,18 +41,18 @@ The simplest route to install the software is to follow the instructions on the 
 
 **Optional extras (which won't be covered during this workshop)**
 
-- **VLC** media player is needed to code audio and video
-- **ffmpeg** lets QualCoder draw audio waveforms.
+-   **VLC** media player is needed to code audio and video
+-   **ffmpeg** lets QualCoder draw audio waveforms.
 
 ## Launching Qualcoder
 
 After installation is completed, to open QualCoder:
 
-- **macOS:** Open **QualCoder** from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.
+-   **macOS:** Open **QualCoder** from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.
 
-- **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
+-   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
 
-**Important:** Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
+**FIXME(CALLOUT) Important:** Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
 
 ## Basic Preferences/Settings
 
@@ -97,11 +97,11 @@ To reset your preferences:
 
 2.  Rename the preferences folder
 
-    - macOS / Linux (Terminal): `mv ~/.qualcoder ~/.qualcoder_backup`
+    -   macOS / Linux (Terminal): `mv ~/.qualcoder ~/.qualcoder_backup`
 
-    - Windows (PowerShell): `Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"`
+    -   Windows (PowerShell): `Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"`
 
-3. Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.
+3.  Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.
 
 Tip: Renaming the folder instead of deleting it keeps a backup. To undo the reset, rename `.qualcoder_backup` back to `.qualcoder`. Coder names are saved inside each project’s .qda file, so a new project starts with no coders from earlier projects.
 :::
