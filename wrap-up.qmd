@@ -2,35 +2,31 @@
 title: "Wrap-up"
 ---
 
-## Recap
+QualCoder is a free, open-source tool for organizing and conducting qualitative data analysis. It lets you bring together text (and other formats such as video and image, not covered in this workshop) in one project, then code your data, write memos, and organize materials into cases and categories. Built-in visualization and reporting features help you spot patterns, compare codes across your data, and share your findings, while support for standard exchange formats keeps your work portable to other qualitative analysis software.
 
-In one session, participants went from an empty project to coded data, a journal, a retrieval report and a thematic map.
+QualCoder can also be integrated with AI tools to support tasks like exploring themes or searching your data. Its design keeps humans in the loop: AI can suggest, but researchers stay at the center of interpretation and decision-making.
 
-1.  **Set up:** project, files, cases, attributes.
-2.  **Code:** codes, categories, memos, important quotes.
-3.  **Analyse:** retrieve, filter by attributes, compare, visualise.
-4.  **Reflect:** journals, and critical thinking about AI.
+This workshop was a quick introduction to the tool. We recognize that every research project is different, and you may run into questions as you apply QualCoder to your own data. The [QualCoder documentation](https://github.com/ccbogel/QualCoder/wiki) and its user community are good places to keep learning.
 
-## Exit ticket
-
-::: {.callout-tip icon="false"}
-## Exit ticket (placeholder) fixme
-
--   [Question 1, e.g. "One thing I can now do in QualCoder"]{.todo}
--   [Question 2, e.g. "One thing I'm still unsure about"]{.todo}
--   [Question 3, e.g. "How confident do I feel coding my own data? (1–5)"]{.todo}
--   **Link to exit survey:** [insert link]{.todo}
-:::
+If you have questions about specific features or about how to set up your project, contact Research Data Services at [rds\@library.ucsb.edu](mailto:rds@library.ucsb.edu) to schedule a consultation.
 
 ## Before you leave
 
--   [ ] Close QualCoder before copying or zipping your project.
+-   Close QualCoder before copying or zipping your project.
 
--   [ ] Zip the whole .qda folder and save a copy somewhere safe.
+-   Zip the whole .qda folder and save a copy somewhere safe.
 
 ::: callout-tip
 ## Backup Important Tips
 
 -   Save projects on your computer's own drive, not in a cloud-synced folder or on a USB stick. Syncing while QualCoder is open can corrupt the database.
 -   Keep backup copies in more than one location. You can use cloud storage, USB drives, external hard drives, or a combination of these options for added protection.
+:::
+
+## Exit ticket
+
+::: {.callout-tip icon="false"}
+Your feedback helps us improve future workshops. Please take a few minutes to tell us what worked and what we could do better.”
+
+[Feedback survey](https://ucsb.co1.qualtrics.com/jfe/form/sv_0ld2xhnezknmsr4?slug=2026-10-22-ucsb-qualcoder)
 :::
