@@ -8,35 +8,24 @@ As discussed earlier, coding involves assigning a short label or tag (hereafter 
 
 For research on learning version control, such as Git, codes capture specific ideas in participants’ responses, categories group related codes, and themes express broader patterns across the data.
 
-| Example data excerpt | Code | Category | Theme |
-|----|----|----|----|
-| “I was afraid I’d lose my work when I tried to merge branches.” | Fear of losing work | Anxiety about making mistakes | Building confidence in version control |
-| “I kept forgetting when to commit my changes.” | Forgetting to commit | Difficulty developing good habits | Developing effective version control practices |
-| “Once I understood branches, I could experiment without affecting the main code.” | Safe experimentation with branches | Benefits of branching | Version control supports independent experimentation |
-| “The merge conflict messages were confusing at first.” | Difficulty understanding merge conflicts | Challenges interpreting Git feedback | Overcoming technical barriers to learning Git |
+| Excerpt Example | Code | Subcode | Category | Theme (reporting) |
+|---------------|---------------|---------------|---------------|---------------|
+| “I was afraid I’d lose my work when I tried to merge branches.” | Fear of losing work | Fear of data loss during merges | Anxiety about making mistakes | Building confidence in version control |
+| “I kept forgetting when to commit my changes.” | Forgetting to commit | Uncertainty about commit timing | Difficulty developing good habits | Developing effective version control practices |
+| “Once I understood branches, I could experiment without affecting the main code.” | Safe experimentation with branches | Isolating changes from the main branch | Benefits of branching | Version control supports independent experimentation |
+| “The merge conflict messages were confusing at first.” | Difficulty understanding merge conflicts | Unclear conflict error messages | Challenges interpreting Git feedback | Overcoming technical barriers to learning Git |
 
 The key distinction:
 
--   Codes identify specific ideas in the data.
+-   *Codes* identify specific ideas in the data.
 
--   Categories group related codes into broader concepts, such as challenges when using Git.
+-   *Subcodes* a more specific label that sits under a broader code. It captures a particular aspect or variation of the code.
 
--   Themes capture a more overarching pattern, such as learners develop confidence as they gain control over changes to their code.
+-   *Categories* group related codes into broader concepts, such as challenges when using Git.
 
-Categories and themes are developed through analysis; they are not necessarily predetermined, and a category may contribute to more than one theme.
+-   *Themes* capture a more overarching pattern, such as learners develop confidence as they gain control over changes to their code. Themes are not part of the codebook structure, but something researchers will developm through analysis. A category may contribute to more than one theme.
 
-Other important terms help explain how qualitative data analysis works and how codes develop into broader categories and themes. The table below introduces these terms using examples related to learning version control.
-
-| Term | Meaning | Example |
-|-------------------|---------------------------|---------------------------|
-| **Code** | A short label applied to a passage of data that captures an idea relevant to the research question. | *Fear of losing work* |
-| **Coded segment** | The passage of data to which a code is attached. | “I was afraid I’d lose my work when I tried to merge branches.” |
-| **In vivo code** | A code that uses the participant’s own words. | *“I was terrified of breaking everything”* |
-| **Category** | A group of related codes that captures a broader concept in the data. | *Concerns about making mistakes* |
-| **Theme** | A broader pattern of meaning developed from the data that helps answer the research question. | *Building confidence through practice with version control* |
-| **Memo** | A note recording the researcher’s thoughts, interpretations, questions, or decisions during analysis. | “Several learners describe fear of losing work. Explore whether repeated practice with branches and commits helps reduce this concern.” |
-
-Codes can be planned in advance from theory (**deductive**) or emerge as you read (**inductive**), but often projects mix both.
+Codes are the foundation for every level above them, so it's worth deciding early how you'll create them. As covered earlier, codes can be planned in advance from theory (**deductive**), emerge as you read the data (**inductive**), or come from a mix of both. In this workshop, we'll start with a predefined codebook.
 
 ## Codebook
 
@@ -66,7 +55,11 @@ Alright, let's now import the codebook by following **Project \> Import \> Impor
 
 Great! You should now see your list of codes in the lower-right panel. Each code has been given a color automatically. You can change these colors under **Code \> Color Scheme**. Colors give you quick visual cues, and giving related codes similar shades makes them easier to spot together. For now, we’ll leave the default colors as they are.
 
-![](images/imported-codebook.png){fig-alt="Screenshot of the code text workspace, with the files at the top-left and the imported codes at the bottom-left" width="736"}
+![](images/imported-codebook-ids.png){fig-alt="Screenshot of the code text workspace, with the files at the top-left and the imported codes at the bottom-left"}
+
+To add a level to the codebook hierarchy, right-click a category or code and create a subcategory or subcode beneath it or rearrange its structure using by navigating options in **Modify**.
+
+![](images/codetree-hierarchy.png){fig-alt="Screenshot demonstrating options to expand or rearrange the codetree."}
 
 Clicking **Memo** opens a separate window with the code’s description. Expect to revise these descriptions as your analysis develops. As you code more transcripts, you’ll find edge cases and clarify where one code ends and another begins.
 
@@ -92,7 +85,7 @@ Although we don’t need to read every detail, we can see that the interviewee i
 
 Select the paragraph at line 122. Our codebook already includes the code **Emotion \> Confused**, so we can apply it to this excerpt by clicking the code. The selected passage takes on the code's color, and a number appears next to the code showing how many times it has been applied. That count also adds to the total for its parent category, **Emotion**. The parent’s number is the total for all of its sub-codes. This lets you see how often a broad theme comes up, as well as each specific variation of it.
 
-![](images/assign-code-01.png){fig-alt="Screenshot of the code text workspace with a passage of text coded"}
+![](images/assigning-first-code.png){fig-alt="Screenshot of the code text workspace with a passage of text coded"}
 
 If you select a text segment by mistake or need to undo the coding, you can right-click the selection and select Unmark (U). Shortcuts after highlighting: **Q** reuses your most recent code, **R** lists recent codes, and **V** makes an *in vivo* code from the selected words.
 
@@ -136,7 +129,7 @@ On its own, "Absolutely not" means nothing.
 
 **A simple test:** If someone reads this segment alone, will they understand it?
 
-**Whatever you choose:** Write the rule in your codebook and apply it every time.
+**Whatever you choose:** Write the rule in your project documentation and apply it every time.
 :::
 
 ### Coding with Search Assistance
@@ -174,31 +167,21 @@ In vivo codes are often renamed or grouped into broader categories later. For ex
 The rationale here would be to add it as in vivo for now, until they consult with the PI and review strategies.
 
 ::: callout-note
-#### In Vivo Coding Discussion
+**Activity 3.2 - In Vivo Coding Discussion**
 
 At what point do in vivo codes need to become conceptual? Does grouping or renaming them erase the participant’s voice? Where should that decision be recorded?
 :::
 
 #### Add your Reasoning
 
-Codes show *what* you noticed. Memos and annotations record *why*. Writing down your reasoning as you go makes your analysis easier to explain, review and share with others.
+Codes show *what* you noticed. Memos and annotations record *why*. Memos are notes recording the researcher’s thoughts, interpretations, questions, or decisions during analysis.
 
-Besides project and code memos, QualCoder lets you add notes to the text itself:
-
--   **Coded excerpt memo:** A note attached to one coded excerpt. Use it to explain why you applied that code to that text, or to flag a borderline case. For example: *“Coded as Confused, but this could also be Overloaded. Revisit.”*
-
--   **Annotation:** A note attached to a piece of text, whether or not it’s coded. Use it for first impressions, questions or links to other parts of the data. For example: *“Compare with the participant’s answer in file 03.”*
-
-To add either one, right-click the text and choose the option from the pop-up menu.
+Writing down your reasoning as you go makes your analysis easier to explain, review and share with others.
 
 These notes become a record of how your thinking developed. They’re especially useful when you refine codes, merge or split them, or code with other people.
 
--   **Memo** a coded segment: hover over it and press **M**. Memoed text appears in italics.
--   **Annotate** any selected text, coded or not, by pressing **A**. Annotated text turns bold.
--   Flag a strong example as **Important** with **I**. The star button under the code tree then shows only important segments, which is handy for picking quotes.
-
 ::: callout-note
-## Adding Memos
+**Activity 3.3 - Adding a Memo to a Code**
 
 Based on what you know about `The Carpentries`, add a one sentence memo to it, also noting it is derived from In Vivo Coding.
 :::
