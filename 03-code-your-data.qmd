@@ -20,7 +20,7 @@ Codes can be planned in advance from theory (**deductive**) or emerge as you rea
 
 As we start assigning codes to excerpts we start developing what it is called a codebook. In qualitative research, a codebook is the shared framework that turns raw text into analyzable data. Each entry typically names a code, gives a concise definition (memo), and sets inclusion and exclusion criteria for when the code applies and when it doesn’t.
 
-Similarly to codes, codebooks can be built deductively from theory or prior literature, inductively from patterns that emerge during close reading, or through a mix of both. Often it changes over several rounds as the team refines, merges, splits, or retires codes. That evolution is itself part of the analytic record, so keeping versions and logging changes helps document how interpretations developed. 
+Similarly to codes, codebooks can be built deductively from theory or prior literature, inductively from patterns that emerge during close reading, or through a mix of both. Often it changes over several rounds as the team refines, merges, splits, or retires codes. That evolution is itself part of the analytic record, so keeping versions and logging changes helps document how interpretations developed.
 
 When several researchers code the same material, the codebook keeps them aligned. It makes inter-coder agreement possible to assess, and it gives the team a concrete reference for talking through disagreements instead of relying on each person’s intuition.
 
@@ -50,7 +50,7 @@ Clicking **Memo** opens a separate window with the code’s description. Expect 
 
 ## Building & Organizing the Code Tree
 
-Codebooks are represented hierarchically as a tree: categories act like folders, codes sit inside them, and can also have sub-codes. A code can belong to only one category. If an idea fits in two places, we recommend creating two similarly named codes.
+Codebooks are represented hierarchically as a tree: categories act like folders, codes sit inside them, and can also have subcodes. A code can belong to only one category. If an idea fits in two places, we recommend creating two similarly named codes.
 
 While we will stick to this structure for this workshop, you can rearrange things, through right-clicking for options to move, merge, delete, sort and more.
 
@@ -80,23 +80,60 @@ Your work hasn’t been lost. Everything you coded in the previous file is saved
 
 Going back to File 07, let's look for line 71, where the interviewee starts describing their approach to editing multiple files in the repository. Skim through the passage, for this exercise we will consider it expresses confidence in the workflow, and code it as **determined**.
 
+## Uncoding Things
+ 
+Coding mistakes are inevitable, so part of good practice is going back to remove codes that don't fit.
+ 
+:::: {.callout icon="false"}
+## Activity 3.1: MK – File 00004 | Lines 125–132
+
+> **SN:** What would you, where would you go to find these types of recent these better resources?\
+> **MK:** Probably the carpentries? That's maybe a little biased because I've taught and helped with teaching for their Git lessons but I know what's in them and I know it works. So that's where I would go.
+
+Code this excerpt with any term that represents what you took from reading it.
+
+Next, let's uncode it, assuming you want to check with your team the criteria for adding new codes to the predefined codebook.
+::::
+
+:::: {.callout-important collapse="true" icon="false"}
+## Discussion point: Should you code the interviewer's question?
+
+**Usually no.** Code only the participant's words. Including the interviewer's questions can:
+
+- inflate your counts, and
+- credit participants with ideas the interviewer introduced.
+
+This matters even more when interviewers ask different follow-ups, because the questions won't line up across interviews.
+
+**The exception:** Include the question when the answer doesn't make sense without it.
+
+> **SN:** Would you teach someone the same way?\
+> **MK:** Absolutely not.
+
+On its own, "Absolutely not" means nothing.
+
+**A simple test:** If someone reads this segment alone, will they understand it?
+
+**Whatever you choose:** Write the rule in your codebook and apply it every time.
+::::
+
 ### Coding with Search Assistance
 
-See the question mark on the left-hand side of the top bar? That allows us to search for words across files, and can be useful to identify relevant terms before we apply codes. Let's look for GUI, which stands for Graphic User Interface, and apply the GUI code the excerpts with the first 5 results (in order of appearance). Select "Aa" to make the search case sensitive, and navigate matches across files using the arrows.
+See the question mark on the left-hand side of the top bar? That allows us to search for words across files, and can be useful to identify relevant terms before we apply codes. Let's look for `GUI`, which stands for Graphic User Interface, and apply the GUI code the excerpts with the first 5 results (in order of appearance). Select "Aa" to make the search case sensitive, and navigate matches across files using the arrows.
 
 ### **Where should a selection begin and end?**
 
 Deciding how much text to select is one of the main choices you make when coding. A few guidelines:
 
-- **Select a complete thought.** Start where the participant begins the idea and stop when they finish it or move on to a new topic. That might be a phrase, a sentence or a whole paragraph.
+-   **Select a complete thought.** Start where the participant begins the idea and stop when they finish it or move on to a new topic. That might be a phrase, a sentence or a whole paragraph.
 
-- **Include enough context to understand it later.** Someone reading the excerpt by itself, for example in a report, should still be able to tell why it was coded. If “It was a nightmare” only makes sense with the sentence before it, select both sentences.
+-   **Include enough context to understand it later.** Someone reading the excerpt by itself, for example in a report, should still be able to tell why it was coded. If “It was a nightmare” only makes sense with the sentence before it, select both sentences.
 
-- **Leave out what doesn’t belong.** Don’t add filler, the interviewer’s next question or a new topic just to fill out the excerpt. Extra text makes reports harder to read and blurs what the code means.
+-   **Leave out what doesn’t belong.** Don’t add filler, the interviewer’s next question or a new topic just to fill out the excerpt. Extra text makes reports harder to read and blurs what the code means.
 
-- **Overlapping is fine.** A passage can have more than one code, and selections for different codes can overlap. For example, one sentence might be coded **Confused** while the whole paragraph is coded **GUI**.
+-   **Overlapping is fine.** A passage can have more than one code, and selections for different codes can overlap. For example, one sentence might be coded **Confused** while the whole paragraph is coded **GUI**.
 
-- **Be consistent.** Use the same approach across all transcripts, especially if you’re coding with other people. Some teams agree on a default unit, such as “the full answer to one question,” before they start.
+-   **Be consistent.** Use the same approach across all transcripts, especially if you’re coding with other people. Some teams agree on a default unit, such as “the full answer to one question,” before they start.
 
 ### In Vivo Coding
 
@@ -104,13 +141,21 @@ As most QDAS, QualCoder also offers the option for researchers to apply InVivo c
 
 In vivo coding is an **inductive** approach because the codes come from the transcripts, not from a predefined codebook. It’s useful when you want to:
 
-- keep participants’ voices and terms in your analysis
+-   keep participants’ voices and terms in your analysis
 
-- capture slang, jargon or vivid expressions that a generic label would lose
+-   capture slang, jargon or vivid expressions that a generic label would lose
 
-- start exploring data before you have a clear set of themes
+-   start exploring data before you have a clear set of themes
 
-In vivo codes are often renamed or grouped into broader categories later. For example, **“I just nuked the whole repo”** might end up under the existing code **conflict-burn-repo**. Let's select File **04** and look for **line 131**, where the interviewer mentions The Carpentries, and let's apply an in vivo code to that, using the right-click or the shortcut (Command or Ctrl + V).
+In vivo codes are often renamed or grouped into broader categories later. For example, **“I just nuked the whole repo”** might end up under the existing code **conflict-burn-repo**. Let's select File **04** and look for **line 131**, where the interviewer mentions `The Carpentries`, and let's apply an in vivo code to that, using the right-click or the shortcut (Command or Ctrl + V).
+
+The rationale here would be to add it as in vivo for now, until they consult with the PI and review strategies.  
+
+::: callout-note
+#### In Vivo Coding Discussion
+
+At what point do in vivo codes need to become conceptual? Does grouping or renaming them erase the participant’s voice? Where should that decision be recorded?
+:::
 
 ### Add your Reasoning
 
@@ -118,41 +163,45 @@ Codes show *what* you noticed. Memos and annotations record *why*. Writing down 
 
 Besides project and code memos, QualCoder lets you add notes to the text itself:
 
-- **Coded excerpt memo:** A note attached to one coded excerpt. Use it to explain why you applied that code to that text, or to flag a borderline case. For example: *“Coded as Confused, but this could also be Overloaded. Revisit.”*
+-   **Coded excerpt memo:** A note attached to one coded excerpt. Use it to explain why you applied that code to that text, or to flag a borderline case. For example: *“Coded as Confused, but this could also be Overloaded. Revisit.”*
 
-- **Annotation:** A note attached to a piece of text, whether or not it’s coded. Use it for first impressions, questions or links to other parts of the data. For example: *“Compare with the participant’s answer in file 03.”*
+-   **Annotation:** A note attached to a piece of text, whether or not it’s coded. Use it for first impressions, questions or links to other parts of the data. For example: *“Compare with the participant’s answer in file 03.”*
 
 To add either one, right-click the text and choose the option from the pop-up menu.
 
 These notes become a record of how your thinking developed. They’re especially useful when you refine codes, merge or split them, or code with other people.
 
-- **Memo** a coded segment: hover over it and press **M**. Memoed text appears in italics.
-- **Annotate** any selected text, coded or not, by pressing **A**. Annotated text turns bold.
-- Flag a strong example as **Important** with **I**. The star button under the code tree then shows only important segments, which is handy for picking quotes.
+-   **Memo** a coded segment: hover over it and press **M**. Memoed text appears in italics.
+-   **Annotate** any selected text, coded or not, by pressing **A**. Annotated text turns bold.
+-   Flag a strong example as **Important** with **I**. The star button under the code tree then shows only important segments, which is handy for picking quotes.
+
+::: callout-note
+## Adding Memos
+
+Based on what you know about `The Carpentries`, add a one sentence memo to it, also noting it is derived from In Vivo Coding.
+:::
 
 ### Auto-coding (use with care!)
 
 **Auto-code** in QualCoder applies a code to every passage that matches text you specify, so you don’t have to select each passage by hand. You’ll find the options as buttons at the top right of the text-coding window. First select the code you want to apply, then choose an option:
 
-- **Auto-code exact text** codes every occurrence of a word or phrase. QualCoder asks which files to search, so you can code across several transcripts at once. Separate alternatives with `|` to catch several terms with one code, for example `GitHub Desktop|GUI`. Matching is **case-sensitive**.
+-   **Auto-code exact text** codes every occurrence of a word or phrase. QualCoder asks which files to search, so you can code across several transcripts at once. Separate alternatives with `|` to catch several terms with one code, for example `GitHub Desktop|GUI`. Matching is **case-sensitive**.
 
-- **Auto-code sentences** codes the whole sentence that contains a text fragment, not just the fragment. You can set what counts as the end of a sentence. The default is a period followed by a space.
+-   **Auto-code sentences** codes the whole sentence that contains a text fragment, not just the fragment. You can set what counts as the end of a sentence. The default is a period followed by a space.
 
-- **Auto-code between start and end marks** codes everything between a start text and an end text in the current file. It’s useful for structured transcripts, such as coding everything from one interview question to the next.
+-   **Auto-code between start and end marks** codes everything between a start text and an end text in the current file. It’s useful for structured transcripts, such as coding everything from one interview question to the next.
 
-- **Regex** is a checkbox that lets you use regular expressions for more flexible matching, such as wildcards and word variations.
+-   **Regex** is a checkbox that lets you use regular expressions for more flexible matching, such as wildcards and word variations.
 
-- **First or last match only** is a right-click option that codes only the first or last match in each file.
+-   **First or last match only** is a right-click option that codes only the first or last match in each file.
 
-- **Mark speakers** codes each paragraph with the speaker’s name when transcripts label speakers as `[name]`, `{name}` or `name:`.
+-   **Mark speakers** codes each paragraph with the speaker’s name when transcripts label speakers as `[name]`, `{name}` or `name:`.
 
-- **Undo** reverses recent auto-coding, but only until you close the project.
+-   **Undo** reverses recent auto-coding, but only until you close the project.
 
 For the workshop, keep in mind that auto-coding matches words, not meaning. Searching for “confused” won’t catch “I had no idea what was going on,” and it will catch “I wasn’t confused at all.” Treat auto-coding as a first pass, and review every coded passage before you rely on it.
 
 Buttons at the top right can code every exact match of a word (case-sensitive; separate options with `|`, e.g. `exam|exams`), every sentence containing a fragment, or the section between two markers.
-
-**Mark speakers** creates a code for each speaker in a transcript.
 
 ::: callout-warning
 Auto-coding can be undone only until you close the project, so always review the results and proceed with care.
