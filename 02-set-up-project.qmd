@@ -100,7 +100,7 @@ Click the first icon (the document with a plus sign) to import files. A window s
 
 ![](images/add-files.png){fig-alt="Tool buttons on the Manage Files tab" width="250"}
 
-![](images/selecting-files.png){fig-alt="Screenshot select files to be added to the project"}
+![](images/selecting-files.png){fig-alt="Screenshot of selected transcripts for import" width="557"}
 
 \
 The files should be displayed in our window, and double-clicking a file should open and display its contents.
