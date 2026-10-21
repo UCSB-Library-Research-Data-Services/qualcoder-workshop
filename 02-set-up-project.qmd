@@ -108,7 +108,9 @@ The files should be displayed in our window, and double-clicking a file should o
 ![](images/file-displays.png){fig-alt="Screenshot showing the imported files and a window with the contents of one of them"}
 
 ::: callout-caution
-**QualCoder should not be used for editing, de-identifying, or pseudonymizing raw data.** Best practice dictates importing only final, analysis-ready transcripts and notes into the platform for coding.
+## Prepare Data Before Importing into QualCoder
+
+QualCoder *should not* be used to edit, de-identify, or pseudonymize raw data. Although pseudonymization is a newly released feature, it is not yet sufficiently robust for routine use. Best practice is to import only finalized, analysis-ready transcripts and notes into the platform for coding.
 :::
 
 The `memo` field can be used to record any notes or annotations relevant to the file. For example, it may document the duration of an interview, its location or setting, the mode of data collection (e.g., in-person, telephone, or online), or its relationship to other files or data sources.
@@ -147,20 +149,20 @@ Attributes will allow you to ask questions like "Do first-year students talk abo
 QualCoder is not a statistics package; for statistical analysis of attributes, we recommend to export them to a tool such as R.
 :::
 
-Attributes can be added manually in the Manage Attributes, Manage Files, Manage Cases or Manage Journals sections by clicking on the (x) button, shown below.
+Attributes can be added manually in the Manage Attributes, Manage Files, Manage Cases or Manage Journals sections by clicking on the (*x*) button, shown below.
 
 ![](images/attributes-manual.png){fig-alt="Screenshot showing the Manage Attributes window while adding an attribute" width="483"}
 
 However, there is an easier way to import them from a survey. QualCoder allows researchers to import csv or xlsx files with the description of cases and their associated attributes, and we have prepared it for you.
 
-Select **Manage Files \> Import Survey**, then choose the `cases-attributes.xlsx` file from the workshop folder.
+Select **Manage Files \> Import Survey**, then choose the `cases-attributes.xlsx` file from the workshop folder. This should display as it follows:
 
-![](images/attributes-case-import.png){fig-alt="Screenshot of the Survey Import options"}
+![](images/cases-attributes-imported.png){fig-alt="Screenshot displaying cases and attributes imported via survey import (.xls file)."}
 
 ::: {.callout icon="false"}
 ## Activity 2.1 - Adding Attributes Manually
 
-Add a mode attribute to indicate whether each interview was conducted online or in person. Set the mode to online for files 01–05 and in-person for files 09–10.
+Add a `mode` attribute to indicate whether each interview was conducted online or in person. Set the mode to `online` for files 01–05 and `in-person` for files 09–10.
 :::
 
 ::: {.callout icon="false"}
@@ -171,18 +173,16 @@ Identify one attribute or combination of attributes that could help uncover a me
 
 If everything looks good, click OK. Now, let's go to **Manage \> Cases**. Note that the column files shows 0. Why? Because we have yet to link files to cases. Double-click the 0 value to prompt the case file manager window.
 
-![](images/case-file-manager.png){fig-alt="Screenshot of the Case file manager to link cases with files"}
+Now, we will assign files to cases. Select the corresponding file to match case (participant). We can assign by clicking on the file and choosing "Add selected files to case".
 
-Now, we will assign files to cases. Select the corresponding file to match case numbers. We can assign by clicking on the file and choosing "Add selected files to case".
+![](images/file-cases-link.png){fig-alt="Screenshot of successful linkage of files to their specific cases."}
 
-![](images/matching-cases-files-1.png){fig-alt="Screenshot showing a successful link between a case and a file"}
+Before confirming, verify that the name matches the participant listed in the transcript header. Note that the file assignment now displays **“YES.”** Once you click **OK**, the grid will update to show 1 file associated with Au Soosaar.
 
-Before confirming, please note that the file assignment now displays “YES.” You can also undo assignments or bulk-assign multiple documents within a selected range, though that won't be relevant in this case. You might also click "Hide Assigned Files" to reduce the list and avoid confusion.
-
-![](images/matching-cases-files-2.png)
+You can also undo assignments or bulk-assign multiple documents within a selected range, though that won't be relevant in this case. You might also click "Hide Assigned Files" to reduce the list and avoid confusion.
 
 ::: {.callout icon="false"}
 ## Activity 2.2 - Connecting Cases & Files
 
-Complete the assignments for the remaining 9 cases/files and verify that each assignment matches the corresponding case/file.
+Complete the assignments for the remaining 9 cases/files and verify that each assignment matches the corresponding case (interviewee's name).
 :::
