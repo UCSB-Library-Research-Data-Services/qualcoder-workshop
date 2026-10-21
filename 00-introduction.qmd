@@ -28,7 +28,7 @@ Imagine you’re a researcher studying how new developers experience Git. You’
 
 -   The participant never says how they *feel*. So how did you know?
 
-## Inductive vs. Deductive Coding
+### Inductive vs. Deductive Coding
 
 Data can be arranged and coded following two types of approaches: a more inductive (bottom-up) approach, where insights and themes emerge more organically and directly from the data without prior assumptions, or a deductive (top-down) approach, where researchers apply preexisting theoretical frameworks or concepts to the data. The approaches can also be combined as researchers engage with and learn more details from the data.
 
@@ -50,7 +50,7 @@ But why do we need a software? Conducting qualitative data analysis manually or 
 
 ![](images/postit-analysis.png){width="387"}
 
-### Data
+### Project Example
 
 The dataset and documentation for this workshop is adapted from a real research project that is publicly archived in the Qualitative Data Repository (QDR):
 
