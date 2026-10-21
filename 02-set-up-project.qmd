@@ -4,23 +4,23 @@ title: "Setting Up Your Project"
 
 ## Creating a New Project
 
-On the main window, before exploring QualCoder and its features, let's create a new project. For this workshop, save the project to your Desktop so it's easy to locate and access. Choose **Project \> Create New Project**.
+On the main window, before exploring QualCoder and its features, let's create a new project. For this workshop, let's save the project in a folder called "Workshop" your Desktop so it's easy to locate and access. Choose **Project \> Create New Project**.
 
-![](images/new-project.png){width="149"}
+![](images/new-project.png){fig-alt="Screenshot of QualCoder to create a new project" width="302"}
 
-Then, let's name it named `git-experience`. Note this will create a folder `git-experience.qda` in your desktop. If you open it you will notice that it contains a set of preset subfolders:
+Next, let’s name the project **`git-experience`**. Note that this will create a folder named `git-experience.qda` inside your selected folder. Open it, and you’ll see a set of predefined subfolders:
 
-![](images/qda%20folder.png){width="389"}
+![](images/qda%20folder.png){fig-alt="Screenshot of the file explorer, showing the top level .qda folder for the project itself, the .qda file with the database, and other folders for imported data." width="498"}
 
 This is a **QualCoder project folder**. QualCoder saves each project as an ordinary folder whose name ends in `.qda`. Here’s what each item in it does:
 
--   **git-experience.qda/** is the project itself. To open it, choose *Project → Open* in QualCoder and select this folder. If you move or back up the project, copy the whole folder. Taking only some of the files inside it will break the project.
+-   **git-experience.qda/** is the project itself. To open it, choose *Project → Open* in QualCoder and select this folder. If you move or back up the project, copy the whole folder. Taking only some of the files inside will break it.
 
 -   **data.qda** is the most important file. It’s a SQLite database that holds all your analysis work: Your codes and code categories (the code tree). Every coded segment of text, image, audio and video. Cases, attributes, journals and memos. The plain text QualCoder pulls out of your imported documents (this is the text you actually code). Project settings and the list of imported files
 
--   **project_in_use.lock** is a temporary file. QualCoder creates it when the project is open, so the same project can’t be edited from two places at once. It’s normally removed when you close the project. If it’s still there and QualCoder isn’t running, the app probably crashed or was force-quit, and QualCoder may warn you the project is in use the next time you open it. In that case it’s safe to delete, as long as the project really isn’t open anywhere else.
+-   **project_in_use.lock** is a temporary file. QualCoder creates it when the project is open, so the same project can’t be edited from two places at once. It’s normally removed when you close the project.
 
--   **ai_data/** holds data for QualCoder’s AI-assisted features (available in newer versions). It’s a local vector database of embeddings made from your documents, which powers AI search and AI-assisted coding. QualCoder can rebuild it from your documents. If it’s empty, you probably haven’t used the AI features yet.
+-   **ai_data/** holds data for QualCoder’s AI-assisted features. It’s a local vector database of embeddings made from your documents, which powers AI search and AI-assisted coding. QualCoder can rebuild it from your documents. If it’s empty, you probably haven’t used the AI features yet.
 
 -   **documents/** stores copies of the text files you imported (.txt, .docx, .pdf, .odt and so on). Your coding is tied to the extracted text in data.qda, not to these files.
 
@@ -34,57 +34,55 @@ This is a **QualCoder project folder**. QualCoder saves each project as an ordin
 
 The main screen has five tabs: Action log, Manage, Reports, Coding and AI chat. But since our project is empty there isn't much to explore yet.
 
-The first step will be to add a project memo. Adding short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and the AI tools use it as context. Anything written after a line of `#####` is kept private from the AI as we will see in later episodes.
+The first step will be to add a project memo. Adding a short memo (about 300–700 characters) describing your research question and data is good practice for future reference and clarity about the project goals and methodology, and also for the AI tools to use it as context. Anything written after a line of `#####` is kept private from the AI, as we will see in later episodes.
 
-![](images/menu-project-memo.png)
+![](images/menu-project-memo.png){fig-alt="QualCoder screenshot of the options inside the Project menu"}
 
-Let's copy the project memo below and add it:
+Let's copy the content from the `project-memo.rtf` file located in the `documentation` subfolder of the workshop folder and paste it:
 
-::: callout-important
-# Project Memo: Investigating & Archiving the Scholarly Git Experience (IASGE) - Behavioral Study
+> **Project Memo: Investigating & Archiving the Scholarly Git Experience (IASGE) - Behavioral Study**
+>
+> This project contains the data underlying the behavioral study of *Investigating & Archiving the Scholarly Git Experience (IASGE)*. The study investigates how scholars use Git and Git hosting platforms (GHPs), such as GitHub and GitLab, to conduct research, manage scholarly materials, and collaborate with others. It explores how researchers with varying levels of experience adopt version control in their workflows, what challenges they encounter, how they learn to use these tools, and how libraries and other scholarly support organizations can better support the sustainable management and preservation of research outputs.
+>
+> **Research Questions and Objectives**
+>
+> The study seeks to understand how scholars incorporate Git and Git hosting platforms into individual and collaborative research practices. It considers both scholars who actively use Git in their academic work and those who are familiar with Git but have not fully adopted it into a standardized workflow. The research examines how these groups use platform features, learn version control practices, and navigate the technical and social aspects of collaborative research.
+>
+> Key research questions include:
+>
+> -   How do scholars with different levels of experience use Git and Git hosting platforms in their research workflows?
+>
+> -   How do researchers learn Git, find instructions, and develop practices for managing files, tracking changes, and synchronizing collaborative work?
+>
+> -   How do scholars resolve merge conflicts, reuse and adapt existing code, and communicate with collaborators or external researchers through issues, discussions, and other platform features?
+>
+> -   How do researchers discover, evaluate, reuse, and cite code hosted in public repositories?
+>
+> -   What challenges do scholars encounter when using Git hosting platforms for academic collaboration, and what features or improvements would better support their needs?
+>
+> -   How can libraries and other scholarly support services help researchers make their code, data, and other research outputs citable, stable, accessible, and suitable for long-term preservation?
+>
+> **Research Design and Methods**
+>
+> The behavioral study uses a three-part, mixed-methods empirical approach consisting of focus groups, a survey, and semi-structured interviews. These methods provide complementary perspectives on scholarly users’ experiences, practices, preferences, and needs.
+>
+> Focus groups gather perspectives on Git adoption, research collaboration, common challenges, and opportunities for improving scholarly workflows. The survey collects information about users’ backgrounds, experience levels, platform use, feature adoption, and research practices. Semi-structured interviews provide a more detailed examination of individual experiences through open-ended questions and task-based scenarios. Together, these methods support an understanding of both broader usage patterns and the reasoning behind specific user behaviors.
+>
+> During interviews, participants discuss their research processes and demonstrate how they approach representative Git and Git hosting platform tasks. Scenarios include editing multiple files, comparing versions of a document, synchronizing local and remote repositories, resolving conflicts, forking repositories, and collaborating with other researchers. Additional tasks explore how participants communicate feedback about code, submit or respond to issues, search for reusable code, obtain citations for repositories, and arrange for persistent identifiers and long-term preservation of research materials. Participants are also asked how they learned each task, where they seek instructions, and how they would teach the same practices to others.
+>
+> **Data and Scope**
+>
+> The project data include, but are not limited to, information about participant experiences and practices, user profiles, levels of Git experience, frequency of feature use, collaboration patterns, learning strategies, and perceptions of platform functionality. Data generated through the study’s research methods provide insight into how scholars engage with version control and Git hosting platforms across different stages of adoption.
+>
+> The interview component also captures participants’ approaches to specific tasks, their decision-making processes, the resources they consult, and the difficulties they encounter. These observations help distinguish between knowing that a feature exists and being able to use it effectively in a research context. The study further considers participants’ preferences for collaboration, peer feedback, code reuse, citation, and repository preservation.
+>
+> **Significance and Expected Outcomes**
+>
+> The findings aim to inform how libraries, research support professionals, and platform developers can better meet the needs of scholars using Git and Git hosting platforms. By identifying common practices, barriers to adoption, and gaps in existing learning resources, the study can help shape instruction, training, and support services for researchers at different experience levels.
+>
+> Ultimately, the behavioral study contributes to IASGE’s broader goal of understanding how scholarly materials hosted on Git platforms can transition from active, collaborative development to stable, permanently citable research outputs supported by professional preservation practices. The project provides an empirical basis for improving the discoverability, usability, citation, and long-term accessibility of scholarship created and shared through Git-based research workflows.
 
-This project contains the data underlying the behavioral study of *Investigating & Archiving the Scholarly Git Experience (IASGE)*. The study investigates how scholars use Git and Git hosting platforms (GHPs), such as GitHub and GitLab, to conduct research, manage scholarly materials, and collaborate with others. It explores how researchers with varying levels of experience adopt version control in their workflows, what challenges they encounter, how they learn to use these tools, and how libraries and other scholarly support organizations can better support the sustainable management and preservation of research outputs.
-
-## Research Questions and Objectives
-
-The study seeks to understand how scholars incorporate Git and Git hosting platforms into individual and collaborative research practices. It considers both scholars who actively use Git in their academic work and those who are familiar with Git but have not fully adopted it into a standardized workflow. The research examines how these groups use platform features, learn version control practices, and navigate the technical and social aspects of collaborative research.
-
-Key research questions include:
-
--   How do scholars with different levels of experience use Git and Git hosting platforms in their research workflows?
-
--   How do researchers learn Git, find instructions, and develop practices for managing files, tracking changes, and synchronizing collaborative work?
-
--   How do scholars resolve merge conflicts, reuse and adapt existing code, and communicate with collaborators or external researchers through issues, discussions, and other platform features?
-
--   How do researchers discover, evaluate, reuse, and cite code hosted in public repositories?
-
--   What challenges do scholars encounter when using Git hosting platforms for academic collaboration, and what features or improvements would better support their needs?
-
--   How can libraries and other scholarly support services help researchers make their code, data, and other research outputs citable, stable, accessible, and suitable for long-term preservation?
-
-## Research Design and Methods
-
-The behavioral study uses a three-part, mixed-methods empirical approach consisting of focus groups, a survey, and semi-structured interviews. These methods provide complementary perspectives on scholarly users’ experiences, practices, preferences, and needs.
-
-Focus groups gather perspectives on Git adoption, research collaboration, common challenges, and opportunities for improving scholarly workflows. The survey collects information about users’ backgrounds, experience levels, platform use, feature adoption, and research practices. Semi-structured interviews provide a more detailed examination of individual experiences through open-ended questions and task-based scenarios. Together, these methods support an understanding of both broader usage patterns and the reasoning behind specific user behaviors.
-
-During interviews, participants discuss their research processes and demonstrate how they approach representative Git and Git hosting platform tasks. Scenarios include editing multiple files, comparing versions of a document, synchronizing local and remote repositories, resolving conflicts, forking repositories, and collaborating with other researchers. Additional tasks explore how participants communicate feedback about code, submit or respond to issues, search for reusable code, obtain citations for repositories, and arrange for persistent identifiers and long-term preservation of research materials. Participants are also asked how they learned each task, where they seek instructions, and how they would teach the same practices to others.
-
-## Data and Scope
-
-The project data include, but are not limited to, information about participant experiences and practices, user profiles, levels of Git experience, frequency of feature use, collaboration patterns, learning strategies, and perceptions of platform functionality. Data generated through the study’s research methods provide insight into how scholars engage with version control and Git hosting platforms across different stages of adoption.
-
-The interview component also captures participants’ approaches to specific tasks, their decision-making processes, the resources they consult, and the difficulties they encounter. These observations help distinguish between knowing that a feature exists and being able to use it effectively in a research context. The study further considers participants’ preferences for collaboration, peer feedback, code reuse, citation, and repository preservation.
-
-## Significance and Expected Outcomes
-
-The findings aim to inform how libraries, research support professionals, and platform developers can better meet the needs of scholars using Git and Git hosting platforms. By identifying common practices, barriers to adoption, and gaps in existing learning resources, the study can help shape instruction, training, and support services for researchers at different experience levels.
-
-Ultimately, the behavioral study contributes to IASGE’s broader goal of understanding how scholarly materials hosted on Git platforms can transition from active, collaborative development to stable, permanently citable research outputs supported by professional preservation practices. The project provides an empirical basis for improving the discoverability, usability, citation, and long-term accessibility of scholarship created and shared through Git-based research workflows.
-:::
-
-![](images/project-memo.png){width="487"}
+![](images/project-memo.png){fig-alt="Screenshot of the project memo window" width="487"}
 
 ## Bringing in the Data: Manage Files
 
@@ -98,28 +96,32 @@ All data in QualCoder comes in through **Manage \> Manage Files**.
 | Images          | .jpg, .jpeg, .png                                   |
 | Audio and video | .mp3, .m4a, .wav, .mp4, .mov, .ogg (and .wmv video) |
 
-Click the first icon (the document with a plus sign). A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.
+Click the first icon (the document with a plus sign) to import files. A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.
 
-![](images/add-files.png){width="250"}
+![](images/add-files.png){fig-alt="Tool buttons on the Manage Files tab" width="250"}
 
-![](images/selecting-files.png)
+![](images/selecting-files.png){fig-alt="Screenshot of selected transcripts for import" width="557"}
 
 \
 The files should be displayed in our window, and double-clicking a file should open and display its contents.
 
-![](images/file-displays.png)
+![](images/file-displays.png){fig-alt="Screenshot showing the imported files and a window with the contents of one of them"}
 
 ::: callout-caution
-> **QualCoder should not be used for editing, de-identifying, or pseudonymizing raw data.** Best practice dictates importing only final, analysis-ready transcripts and notes into the platform for coding.
+## Prepare Data Before Importing into QualCoder
+
+QualCoder *should not* be used to edit, de-identify, or pseudonymize raw data. Although pseudonymization is a newly released feature, it is not yet sufficiently robust for routine use. Best practice is to import only finalized, analysis-ready transcripts and notes into the platform for coding.
 :::
 
-The `memo` field can be used to record any notes or annotations relevant to the file. For example, it may document the duration of an interview, its location or setting, the mode of data collection (e.g., in-person, telephone, or online), or its relationship to other files or data sources. More generally, the memo can capture contextual information, methodological notes, or other details that help document the file and support subsequent analysis. We won't be using file memos in this workshop, but you may find them useful in your own projects for documenting additional information about your data and keeping track of details that may be relevant during analysis.
+The `memo` field can be used to record any notes or annotations relevant to the file. For example, it may document the duration of an interview, its location or setting, the mode of data collection (e.g., in-person, telephone, or online), or its relationship to other files or data sources.
+
+More generally, the memo can capture contextual information, methodological notes, or other details that help document the file and support subsequent analysis. We won't be using file memos in this workshop, but you may find them useful in your own projects for documenting additional information about your data and keeping track of details that may be relevant during analysis.
 
 Note that that the time and date stamp reflect the import, not the file creation. IDs are sequentially assigned. But what are `cases` for?
 
 ### Cases
 
-**`Cases`** allow you to group data around a person, place, organization, or situation. In QualCoder, a case provides a way to bring together files and descriptive information associated with the same entity, making it easier to organize and compare data during analysis. You can also assign attributes to cases, such as a participant's age group, gender, occupation, or other characteristics relevant to your research.
+**`Cases`** allow you to group data around a person, place, organization, or situation. In QualCoder, a case provides a way to bring together files and descriptive information associated with the same entity, making it easier to organize and compare data during analysis. You can also assign **`attributes`** to cases, such as a participant's age group, gender, occupation, or other characteristics relevant to your research.
 
 *Do you need cases?* Not always! If each participant has only one interview file, you can assign attributes directly to the file, without creating a separate case for each participant.
 
@@ -147,30 +149,40 @@ Attributes will allow you to ask questions like "Do first-year students talk abo
 QualCoder is not a statistics package; for statistical analysis of attributes, we recommend to export them to a tool such as R.
 :::
 
-Attributes can be added manually in the Manage Attributes, Manage Files, Manage Cases or Manage Journals sections by clicking on the (x) button, shown below.
+Attributes can be added manually in the Manage Attributes, Manage Files, Manage Cases or Manage Journals sections by clicking on the (*x*) button, shown below.
 
-![](images/attributes-manual.png){width="483"}
+![](images/attributes-manual.png){fig-alt="Screenshot showing the Manage Attributes window while adding an attribute" width="483"}
 
-However, there is an easier way to import them from a survey. QualCoder allows researchers to import csv or xls files with the description of cases and their associated attributes, and we have prepared it for you.
+However, there is an easier way to import them from a survey. QualCoder allows researchers to import csv or xlsx files with the description of cases and their associated attributes, and we have prepared it for you.
 
-Select **Manage \> Import Survey**, then choose the \`cases-attributes.xls\` file from the workshop folder.
+Select **Manage Files \> Import Survey**, then choose the `cases-attributes.xlsx` file from the workshop folder. This should display as it follows:
 
-![](images/attributes-case-import.png)
+![](images/cases-attributes-imported.png){fig-alt="Screenshot displaying cases and attributes imported via survey import (.xls file)."}
+
+::: {.callout icon="false"}
+## Activity 2.1 - Adding Attributes Manually
+
+Add a `mode` attribute to indicate whether each interview was conducted online or in person. Set the mode to `online` for files 01–05 and `in-person` for files 09–10.
+:::
+
+::: {.callout icon="false"}
+## Food for Thought: Using Attributes to Derive Insights
+
+Identify one attribute or combination of attributes that could help uncover a meaningful insight in our data. What would you look for, and why?
+:::
 
 If everything looks good, click OK. Now, let's go to **Manage \> Cases**. Note that the column files shows 0. Why? Because we have yet to link files to cases. Double-click the 0 value to prompt the case file manager window.
 
-![](images/case-file-manager.png)
+Now, we will assign files to cases. Select the corresponding file to match case (participant). We can assign by clicking on the file and choosing "Add selected files to case".
 
-Now, we will assign files to cases. Select the corresponding file to match case numbers. We can assign by clicking on the file and choosing "Add selected files to case".
+![](images/file-cases-link.png){fig-alt="Screenshot of successful linkage of files to their specific cases."}
 
-![](images/matching-cases-files-1.png)
+Before confirming, verify that the name matches the participant listed in the transcript header. Note that the file assignment now displays **“YES.”** Once you click **OK**, the grid will update to show 1 file associated with Au Soosaar.
 
-Before confirming, please note that the file assignment now displays “YES.” You can also undo assignments or bulk-assign multiple documents within a selected range, though that won't be relevant in this case. You might also click "Hide Assigned Files" to reduce the list and avoid confusion.
+You can also undo assignments or bulk-assign multiple documents within a selected range, though that won't be relevant in this case. You might also click "Hide Assigned Files" to reduce the list and avoid confusion.
 
-![](images/matching-cases-files-2.png)
+::: {.callout icon="false"}
+## Activity 2.2 - Connecting Cases & Files
 
-::: {.callout-tip icon="false"}
-## Activity 2.1
-
-Complete the assignments for the remaining 9 cases/files and verify that each assignment matches the corresponding case/file.
+Complete the assignments for the remaining 9 cases/files and verify that each assignment matches the corresponding case (interviewee's name).
 :::

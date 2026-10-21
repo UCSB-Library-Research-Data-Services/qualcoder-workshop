@@ -31,7 +31,7 @@ QualCoder can be used to analyze a wide range of qualitative data files and comb
 -   It aims to follow the **REFI-QDA** exchange standard, so projects can move to and from tools such as NVivo, ATLAS.ti and MAXQDA, with some limits.
 -   It is licensed under the LGPL v3. If you use it in coursework or research, cite it (the citation is on the QualCoder website).
 
-The simplest route is a ready-made installer from the [releases page](https://github.com/ccbogel/QualCoder/releases). Choose the one appropriate for your laptop.
+The simplest route to install the software is to follow the instructions on the [setup page](index.qmd#setup) . For updated instructions from QualCoder themselves, download the ready-made installer from the [releases page](https://github.com/ccbogel/QualCoder/releases). Choose the one appropriate for your laptop.
 
 | System | What to download | What to expect on first launch |
 |------------------------|------------------------|------------------------|
@@ -44,31 +44,27 @@ The simplest route is a ready-made installer from the [releases page](https://gi
 -   **VLC** media player is needed to code audio and video
 -   **ffmpeg** lets QualCoder draw audio waveforms.
 
-Please note that Audio and video do not work on Fedora Linux.
-
 ## Launching Qualcoder
 
 After installation is completed, to open QualCoder:
 
 -   **macOS:** Open **QualCoder** from your Applications folder or use Spotlight Search (⌘ + Space) to find and launch it.
 
-<!-- -->
-
 -   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
 
-**Important:** Windows users may see a shell/terminal window pop up, which upon closing will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
+**FIXME(CALLOUT) Important:** Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
 
 ## Basic Preferences/Settings
 
 We’ll start by adjusting a few settings. Open the main menu and choose **QualCoder \> Preferences** (Mac) or **Project \> Settings** (Windows).
 
-![](images/settings-preferences.png){fig-alt="Settings and preferences"}
+![](images/settings-preferences.png){fig-alt="Settings and preferences in QualCoder"}
 
 Only a few settings matter for now:
 
 1.  **Coder name:** Every code you apply is stamped with your coder name. Set your own name (or initials) before you start, using the **Change** button. This matters later if you compare coding with a collaborator. For this, choose `change` and `rename` the system default.
 
-    ![](images/coder-name.png)
+    ![](images/coder-name.png){fig-alt="Window to change the name of the coder and add new coders in QualCoder"}
 
 2.  **Show IDs:** It is a good practice to check this option so that you will see the unique ID for each file, code, cases and other project components.
 
@@ -76,18 +72,17 @@ Only a few settings matter for now:
 
 4.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
 
-5.  **Backups"** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on!
+5.  **Backups:** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on!
 
 Applying these changes, your settings and preferences should look like:
 
-![](images/settings-preferences-modified.png)
+![](images/settings-preferences-modified.png){fig-alt="Screenshot showing the changed settings and preferences in QualCoder"}
 
 As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
 ::: {.callout-note icon="false"}
 ## Activity 1.1 – Adding you as a Coder
 
-\
 Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.
 :::
 
@@ -96,15 +91,17 @@ Enter your name or initials so QualCoder can identify who is coding the data. Th
 
 If you already use QualCoder and want to start from a blank slate, you can clear the settings, recent projects and saved coder name left over from earlier work. Your existing projects won’t be affected. QualCoder keeps these preferences in a hidden folder called .qualcoder in your home directory. Your projects are stored separately as .qda folders, so resetting preferences doesn’t touch them.
 
+To reset your preferences:
+
 1.  Quit QualCoder
 
-2.  Rename the preferences folder.
+2.  Rename the preferences folder
 
-macOS / Linux (Terminal): `mv ~/.qualcoder ~/.qualcoder_backup`
+    -   macOS / Linux (Terminal): `mv ~/.qualcoder ~/.qualcoder_backup`
 
-Windows (PowerShell): `Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"`
+    -   Windows (PowerShell): `Rename-Item "$HOME\.qualcoder" ".qualcoder_backup"`
 
-Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.
+3.  Reopen QualCoder. It will start fresh, with no recent projects and no saved coder name.
 
-Tip: Renaming the folder instead of deleting it keeps a backup. To undo the reset, rename .qualcoder_backup back to .qualcoder. Coder names are saved inside each project’s .qda file, so a new project starts with no coders from earlier projects.
+Tip: Renaming the folder instead of deleting it keeps a backup. To undo the reset, rename `.qualcoder_backup` back to `.qualcoder`. Coder names are saved inside each project’s .qda file, so a new project starts with no coders from earlier projects.
 :::
