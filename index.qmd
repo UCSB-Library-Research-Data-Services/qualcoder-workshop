@@ -6,9 +6,9 @@ In this 3 hour workshop, attendees with no QualCoder experience will set up a pr
 
 ## **Agenda**
 
-| Time | **Block** | **Minutes** | **Focus** |
-|---------|---------------|--------|-----------------------------|
-| 9:05 | [Qualitative Data Analysis](00-introduction.qmd) | 15 | What is qualitative coding? Icebreaker |
+| Time | **Block** | **Min.** | **Focus** |
+|:-------------|:-----------------------|:------|:-----------------------------|
+| 9:05 | [Qualitative Data Analysis](00-introduction.qmd) | 15 | What is qualitative coding? |
 | 9:20 | [Meet QualCoder!](01-meet-qualcoder.qmd) | 15 | Tour of basic settings and functionalities. |
 | 9:35 | [Setting Up Your Project](02-set-up-project.qmd) | 30 | Starting a new project and importing files. Describing cases and attributes. |
 | 10:05 | [Coding Data](03-code-your-data.qmd) | 40 | Working with codes and categories. Different coding approaches. The role of memos. |
