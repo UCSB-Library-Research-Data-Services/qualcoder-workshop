@@ -4,7 +4,13 @@ title: "Meet QualCoder!"
 
 ## What is QualCoder?
 
+![](images/qualcoder-logo.png){fig-alt="QualCoder logo reads QC in purple and black." width="123"}
+
 QualCoder is a free, open-source desktop program for qualitative data analysis. It helps you organize non-numeric data, such as interviews, documents and images, and tag meaningful passages with codes.
+
+QualCoder began with a researcher’s own frustration. While analyzing survey data for his PhD, he relied on a free coding tool that had become hard to install and keep running, so he rebuilt the workflow from scratch in Python and shared the result with everyone. That spirit still drives the project: qualitative analysis shouldn’t depend on expensive licenses or institutional subscriptions.
+
+QualCoder is maintained by a small team of academics working across four continents, often in their own time. Despite these constraints, the team has continued to improve the software, responding to user feedback and incorporating suggestions to make it more useful and accessible to a growing global community.
 
 **What you can do with it:**
 
@@ -53,7 +59,7 @@ After installation is completed, to open QualCoder:
 -   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
 
 ::: callout-important
-**Keep the Terminal Window Open While Using QualCoder**
+**Keep the Terminal/Shell Window Open While Using QualCoder**
 
 Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
 :::
@@ -85,13 +91,13 @@ Applying these changes, your settings and preferences should look like:
 As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
 ::: {.callout-note icon="false"}
-## Activity 1.1 – Adding Yourself as a Coder
+### Activity 1.1 – Adding Yourself as a Coder
 
 Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.
 :::
 
 ::: callout-tip
-## Pro-tip: Resetting preferences or coders from past projects
+### Pro-tip: Resetting preferences or coders from past projects
 
 If you already use QualCoder and want to start from a blank slate, you can clear the settings, recent projects and saved coder name left over from earlier work. Your existing projects won’t be affected. QualCoder keeps these preferences in a hidden folder called .qualcoder in your home directory. Your projects are stored separately as .qda folders, so resetting preferences doesn’t touch them.
 
