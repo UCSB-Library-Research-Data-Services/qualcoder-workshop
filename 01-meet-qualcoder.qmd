@@ -103,9 +103,11 @@ Applying these changes, your settings and preferences should look like:
 As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
 ::: callout-tip
-### Pro-tip: Resetting preferences or coders from past projects
+### Pro-tip: Resetting Preferences or Coders from Past Projects
 
-If you already use QualCoder and want to start from a blank slate, you can clear the settings, recent projects and saved coder name left over from earlier work. Your existing projects won’t be affected. QualCoder keeps these preferences in a hidden folder called .qualcoder in your home directory. Your projects are stored separately as .qda folders, so resetting preferences doesn’t touch them.
+Settings carry over to new projects. QualCoder saves them in a settings file in your user folder (usually a `.qualcoder` folder in your home directory), not inside the project. So your coder name, fonts, theme and backup options apply to every project you open or create until you change them.
+
+Resetting your preferences therefore leaves your project data untouched!
 
 To reset your preferences:
 
