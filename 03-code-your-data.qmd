@@ -107,8 +107,10 @@ Code this excerpt with any term that represents what you took from reading it.
 Next, let's uncode it, assuming you want to check with your team the criteria for adding new codes to the predefined codebook.
 :::
 
+You may have noticed that the excerpts also include the questions asked. Depending on the interview protocol and methodological approach, these questions may vary across interviews. After all, an interview is an interactive exchange that can evolve in response to participants’ answers. This raises an important coding consideration worth discussing.
+
 ::: {.callout-important collapse="true" icon="false"}
-### **Discussion point: Should you code the interviewer's question?**
+### **Discussion Point: Should you code the interviewer's questions or comments?**
 
 **Usually no.** Code only the participant's words. Including the interviewer's questions can:
 
@@ -135,9 +137,9 @@ See the question mark on the left-hand side of the top bar? That allows us to se
 
 Let's look for **GUI**, which stands for Graphic User Interface, and apply the GUI code the excerpts with the first 5 results (in order of appearance). Select "Aa" to make the search case sensitive, and navigate matches across files using the arrows.
 
-### **Where should a selection begin and end?**
+### **The limits of a segment** 
 
-Deciding how much text to select is one of the main choices you make when coding. A few guidelines:
+Where should a selection begin and end? Deciding how much text to select is one of the main choices you make when coding. A few guidelines:
 
 -   **Select a complete thought:** Start where the participant begins the idea and stop when they finish it or move on to a new topic. That might be a phrase, a sentence or a whole paragraph.
 
@@ -168,7 +170,7 @@ The rationale here would be to add it as in vivo for now, until they consult wit
 ::: callout-note
 ### **Activity 3.3 - In Vivo Coding Discussion**
 
-At what point do in vivo codes need to become conceptual? Does grouping or renaming them erase the participant’s voice? Where should that decision be recorded?
+At what point do *in vivo* codes need to become conceptual? Does grouping or renaming them erase the participant’s voice? Where should that decision be recorded?
 :::
 
 You can also add codes to the code book on the fly (inductively), by selecting a segment and then **Mark with New Code (N).**
