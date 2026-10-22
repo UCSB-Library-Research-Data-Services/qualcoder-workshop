@@ -66,7 +66,9 @@ Windows users may see a shell/terminal window pop up, which upon closing, will a
 
 ## Basic Preferences/Settings
 
-We’ll start by adjusting a few settings. Open the main menu and choose **QualCoder \> Preferences** (Mac) or **Project \> Settings** (Windows).
+We’ll start by adjusting a few settings. These are program-wide settings, so they apply to every project you open.
+
+Open the main menu and choose **QualCoder \> Preferences** (Mac) or **Project \> Settings** (Windows).
 
 ![](images/settings-preferences.png){fig-alt="Settings and preferences in QualCoder"}
 
@@ -82,7 +84,9 @@ Only a few settings matter for now:
 
 4.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
 
-5.  **Backups:** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on!
+5.  **Backups:** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on! You can set a limit of how many backups are kept and delete the oldest automatically. Older versions may just keep adding them, so check your project folder now and then and delete old ones.
+
+    The backups sit next to your project, so a dead drive takes them out too. Also copy your `.qda` project folder somewhere else from time to time, such as cloud storage or an external drive. The backups are not compressed, so they can add up quickly with large projects.
 
 Applying these changes, your settings and preferences should look like:
 
