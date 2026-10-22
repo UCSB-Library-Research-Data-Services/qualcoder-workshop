@@ -186,3 +186,5 @@ Complete the assignments for the remaining nine cases/files, ensuring that each 
 
 Take a moment to reflect which strategy with file naming could have made this assignment process easier.
 :::
+
+With our files, cases, and attributes all set up and connected, it’s time to dive into QualCoder’s main feature. Any guesses what comes next? Coding, of course!
