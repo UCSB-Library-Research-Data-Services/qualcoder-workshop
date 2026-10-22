@@ -399,21 +399,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Beyond annotating your data, QualCoder provides powerful tools to analyze your results and make reports and graphs. If you want to report an issue in QualCoder or request an additional feature, please open a <code>New issue</code> on the <a href="https://github.com/ccbogel/QualCoder/issues">GitHub repository for the project</a>.</p>
-<p>We’ll dive into five of the most frequently used tools, but bear in mind, there is much more to explore:</p>
+<p>Beyond letting you code data, QualCoder provides powerful tools to analyze your results and create reports and graphs. If you want to report an issue in QualCoder or request an additional feature, please open a <code>New issue</code> on the <a href="https://github.com/ccbogel/QualCoder/issues">GitHub repository for the project</a>.</p>
+<p>We’ll dive into five of the most frequently used tools, but bear in mind that there is much more to explore:</p>
 <ul>
-<li><strong>Code retrieval:</strong> Show all coded passages, of a subset of them based on the chosen filters.</li>
-<li><strong>Code co-occurrence:</strong> Code matrix counting the number of times two codes have been used in the same text.</li>
-<li><strong>Charts:</strong> Insightful graphs based on your data, like word clouds, bar charts counting code frequency or pie charts showing their relative frequency, code heatmaps by file or case.</li>
-<li><strong>File and code summaries:</strong> For a given file or code, show how many characters were coded and what are the most frequent words in the data, optionally removing common words.</li>
-<li><strong>Database queries:</strong> advanced users can run SQL queries on the project database. Back up first, as queries can change data.</li>
+<li><strong>Code retrieval:</strong> A list of all coded text, or a subset of it based on the chosen filters.</li>
+<li><strong>Code co-occurrence:</strong> A matrix counting how many times two codes appear in the same text.</li>
+<li><strong>Charts:</strong> Word clouds, bar charts counting code frequency, pie charts showing relative frequency, and code heatmaps by file or case.</li>
+<li><strong>File and code summaries:</strong> For a given file or code, show how many characters were coded and what the most frequent words in the data are, with the option to remove common words (stopwords).</li>
+<li><strong>Database queries:</strong> Advanced users can run SQL queries on the project database. Back up first, as queries can change data.</li>
 </ul>
 <p>Other tools:</p>
 <ul>
-<li>Code comparison, in case you have multiple coders and are making intercoder reliability analysis.</li>
-<li>Code frequencies, by coder.</li>
-<li>Code text exact matches, to see if identical excerpts have been given different codes.</li>
-<li>Journals, a place in your project to keep note of your ideas.</li>
+<li>Code comparison and frequencies, in case you have multiple coders and want to run an intercoder reliability analysis.</li>
+<li>Journals, a place in your project to keep notes on your ideas.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -425,27 +423,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>As we don’t have a big amount of text coded until now, we will merge another project to the one we are working on now. This will enrich the demonstration of the different analysis and report tools, as we will have more data show up in our outputs and plots.</p>
-<p>Beyond this specific purpose for the workshop, merging projects is useful when your workflow has multiple coders analyzing the same files and you want to bring it all together.</p>
-<p>To merge the project we have prepared for you follow these steps:</p>
+<p>Since we haven’t coded much text yet, we will merge another project into the one we are working on now. This will enrich the demonstration of the different analytical and reporting tools, as we will have more data show up in the outputs and plots.</p>
+<p>Beyond this workshop, merging projects is useful when multiple coders analyze the same files and you want to bring their work together.</p>
+<p>To merge the project we have prepared for you, follow these steps:</p>
 <ol type="1">
-<li>Make sure the <code>qualcoder-workshop-project</code> folder you downloaded for the workshop contains a folder called <code>coded-project.qda</code>. Take note of the location of this folder in your computer.</li>
-<li>In QualCoder, go to <strong>Help &gt; Special functions</strong></li>
-<li>In the pop-up window, click the button inside the <code>Merge project into this project</code> section</li>
-<li>Click the <code>Run</code> button</li>
+<li>Make sure the <code>qualcoder-workshop-project</code> folder you downloaded for the workshop contains a folder called <code>coded-project.qda</code>.</li>
+<li>In QualCoder, go to <strong>Help &gt; Special functions</strong>.</li>
+<li>In the pop-up window, click the button inside the <code>Merge project into this project</code> section.</li>
+<li>Click the <code>Run</code> button.</li>
 </ol>
 </div>
 </div>
 <section id="code-retrieval" class="level2">
 <h2 class="anchored" data-anchor-id="code-retrieval">Code retrieval</h2>
-<p>To have all the coded excerpts in one place to analyze your data as a whole, the best place to start is the Code retrieval (sometimes called the coding report) tool, which you can access in the top menu <strong>Analysis &gt; Code retrieval</strong>.</p>
+<p>To see all the coded excerpts together and analyze your data as a whole, start with the Code retrieval tool (sometimes called the coding report), under <strong>Analysis &gt; Code retrieval</strong>.</p>
 <p><img src="images/code-retrieval.jpeg" class="img-fluid" alt="Screenshot of the code retrieval window"></p>
 <p>Once you are there, the usual workflow is:</p>
 <ol type="1">
 <li>Choose one or more codes or categories.</li>
-<li>Select one or more files. If you want to return all coded excerpts for the given code(s), select all the files.</li>
+<li>Select one or more files. If you want to retrieve all coded excerpts for the given code(s), select all the files.</li>
 <li>Optionally narrow by case, attribute (e.g.&nbsp;only second-year students), or coder.</li>
-<li>Click the <code>Run</code> button (as highlighted in red in the next screenshot) to show the results on the right pane.</li>
+<li>Click the <code>Run</code> button (as highlighted in red in the next screenshot) to display the results in the right pane.</li>
 </ol>
 <p><img src="images/run-code-retrieval.jpeg" class="img-fluid" alt="Screenshot of the code retrieval window, selecting all files, the bestpractice code, and highlighting the run button that shows the results"></p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -454,38 +452,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Tip: Selecting multiple files, codes or cases
+<span class="screen-reader-only">Tip</span>Tip: Selecting multiple files, codes, or cases
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Whenever you want to select multiple files, codes or cases, the fastest way is to use the <code>Shift</code> key. For example, if you want to select all the files, you would: 1) Select the first file, File 001, 2) Press and hold the <code>Shift</code> key, 3) Select the last file, File 010, 4) Release the <code>Shift</code> key.</p>
-<p>To select multiple files one by one, press and hold the <code>Ctrl</code> or <code>Cmd</code> key while selecting the files.</p>
+<p>Whenever you want to select multiple files, codes, or cases, the fastest way to select a range is to use the <code>Shift</code> key. For example, if you want to select all the files, you would: 1) Select the first file, File 001; 2) Press and hold the <code>Shift</code> key; 3) Select the last file, File 010; 4) Release the <code>Shift</code> key.</p>
+<p>To select files that aren’t next to each other, hold <code>Ctrl</code> (Windows) or <code>Cmd</code> (macOS) while clicking.</p>
 </div>
 </div>
-<p>You can analyze your data directly on this screen, scrolling up and down on the right pane. You can also export the results to HTML, TXT, CSV, XLSX, or ODT to read them in a different software.</p>
-<p>Another option is use the <strong>matrix view</strong>, to place codes (or categories) against files or cases, so you can see who talked about what. This tool is located at the right of the <code>Run</code> button we used to show the results. You can export the resulting matrix to XLSX.</p>
+<p>You can analyze your data directly on this screen, scrolling up and down in the right pane. You can also export the results to HTML, TXT, CSV, XLSX, or ODT to read them in different software.</p>
+<p>Another option is to use the <strong>matrix view</strong> to place codes (or categories) against files or cases, so you can see who talked about what. This tool is located to the right of the <code>Run</code> button we used to display the results. You can export the resulting matrix to XLSX.</p>
 </section>
 <section id="code-co-occurrence" class="level2">
 <h2 class="anchored" data-anchor-id="code-co-occurrence">Code co-occurrence</h2>
-<p>This tool creates a matrix with all your codes both in the vertical and horizontal axes, each cell representing the number of times the given codes have overlapped or are right next to each other in your data. You can open it navigating to <strong>Analysis &gt; Code co-occurrence</strong>.</p>
+<p>This tool creates a matrix with all your codes along both the vertical and horizontal axes. Each cell shows how many times the two codes overlap or appear right next to each other in your data. You can open it by navigating to <strong>Analysis &gt; Code co-occurrence</strong>.</p>
 <p><img src="https://qualcoder.org/images/651895717-c043a401-d066-42ea-affa-912a935b5e60.png" class="img-fluid" alt="Screenshot of the Code co-occurrence tool, showing the options each button in the screen enables"></p>
 <p>Clicking on a cell shows the text where both codes have overlapped.</p>
 <p><img src="https://qualcoder.org/images/fadccf7b-d18b-44a9-8637-650ea3421f66.png" class="img-fluid" alt="Screenshot of the Code co-occurrence tool, showing the text details for a given combination of codes"></p>
 <p>This is a useful result for your analysis, mainly in two ways:</p>
 <ul>
-<li>If you notice redundant codes (being used for the same phenomenon), you could make the decision to <strong>merge the codes</strong>.</li>
-<li>You spot a pattern where different codes tend to be close together in multiple cases, which you could infer as a <strong>relationship between two phenomena</strong>, an emerging theme.</li>
+<li>If you notice redundant codes (being used for the same phenomenon), you migth decide to <strong>merge them</strong>.</li>
+<li>If you see two codes that tend to appear close together across multiple cases, this may point to a <strong>relationship</strong> between the phenomena, which could be an emerging theme.</li>
 </ul>
 </section>
 <section id="charts" class="level2">
 <h2 class="anchored" data-anchor-id="charts">Charts</h2>
-<p>There are a number of different graphs with aggregated data you can easily generate and export.</p>
-<p>Going to <strong>Reports &gt; Charts</strong> shows the available charts. For all of them you can filter what data is included in the plot with the options below “Data filters”.</p>
+<p>You can easily generate and export several types of charts based on aggregated data.</p>
+<p>Go to <strong>Reports &gt; Charts</strong> to see the available charts. For all of them you can filter what data is included in the plot with the options under “Data filters”.</p>
 <ul>
-<li><strong>Pie</strong> and <strong>sunburst</strong> and <strong>treemap charts</strong>, to show the relative frequency (percentage) of times a code is used.</li>
-<li><strong>Bar</strong> and <strong>cumulative bar charts</strong>, to show the absolute frequency (number) of times a code is used, per file or case if you choose a cumulative bar chart.</li>
-<li><strong>Heatmaps</strong> to show and compare visually the frequency a code is used by file or case.</li>
-<li><strong>Attribute charts</strong> to describe your cases or files by the attributes you have assigned them.</li>
+<li><strong>Pie</strong>, <strong>sunburst</strong>, and <strong>treemap charts</strong> show the relative frequency (percentage) of times a code is used.</li>
+<li><strong>Bar charts</strong> show how many times each code is used; <strong>cumulative bar charts</strong> break this down per file or case.</li>
+<li><strong>Heatmaps</strong> show a visual comparison of the frequency with which a code is used by file or case.</li>
+<li><strong>Attribute charts</strong> to describe your cases or files by the attributes you have assigned to them.</li>
 <li><strong>Word clouds</strong> to show the most frequent words in your coded data.</li>
 </ul>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -498,37 +496,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Choose one of the available charts and try it out. Then, write a little analysis about what the graph is showing.</p>
+<p>Choose one of the available charts and try it out. Then, write a brief analysis of what the chart shows.</p>
 </div>
 </div>
-<p>Once the plot shows up in your web browser, you can download it by clicking the camera icon on the top-left corner.</p>
+<p>Once the plot shows up in your web browser, you can download it by clicking the camera icon in the top-right corner.</p>
 </section>
 <section id="file-and-code-summaries" class="level2">
 <h2 class="anchored" data-anchor-id="file-and-code-summaries">File and code summaries</h2>
 <p>In the <strong>Reports menu</strong> you can find <strong>File summary</strong> and <strong>Code summary</strong>.</p>
 <ul>
-<li>File summary shows the following statistics for the file you select on the left pane:
+<li>File summary shows the following statistics for the file you select in the left pane:
 <ul>
-<li>Total number of characters, words, and unique words on the file</li>
-<li>Top 100 words in the file and their frequency. Make sure to filter out common words (also known as stopwords), with the drop-down menu shown in the screenshot below</li>
-<li>For each code used in the file: the number of times it was used, the number of characters that the coded text contains, and a percentage calculated on the total number of characters in the document</li>
+<li>Total number of characters, words, and unique words in the file.</li>
+<li>Top 100 words in the file and their frequency. Use the drop-down menu shown in the screenshot below to filter out common words (also known as stopwords).</li>
+<li>For each code used in the file: the number of times it was used, the number of coded characters, and a percentage of the total character count.</li>
 </ul></li>
 </ul>
 <p><img src="images/file-summary.jpeg" class="img-fluid" alt="Screenshot of the File summary tool, highlighting the option at the top to filter stopwords"></p>
-<p>- On the other hand, Code summary shows: - Coders and files that used the code - Number of times the code has been used, along with the number of characters in the excerpts and the average per excerpt - Number of words and unique words on the coded excerpts - Top 100 words on the excerpts and their frequency. The option to remove stopwords is also available here</p>
+<ul>
+<li>In contrast, Code summary shows:
+<ul>
+<li>Coders who used the code and files in which it appears.</li>
+<li>Number of times the code has been used, along with the number of characters in the excerpts and the average per excerpt.</li>
+<li>Number of words and unique words in the coded excerpts.</li>
+<li>Top 100 words in the excerpts and their frequency. The option to remove stopwords is also available here.</li>
+</ul></li>
+</ul>
 <p><img src="images/code-summary.jpeg" class="img-fluid" alt="Screenshot of the Code summary tool"></p>
 </section>
 <section id="database-queries" class="level2">
 <h2 class="anchored" data-anchor-id="database-queries">Database queries</h2>
-<p>QualCoder gives us the great feature to directly access the database behind all our data, accessible in <strong>Reports &gt; Database queries</strong>. For users who are comfortable with SQL queries, it will be useful to get custom reports from their project.</p>
+<p>QualCoder gives you direct access to the database behind your project data in <strong>Reports &gt; Database queries</strong>. For users who are comfortable with SQL queries, it will be useful to get custom reports from their project.</p>
+<p><em>Remember, back up your project first, as queries can change data</em>.</p>
 <p>Let’s see three examples:</p>
 <ol type="1">
-<li><p>Using a default query to list files not including a given code</p>
+<li><p>Using a default query to list files that don’t include a given code</p>
 <ul>
-<li>On the left pane, scroll all the way down to “Default Queries”</li>
+<li>In the left pane, scroll all the way down to “Default Queries”</li>
 <li>Select “FILES THAT ARE NOT CODED with code id 1”</li>
 <li>Click the <code>Run</code> button to execute the query</li>
-<li>The result shows the files that don’t have the code with ID 1, which in our example represents “bestpractice”
+<li>The result shows the files that don’t have the code with ID 1, which in the example represents “bestpractice”
 <ul>
 <li>You can see the query includes not only coded text (code_text), but also audio/video (code_av) and images (code_image)</li>
 <li>Try modifying the query to use a different code ID, or to show the files that do have the code</li>
@@ -537,15 +544,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <p><img src="images/database-query.jpeg" class="img-fluid" alt="Screenshot of the Database query tool"></p>
 <ol start="2" type="1">
-<li><p>Let’s write ourselves a simple query, returning all file names where the full text contains the word “github”</p>
+<li><p>Write a simple query that all file names where the full text contains the word “rstudio”</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">id</span>, name</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> <span class="kw">source</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> fulltext <span class="kw">LIKE</span> <span class="st">'%rstudio%'</span> <span class="kw">OR</span> fulltext <span class="kw">LIKE</span> <span class="st">'%r studio%'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>We could read this query as follows:</p>
 <ul>
-<li>The database has a table of data called <code>source</code>, which contains all our file sources</li>
-<li>This table has fields <code>id</code>, <code>name</code>, and <code>fulltext</code>, containing our files id, name and its entire text</li>
-<li>We filter our results with the <code>WHERE</code> clause, filtering text that contains either “rstudio” or “r studio”</li>
+<li>The database has a table of data called <code>source</code>, which contains all your file sources</li>
+<li>This table has fields <code>id</code>, <code>name</code>, and <code>fulltext</code>, containing the file IDs, names, and full text</li>
+<li>The <code>WHERE</code> clause keeps only the files whose text contains either ‘rstudio’ or ‘r studio’.</li>
 </ul></li>
 <li><p>A more complex query, involving the <code>code_name</code> and <code>code_text</code> tables, searching for coded text that contains the word “jupyter”</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">source</span>.name, code_name.name, code_text.seltext</span>
@@ -560,16 +567,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="other-tools">Other tools</h2>
 <section id="code-comparison-and-code-frequencies" class="level3">
 <h3 class="anchored" data-anchor-id="code-comparison-and-code-frequencies">Code comparison and code frequencies</h3>
-<p>If your project involves multiple coders reviewing the same data, probably you will be interested in comparing their coding agreement. In other words, you’re interested in <a href="https://perma.cc/C8ES-SSPH">intercoder reliability</a>, also known as inter-rater reliability. The tool in <strong>Reports &gt; Comparison</strong> compares two coders on the same text using percentage agreement and <strong>Cohen’s kappa</strong>, a measure of agreement beyond chance.</p>
-<p>Another tool to see the number of passages coded, disaggregated by code name and coder is found in <strong>Reports &gt; Code frequencies</strong></p>
-<p>If you want are interested in learning more about intercoder reliability for your project, reach out to the Library’s Research Data Services department at <a href="mailto:rds@library.ucsb.edu">rds@library.ucsb.edu</a>.</p>
+<p>If your project involves multiple coders reviewing the same data, you’ll likely want to compare their coding agreement. In other words, you’re interested in <a href="https://perma.cc/C8ES-SSPH">intercoder reliability</a>, also known as inter-rater reliability. The tool in <strong>Reports &gt; Comparison</strong> compares two coders on the same text using percentage agreement and <strong>Cohen’s kappa</strong>, a measure of agreement that accounts for the agreement expected by chance.</p>
+<p>To see the number of coded passages, broken down by code name and coder, use <strong>Reports &gt; Code frequencies</strong></p>
+<p>If you are interested in learning more about intercoder reliability for your project, reach out to the Library’s Research Data Services department at <a href="mailto:rds@library.ucsb.edu">rds@library.ucsb.edu</a>.</p>
 </section>
 <section id="journals" class="level3">
 <h3 class="anchored" data-anchor-id="journals">Journals</h3>
-<p>Journals are free-form notes for recording ideas, decisions and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.</p>
+<p>Journals are free-form notes for recording ideas, decisions, and emerging themes as you code. They support reflexivity: being aware of how your own views shape the analysis.</p>
 <ul>
 <li>The journal window floats, so you can keep it open beside the coding screen.</li>
-<li>Add simple formatting with Markdown: <code>#</code> for headings (up to three levels), <code>*italics*</code> and <code>**bold**</code>. Web links become clickable from the right-click menu.</li>
+<li>Add simple formatting with Markdown: <code>#</code> for headings (up to three levels), <code>*italics*</code>, and <code>**bold**</code>. Use the right-click menu to make web links clickable.</li>
 <li>Search journals, sort them by name or date, filter them, add attributes, and export one journal or all of them as a single file.</li>
 </ul>
 <p>You can see and manage all your journals under <strong>Manage &gt; Journals</strong>.</p>
@@ -583,7 +590,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Memo vs journal:</strong> a memo belongs to one code, file or passage; a journal entry is about the project as a whole.</p>
+<p><strong>Memo vs.&nbsp;journal:</strong> a memo belongs to one code, file or passage; a journal entry is about the project as a whole.</p>
 </div>
 </div>
 
