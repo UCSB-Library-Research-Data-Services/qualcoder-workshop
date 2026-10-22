@@ -14,21 +14,7 @@ Next, let’s name the project **`git-experience`**. Note that this will create 
 
 This is a **QualCoder project folder**. QualCoder saves each project as an ordinary folder whose name ends in `.qda`. Here’s what each item in it does:
 
--   **git-experience.qda/** is the project itself. To open it, choose *Project → Open* in QualCoder and select this folder. If you move or back up the project, copy the whole folder. Taking only some of the files inside will break it.
-
--   **data.qda** is the most important file. It’s a SQLite database that holds all your analysis work: Your codes and code categories (the code tree). Every coded segment of text, image, audio and video. Cases, attributes, journals and memos. The plain text QualCoder pulls out of your imported documents (this is the text you actually code). Project settings and the list of imported files
-
--   **project_in_use.lock** is a temporary file. QualCoder creates it when the project is open, so the same project can’t be edited from two places at once.
-
--   **ai_data/** holds data for QualCoder’s AI-assisted features. It’s a local vector database of embeddings made from your documents, which powers AI search and AI-assisted coding. QualCoder can rebuild it from your documents.
-
--   **documents/** stores copies of the text files you imported (.txt, .docx, .pdf, .odt and so on). Your coding is tied to the extracted text in data.qda, not to these files.
-
--   **images/** stores imported images (.jpg, .png and so on) that you can code by region.
-
--   **audio/** stores imported audio (.mp3, .wav, .m4a and so on). You can transcribe it and code it by time segment.
-
--   **video/** stores imported video (.mp4, .mov and so on), which you can also transcribe and code by time segment.
+![](images/qualcoder-project-structure.png){fig-alt="Diagram of a QualCoder project folder, git-experience.qda, and what each item in it does: data.qda (database holding all your analysis work), project_in_use.lock (temporary file), ai_data (rebuildable data for AI features), and documents, images, audio and video (copies of imported files)."}
 
 ## Navigating Basic Functions
 
@@ -92,7 +78,7 @@ Let's copy the content from the `project-memo.rtf` file located in the `document
 
 With the project memo in place, let’s bring in the data we’ll be working with by importing the interview files we’ll code and analyze.
 
-All data in QualCoder comes in through **Manage \> Manage Files**.
+All data in QualCoder comes in through **Manage \> Files**.
 
 | Type            | Accepted Formats                                    |
 |-----------------|-----------------------------------------------------|
@@ -100,9 +86,13 @@ All data in QualCoder comes in through **Manage \> Manage Files**.
 | Images          | .jpg, .jpeg, .png                                   |
 | Audio and video | .mp3, .m4a, .wav, .mp4, .mov, .ogg (and .wmv video) |
 
-Click the first icon (the document with a plus sign) to import files. A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.
+Take a moment to familiarize yourself with the menu. We won't explore every function, but since some QualCoder icons may not be immediately intuitive to new users, you can hover over each icon to see a tooltip describing its functionality.
 
-![](images/add-files.png){fig-alt="Tool buttons on the Manage Files tab" width="250"}
+![](images/qualcoder_files_toolbar_annotated.png){fig-alt="QualCoder Manage Files toolbar with nine numbered buttons and what each one does: Import files, Create text file, Link to file, Pseudonymise, View file, Import linked, Export to linked, Add attribute and Mark speakers." width="546"}
+
+Click the first icon (the document with a plus sign) to import files.
+
+A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.
 
 ![](images/selecting-files.png){fig-alt="Screenshot of selected transcripts for import" width="557"}
 
@@ -137,7 +127,7 @@ For this workshop, even though we only have one file per case, we will proceed c
 
 ### Attributes
 
-QualCoder also offers the option to **Manage Attributes** through the **Manage menu**.
+QualCoder also allows you to manage attributes by selecting **Manage \> Attributes**.
 
 File attributes describe a particular file, whereas case attributes describe the entity represented by the data. For example, an interview's date and mode of collection are file-level characteristics, while the participant's age group and occupation are typically case-level characteristics. The choice depends on your research design and what you want to compare during analysis.
 
@@ -146,22 +136,24 @@ File attributes describe a particular file, whereas case attributes describe the
 **Case attributes** describe the people, places, organizations, or situations represented in your data. For example, if you create a case for each participant, you could assign attributes such as age group, occupation, education level, or region. If a participant has several interview files, these attributes belong to the case rather than needing to be repeated for every file. You can then use the attributes to compare participants or explore patterns across groups.
 
 ::: callout-note
-## Relevance of Attributes
+## The Role of Attributes in Analysis
 
 Attributes will allow you to ask questions like "Do first-year students talk about stress differently from final-year students?". It allows you to query and explore the data considering demographics and other important characteristics associated with the documents you are analyzing.
 
 Please remember that QualCoder is designed primarily for qualitative data analysis, supporting the systematic coding, organization, comparison, and interpretation of qualitative data. Although attributes can help you describe participants, cases, and other data sources, the main purpose is to support qualitative inquiry rather than statistical analysis. For statistical analysis of attributes, you can export your data to a suitable quantitative analysis tool, such as R.
 :::
 
-Attributes can be added manually in the **Manage Attributes, Manage Files, Manage Cases or Manage Journals** sections by clicking on the (*x*) button, shown below.
+Attributes can be added manually by clicking on the variable symbol, the (*x*) button, shown below:
 
 ![](images/attributes-manual.png){fig-alt="Screenshot showing the Manage Attributes window while adding an attribute" width="483"}
 
 However, there is an **easier way to import them from a survey**. QualCoder allows researchers to import `.csv` or `.xlsx` files with the description of cases and their associated attributes, and we have prepared it for you.
 
-Select **Manage Files \> Import Survey**, then choose the `cases-attributes.xlsx` file from the workshop folder. This should display as it follows:
+Select **Manage \> Cases**, then click the second icon from the left, which depicts a page with a downward-pointing arrow, to import the file. Choose `cases-attributes.xlsx` from the workshop folder. The imported data should then appear as shown below. Take a second to also hoover over other icons.
 
-![](images/cases-attributes-imported.png){fig-alt="Screenshot displaying cases and attributes imported via survey import (.xls file)."}
+![](images/qualcoder_cases_toolbar_annotated.png){fig-alt="QualCoder Manage Cases toolbar with seven numbered buttons and what each one does: Add case, Import cases, Case file manager, Add attribute, Export attributes, Help and Delete case. The case counter reads “Cases: 0”."}
+
+The fourth icon/function will be particularly useful for the next activity.
 
 ::: {.callout icon="false"}
 ## Activity 2.1 - Adding Attributes Manually
@@ -177,16 +169,18 @@ Identify one attribute or combination of attributes that could help uncover a me
 
 If everything looks good, click **OK**. Now, let's go to **Manage \> Cases**. Note that the column files shows 0. Why? Because we have yet to link files to cases. Double-click the **0** value to prompt the case file manager window.
 
-Now, we will assign files to cases. Select the corresponding file to match case (participant). We can assign by clicking on the file and choosing **"Add selected files to case"**.
+Now, we will assign files to cases. Select the corresponding file to match case (participant). We can assign by clicking on the file and choosing **Add selected files to case**.
 
-![](images/file-cases-link.png){fig-alt="Screenshot of successful linkage of files to their specific cases."}
+![](images/file-cases-linking.png){fig-alt="Screenshot of successful linkage of files to their specific cases."}
 
-Before confirming, verify that the name matches the participant listed in the transcript header. Note that the file assignment now displays **“YES.”** Once you click **OK**, the grid will update to show 1 file associated with Au Soosaar.
+Before confirming, verify that the name matches the participant listed in the transcript header. Note that the file assignment now displays **YES**. Once you click **OK**, the grid will update to show 1 file associated with Au Soosaar.
 
-You can also undo assignments or bulk-assign multiple documents within a selected range, though that won't be relevant in this case. You might also click **"Hide Assigned Files"** to reduce the list and avoid confusion.
+You can also undo assignments or bulk-assign multiple documents within a selected range, though that won't be relevant in this case. You might also check **Hide Assigned Files** to reduce the list and avoid confusion.
+
+**Auto Assign File Text to Case** streamlines assignments by defining rules based on file names, automatically assigning files to the appropriate cases. This feature is most useful when multiple files are associated with the same case.
 
 ::: {.callout icon="false"}
 ## Activity 2.2 - Connecting Cases & Files
 
-Complete the assignments for the remaining 9 cases/files and verify that each assignment matches the corresponding case (interviewee's name).
+Complete the assignments for the remaining nine cases/files, ensuring that each file is assigned to the correct case based on the interviewee’s name.
 :::
