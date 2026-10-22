@@ -74,31 +74,33 @@ Open the main menu and choose **QualCoder \> Preferences** (Mac) or **Project \>
 
 Only a few settings matter for now:
 
-1.  **Coder name:** Every code you apply is stamped with your coder name. Set your own name (or initials) before you start, using the **Change** button. This matters later if you compare coding with a collaborator. For this, choose `change` and `rename` the system default.
+1.  **Coder name:** Every code you apply is stamped with your coder name. This matters later if you compare coding with a collaborator. For this, choose **change** and **rename** the system default.
 
     ![](images/coder-name.png){fig-alt="Window to change the name of the coder and add new coders in QualCoder"}
-
-2.  **Show IDs:** It is a good practice to check this option so that you will see the unique ID for each file, code, cases and other project components.
-
-3.  **Language:** English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.
-
-4.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
-
-5.  **Backups:** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on! You can set a limit of how many backups are kept and delete the oldest automatically. Older versions may just keep adding them, so check your project folder now and then and delete old ones.
-
-    The backups sit next to your project, so a dead drive takes them out too. Also copy your `.qda` project folder somewhere else from time to time, such as cloud storage or an external drive. The backups are not compressed, so they can add up quickly with large projects.
-
-Applying these changes, your settings and preferences should look like:
-
-![](images/settings-preferences-modified.png){fig-alt="Screenshot showing the changed settings and preferences in QualCoder"}
-
-As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
 ::: {.callout-note icon="false"}
 ### Activity 1.1 – Adding Yourself as a Coder
 
 Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.
 :::
+
+2.  Also ensure to apply or keep the following settings so we have the same setup throughout the workshop:
+
+3.  **Show IDs:** It is a good practice to check this option so that you will see the unique ID for each file, code, cases and other project components.
+
+4.  **Language:** English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.
+
+5.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
+
+6.  **Backups:** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on! You can set a limit of how many backups are kept and delete the oldest automatically. Older versions may just keep adding them, so check your project folder now and then and delete old ones.
+
+The backups sit next to your project, so a dead drive takes them out too. Also copy your `.qda` project folder somewhere else from time to time, such as cloud storage or an external drive. The backups are not compressed, so they can add up quickly with large projects.
+
+Applying these changes, your settings and preferences should look like:
+
+![](images/settings-preferences-modified.png){fig-alt="Screenshot showing the changed settings and preferences in QualCoder"}
+
+As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
 ::: callout-tip
 ### Pro-tip: Resetting preferences or coders from past projects
