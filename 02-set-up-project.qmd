@@ -10,7 +10,7 @@ On the main window, before exploring QualCoder and its features, let's create a 
 
 Next, let’s name the project **`git-experience`**. Note that this will create a folder named `git-experience.qda` inside your selected folder. Open it, and you’ll see a set of predefined subfolders:
 
-![](images/qda%20folder.png){fig-alt="Screenshot of the file explorer, showing the top level .qda folder for the project itself, the .qda file with the database, and other folders for imported data." width="604"}
+![](images/qda%20folder.png){fig-alt="Screenshot of the file explorer, showing the top level .qda folder for the project itself, the .qda file with the database, and other folders for imported data." width="696"}
 
 This is a **QualCoder project folder**. QualCoder saves each project as an ordinary folder whose name ends in `.qda`. Here’s what each item in it does:
 
@@ -70,7 +70,7 @@ Let's copy the content from the `project-memo.rtf` file located in the `document
 >
 > Ultimately, the behavioral study contributes to IASGE’s broader goal of understanding how scholarly materials hosted on Git platforms can transition from active, collaborative development to stable, permanently citable research outputs supported by professional preservation practices. The project provides an empirical basis for improving the discoverability, usability, citation, and long-term accessibility of scholarship created and shared through Git-based research workflows.
 
-![](images/project-memo.png){fig-alt="Screenshot of the project memo window" width="487"}
+![](images/project-memo.png){fig-alt="Screenshot of the project memo window" width="539"}
 
 **Project memos** can also provide context for AI tools integrated into QualCoder, helping them generate more relevant, consistent, and contextually informed suggestions and analyses. Any text written after a line containing `#####` remains private and is not shared with the AI model. In the example below, however, we will keep the entire memo visible to the AI to demonstrate how project-level context can inform its responses later in the workshop.
 
@@ -88,13 +88,13 @@ All data in QualCoder comes in through **Manage \> Files**.
 
 Take a moment to familiarize yourself with the menu. We won't explore every function, but since some QualCoder icons may not be immediately intuitive to new users, you can hover over each icon to see a tooltip describing its functionality.
 
-![](images/qualcoder_files_toolbar_annotated.png){fig-alt="QualCoder Manage Files toolbar with nine numbered buttons and what each one does: Import files, Create text file, Link to file, Pseudonymise, View file, Import linked, Export to linked, Add attribute and Mark speakers." width="546"}
+![](images/qualcoder_files_toolbar_annotated.png){fig-alt="QualCoder Manage Files toolbar with nine numbered buttons and what each one does: Import files, Create text file, Link to file, Pseudonymise, View file, Import linked, Export to linked, Add attribute and Mark speakers." width="661"}
 
 Click the first icon (the document with a plus sign) to import files.
 
 A window should open, allowing you to browse for and select the files you downloaded for this workshop. We will be uploading 10 interview transcripts that use aliases instead of participants’ real names to protect their identities.
 
-![](images/selecting-files.png){fig-alt="Screenshot of selected transcripts for import" width="557"}
+![](images/selecting-files.png){fig-alt="Screenshot of selected transcripts for import" width="698"}
 
 \
 The files should be displayed in our window, and double-clicking a file should open and display its contents.
