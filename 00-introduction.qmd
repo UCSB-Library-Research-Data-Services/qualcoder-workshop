@@ -29,7 +29,7 @@ A single hour-long interview can run to a couple of pages, and a small-scale stu
 This process involves identifying and labeling meaningful pieces of qualitative data. These labels, called *codes*, help organize the data and make it easier to identify important ideas, concepts, and patterns. Coding is an initial step in qualitative data analysis that supports a closer examination of the data and provides a foundation for further analysis and interpretation.
 
 ::: {.callout-note icon="false"}
-**Activity 0.1 - Warm-up**
+### **Activity 0.1 - Warm-up**
 
 Imagine you’re a researcher studying how new developers experience Git. You’ve just finished an interview, and this is one passage from the transcript. Your job is to read between the lines: what is this person going through, and what’s worth capturing?
 

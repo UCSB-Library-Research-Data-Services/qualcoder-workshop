@@ -11,7 +11,7 @@ QualCoder is a free, open-source desktop program for qualitative data analysis. 
 -   **Code many kinds of data:** text, PDFs, images, audio and video.
 -   **Write as you think:** keep journals and attach memos to codes, files and coded passages.
 -   **Organize ideas:** group codes into categories in a tree, like folders.
--   **Analyse and report:** retrieve everything tagged with a code, compare codes, and export reports.
+-   **Analyze and report:** retrieve everything tagged with a code, compare codes, and export reports.
 -   **Use optional AI tools:** search for themes and discuss your data with a large language model. These are switched off by default.
 
 **Applications**
@@ -52,7 +52,11 @@ After installation is completed, to open QualCoder:
 
 -   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
 
-**FIXME(CALLOUT) Important:** Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
+::: callout-important
+**Keep the Terminal Window Open While Using QualCoder**
+
+Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
+:::
 
 ## Basic Preferences/Settings
 
