@@ -85,7 +85,7 @@ Applying these changes, your settings and preferences should look like:
 As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
 ::: {.callout-note icon="false"}
-## Activity 1.1 – Adding you as a Coder
+## Activity 1.1 – Adding Yourself as a Coder
 
 Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.
 :::
