@@ -136,7 +136,7 @@ File attributes describe a particular file, whereas case attributes describe the
 **Case attributes** describe the people, places, organizations, or situations represented in your data. For example, if you create a case for each participant, you could assign attributes such as age group, occupation, education level, or region. If a participant has several interview files, these attributes belong to the case rather than needing to be repeated for every file. You can then use the attributes to compare participants or explore patterns across groups.
 
 ::: callout-note
-## The Role of Attributes in Analysis
+#### The Role of Attributes in Analysis
 
 Attributes will allow you to ask questions like "Do first-year students talk about stress differently from final-year students?". It allows you to query and explore the data considering demographics and other important characteristics associated with the documents you are analyzing.
 
@@ -156,13 +156,13 @@ Select **Manage \> Cases**, then click the second icon from the left, which depi
 The fourth icon/function will be particularly useful for the next activity.
 
 ::: {.callout icon="false"}
-## Activity 2.1 - Adding Attributes Manually
+#### Activity 2.1 - Adding Attributes Manually
 
-Add a **mode** attribute to indicate whether each interview was conducted online or in person. Set the mode to **online for files 01–05** and **in-person for files 09–10.**
+Add a **mode** attribute to indicate whether each interview was conducted online or in person. Set the mode to **online** for the first 5 files and **in-person** for the other 5.
 :::
 
 ::: {.callout icon="false"}
-## Food for Thought: Using Attributes to Derive Insights
+#### Using Attributes for Insight
 
 Identify one attribute or combination of attributes that could help uncover a meaningful insight in our data. What would you look for, and why?
 :::
@@ -171,7 +171,7 @@ If everything looks good, click **OK**. Now, let's go to **Manage \> Cases**. No
 
 Now, we will assign files to cases. Select the corresponding file to match case (participant). We can assign by clicking on the file and choosing **Add selected files to case**.
 
-![](images/file-cases-linking.png){fig-alt="Screenshot of successful linkage of files to their specific cases."}
+![](images/linking-files.png){fig-alt="Screenshot of successful linkage of files to their specific cases."}
 
 Before confirming, verify that the name matches the participant listed in the transcript header. Note that the file assignment now displays **YES**. Once you click **OK**, the grid will update to show 1 file associated with Au Soosaar.
 
