@@ -180,7 +180,7 @@ You can also undo assignments or bulk-assign multiple documents within a selecte
 **Auto Assign File Text to Case** streamlines assignments by defining rules based on file names, automatically assigning files to the appropriate cases. This feature is most useful when multiple files are associated with the same case.
 
 ::: {.callout icon="false"}
-## Activity 2.2 - Connecting Cases & Files
+#### Activity 2.2 - Connecting Cases & Files
 
 Complete the assignments for the remaining nine cases/files, ensuring that each file is assigned to the correct case based on the interviewee’s name.
 
