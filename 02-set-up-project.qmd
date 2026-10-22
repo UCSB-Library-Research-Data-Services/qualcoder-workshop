@@ -183,4 +183,6 @@ You can also undo assignments or bulk-assign multiple documents within a selecte
 ## Activity 2.2 - Connecting Cases & Files
 
 Complete the assignments for the remaining nine cases/files, ensuring that each file is assigned to the correct case based on the interviewee’s name.
+
+Take a moment to reflect which strategy with file naming could have made this assignment process easier.
 :::
