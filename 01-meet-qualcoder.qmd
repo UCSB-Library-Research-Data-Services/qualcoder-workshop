@@ -4,14 +4,20 @@ title: "Meet QualCoder!"
 
 ## What is QualCoder?
 
+![](images/qualcoder-logo.png){fig-alt="QualCoder logo reads QC in purple and black." width="123"}
+
 QualCoder is a free, open-source desktop program for qualitative data analysis. It helps you organize non-numeric data, such as interviews, documents and images, and tag meaningful passages with codes.
+
+QualCoder began with a researcher’s own frustration. While analyzing survey data for his PhD, he relied on a free coding tool that had become hard to install and keep running, so he rebuilt the workflow from scratch in Python and shared the result with everyone. That spirit still drives the project: qualitative analysis shouldn’t depend on expensive licenses or institutional subscriptions.
+
+QualCoder is maintained by a small team of academics working across four continents, often in their own time. Despite these constraints, the team has continued to improve the software, responding to user feedback and incorporating suggestions to make it more useful and accessible to a growing global community.
 
 **What you can do with it:**
 
 -   **Code many kinds of data:** text, PDFs, images, audio and video.
 -   **Write as you think:** keep journals and attach memos to codes, files and coded passages.
 -   **Organize ideas:** group codes into categories in a tree, like folders.
--   **Analyse and report:** retrieve everything tagged with a code, compare codes, and export reports.
+-   **Analyze and report:** retrieve everything tagged with a code, compare codes, and export reports.
 -   **Use optional AI tools:** search for themes and discuss your data with a large language model. These are switched off by default.
 
 **Applications**
@@ -52,27 +58,43 @@ After installation is completed, to open QualCoder:
 
 -   **Windows:** Double-click the **QualCoder** shortcut on your desktop or search for *QualCoder* in the Start Menu.
 
-**FIXME(CALLOUT) Important:** Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
+::: callout-important
+**Keep the Terminal/Shell Window Open While Using QualCoder**
+
+Windows users may see a shell/terminal window pop up, which upon closing, will also stop the running process (for example, the server or the app’s background service) and quit QualCoder. Leave this window open, or minimize it, for as long as you’re using the tool. If you close it by mistake, relaunch the application to start it again.
+:::
 
 ## Basic Preferences/Settings
 
-We’ll start by adjusting a few settings. Open the main menu and choose **QualCoder \> Preferences** (Mac) or **Project \> Settings** (Windows).
+We’ll start by adjusting a few settings. These are program-wide settings, so they apply to every project you open.
+
+Open the main menu and choose **QualCoder \> Preferences** (Mac) or **Project \> Settings** (Windows).
 
 ![](images/settings-preferences.png){fig-alt="Settings and preferences in QualCoder"}
 
 Only a few settings matter for now:
 
-1.  **Coder name:** Every code you apply is stamped with your coder name. Set your own name (or initials) before you start, using the **Change** button. This matters later if you compare coding with a collaborator. For this, choose `change` and `rename` the system default.
+1.  **Coder name:** Every code you apply is stamped with your coder name. This matters later if you compare coding with a collaborator. For this, choose **change** and **rename** the system default.
 
     ![](images/coder-name.png){fig-alt="Window to change the name of the coder and add new coders in QualCoder"}
 
-2.  **Show IDs:** It is a good practice to check this option so that you will see the unique ID for each file, code, cases and other project components.
+::: {.callout-note icon="false"}
+### Activity 1.1 – Adding Yourself as a Coder
 
-3.  **Language:** English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.
+Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.
+:::
 
-4.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
+2.  Also ensure to apply or keep the following settings so we have the same setup throughout the workshop:
 
-5.  **Backups:** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on!
+3.  **Show IDs:** It is a good practice to check this option so that you will see the unique ID for each file, code, cases and other project components.
+
+4.  **Language:** English is the default. French, German and Spanish are kept up to date; other languages are contributed by volunteers.
+
+5.  **Font and display:** Increase the font size if text is hard to read on a projector or small screen.
+
+6.  **Backups:** QualCoder can back up your project every hour and keep the most recent copies, named like *projectname_BKP_yyyymmdd_hh.qda*. Let's leave this on! You can set a limit of how many backups are kept and delete the oldest automatically. Older versions may just keep adding them, so check your project folder now and then and delete old ones.
+
+The backups sit next to your project, so a dead drive takes them out too. Also copy your `.qda` project folder somewhere else from time to time, such as cloud storage or an external drive. The backups are not compressed, so they can add up quickly with large projects.
 
 Applying these changes, your settings and preferences should look like:
 
@@ -80,16 +102,12 @@ Applying these changes, your settings and preferences should look like:
 
 As you may notice, QualCoder offers several additional settings, including options for integrating AI into your project. Don't worry about these for now—we'll explore them later in the workshop.
 
-::: {.callout-note icon="false"}
-## Activity 1.1 – Adding you as a Coder
-
-Enter your name or initials so QualCoder can identify who is coding the data. Then, add a second coder (you may add any name), but keep you as the current coder. We will see how that works in practice in future episodes.
-:::
-
 ::: callout-tip
-## Pro-tip: Resetting preferences or coders from past projects
+### Pro-tip: Resetting Preferences or Coders from Past Projects
 
-If you already use QualCoder and want to start from a blank slate, you can clear the settings, recent projects and saved coder name left over from earlier work. Your existing projects won’t be affected. QualCoder keeps these preferences in a hidden folder called .qualcoder in your home directory. Your projects are stored separately as .qda folders, so resetting preferences doesn’t touch them.
+Settings carry over to new projects. QualCoder saves them in a settings file in your user folder (usually a `.qualcoder` folder in your home directory), not inside the project. So your coder name, fonts, theme and backup options apply to every project you open or create until you change them.
+
+Resetting your preferences therefore leaves your project data untouched!
 
 To reset your preferences:
 

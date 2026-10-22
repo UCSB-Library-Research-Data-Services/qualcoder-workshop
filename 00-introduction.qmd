@@ -6,33 +6,49 @@ title: "Introduction to Qualitative Data Analysis"
 
 ### What is Coding?
 
-Qualitative data, such as interview transcripts, open-ended survey answers, field notes and focus group recordings, is rich but unruly. Qualitative analysis is about finding patterns, unfolding both explicit and implicit attitudes, behaviors, and beliefs, understanding meanings, and making sense of findings concerning the research questions at hand.
+Qualitative data, such as interview transcripts, open-ended survey answers, field notes, focus group recordings, videos and news articles, is rich but unruly:
 
-But how do we move from all that text to meaningful findings? This is where coding comes in. Coding is the process of assigning labels to meaningful parts of our data so we can identify patterns, compare experiences, and develop interpretations. Importantly, coding is not simply highlighting interesting quotes. The way we code influences what we notice, how we interpret people's experiences, and ultimately the conclusions we draw.
+-   **No fixed structure:** Responses wander, contradict themselves or bury the main point.
+
+-   **Inconsistent format:** It spans text, audio and video, and answers range from one word to several paragraphs.
+
+-   **Harder to compare and count:** The same idea shows up in different words, so it has to be interpreted rather than tallied.
+
+-   **Volume:** A few hours of audio recordings or video can fill hundreds of pages.
+
+-   **Ambiguity:** Tone and context carry meaning that’s easy to misread.
+
+Despite these challenges, qualitative data is sometimes the most appropriate, or even the only, way to understand a research phenomenon, depending on what that phenomenon is. For example, a survey can show how many employees are leaving a company, but only interviews can reveal why they decided to go.
+
+Qualitative data analysis is about finding patterns, unfolding both explicit and implicit attitudes, behaviors, and beliefs, understanding meanings and events, and making sense of findings concerning the research questions at hand.
+
+But how do we move from text to meaningful findings? This is where coding comes in. Coding is the process of assigning labels to meaningful parts of our data so we can identify patterns, compare experiences, and develop interpretations. Importantly, coding is not simply highlighting interesting quotes. The way we code influences what we notice, how we interpret people's experiences, and ultimately the conclusions we draw.
 
 A single hour-long interview can run to a couple of pages, and a small-scale study can produce hundreds. Coding is how we turn that volume into something we can think with: we read closely, attach short labels to meaningful segments, and then group, compare and count those labels across the whole dataset. Without coding, analysis tends to rely on whichever quotes felt most vivid; with it, we can see which ideas recur, which are rare, and which participants hold them.
 
-This process involves identifying specific labels applied to small pieces of data. These codes act as foundational building blocks that, when further developed and refined, can combine to form “themes.” Themes are broader concepts that emerge from grouping related codes, offering a deeper interpretation of the data. It is an outcome of coding, categorization, and analytic reflection. In other words, codes provide detailed elements that contribute to the development of broader themes. Coding is the initial step of analyzing data by assigning labels to relevant sections while theming involves interpreting and grouping codes to identify recurring patterns and meanings.
+This process involves identifying and labeling meaningful pieces of qualitative data. These labels, called *codes*, help organize the data and make it easier to identify important ideas, concepts, and patterns. Coding is an initial step in qualitative data analysis that supports a closer examination of the data and provides a foundation for further analysis and interpretation.
 
-### Warm-up
+::: {.callout-note icon="false"}
+### **Activity 0.1 - Warm-up**
 
-Imagine you’re a researcher studying how new developers experience Git. You’ve just finished an interview, and this is one moment from the transcript. Your job is to read between the lines: what is this person going through, and what’s worth capturing?
+Imagine you’re a researcher studying how new developers experience Git. You’ve just finished an interview, and this is one passage from the transcript. Your job is to read between the lines: what is this person going through, and what’s worth capturing?
 
 > *Interviewer:* Can you tell me about a memorable experience you’ve had using Git?
 >
 > *Participant:* Sure. In my first internship I merged my feature branch into main and got fourteen conflicts. I kept staring at the angle brackets and equals signs, reading the same lines over and over, and I still couldn’t tell which half was mine and which was my teammate’s. I didn’t even understand why some files had conflicts when I was sure I’d never touched them. So I started googling, and pretty soon I had about twenty tabs open, rebase, reset, revert, cherry-pick, and they all started blurring together. Every answer I found brought up three new terms I’d have to look up, and at some point I was just scrolling without taking anything in. I remember sitting there with the terminal open, not even sure what I was supposed to type next.
 
-**Discuss with a partner:**
+**Discuss with a partner or share in the chat**
 
-- What labels did you both come up with?
+-   What labels did you both come up with?
 
-- The participant never says how they *feel*. So how did you know?
+-   The participant never says how they *feel*. So how did you know?
+:::
 
 ### Inductive vs. Deductive Coding
 
 Data can be arranged and coded following two types of approaches: a more inductive (bottom-up) approach, where insights and themes emerge more organically and directly from the data without prior assumptions, or a deductive (top-down) approach, where researchers apply preexisting theoretical frameworks or concepts to the data. The approaches can also be combined as researchers engage with and learn more details from the data.
 
-![Adapted from: https://delvetool.com/blog/deductiveinductive](images/inductive-deductive-coding.jpg){width="567" fig-alt="Diagram comparing Inductive (bottom-up) and Deductive (top-down) qualitative coding processes, separated by two central up/down arrows."}
+![](images/inductive_vs_deductive.png){fig-alt="Diagram comparing Inductive (bottom-up) and Deductive (top-down) qualitative coding processes, separated by two central up/down arrows." width="492"}
 
 The **bottom-up approach** is exploratory and highly flexible as there are no predetermined categories or hypotheses; it has its basis in grounded theory, meaning that themes emerge directly from the data through open coding and analysis, allowing a wide range of topics and potential unexpected insights to be extracted from the data.
 
@@ -62,9 +78,9 @@ The original project, funded by the Alfred P. Sloan Foundation, is a mixed-metho
 
 [![](images/clipboard-3061620755.png){fig-alt="download icon" width="72" height="58"}](https://drive.google.com/drive/folders/1ySRkXnDSW_unpis24fuG-vqg3AfnPgY8?usp=drive_link)
 
-[Access and download](https://drive.google.com/drive/folders/1ySRkXnDSW_unpis24fuG-vqg3AfnPgY8?usp=drive_link) the `qualcoder-workshop-project` which should contain the following files:
+[Access and download](https://drive.google.com/drive/folders/1ySRkXnDSW_unpis24fuG-vqg3AfnPgY8?usp=drive_link) the `qualcoder-workshop-project` which should contain the following sub-folders and files:
 
-```markdown
+``` markdown
 qualcoder-workshop-project/
 ├── coded-project.qda/
 ├── documentation/
